@@ -209,6 +209,21 @@ input {
   padding: 0 11px;
 }
 
+input[type="checkbox"] {
+  min-height: auto;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 4px;
+  accent-color: var(--accent);
+  justify-self: start;
+}
+
+input[type="range"] {
+  min-height: auto;
+  padding: 0;
+}
+
 select:focus,
 input:focus {
   outline: 2px solid rgba(15, 122, 116, 0.2);
@@ -238,6 +253,22 @@ button:hover {
 
 .mini-tip {
   font-size: 0.77rem;
+}
+
+#minMatchValue {
+  display: inline-block;
+  width: fit-content;
+  border: 1px solid var(--line);
+  background: #fffdf6;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  color: #544f41;
+}
+
+#clearFilters {
+  margin-top: 10px;
+  background: linear-gradient(140deg, #4f6f78, #618a95);
 }
 
 .section-head {

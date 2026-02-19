@@ -1,3 +1,7 @@
+import { daysLeft, formatDate, itemSummaryText, normalizeInput, rankItems } from "./matching.js";
+
+const STORAGE_KEY = "granthunter:ui-state:v2";
+
 const state = {
   raw: null,
   items: [],
@@ -6,7 +10,11 @@ const state = {
     keyword: "",
     type: "",
     status: "",
-    source: ""
+    source: "",
+    sortBy: "match_desc",
+    minMatch: 0,
+    openOnly: false,
+    closingSoonOnly: false
   },
   profile: {
     level: "",
@@ -26,7 +34,8 @@ const el = {
   digestMeta: document.getElementById("digestMeta"),
   digestLink: document.getElementById("digestLink"),
   subscribeForm: document.getElementById("subscribeForm"),
-  subscribeHint: document.getElementById("subscribeHint")
+  subscribeHint: document.getElementById("subscribeHint"),
+  minMatchValue: document.getElementById("minMatchValue")
 };
 
 function escapeHtml(str) {
@@ -44,116 +53,122 @@ async function fetchJson(url) {
   return res.json();
 }
 
-function formatDate(iso) {
-  if (!iso) return "TBC";
-  const d = new Date(`${iso}T00:00:00Z`);
-  if (Number.isNaN(d.getTime())) return iso;
-  return d.toISOString().slice(0, 10);
+function readBool(value) {
+  return value === "1" || value === "true";
 }
 
-function daysLeft(iso) {
-  if (!iso) return null;
-  const diff = Date.parse(`${iso}T23:59:59Z`) - Date.now();
-  if (Number.isNaN(diff)) return null;
-  return Math.ceil(diff / (24 * 3600 * 1000));
-}
+function mergeState(partial) {
+  if (!partial || typeof partial !== "object") return;
 
-function normalizeInput(text) {
-  return String(text || "")
-    .toLowerCase()
-    .trim();
-}
-
-function tokenize(text) {
-  return normalizeInput(text)
-    .split(/[\s,;/|]+/)
-    .map((x) => x.trim())
-    .filter((x) => x.length > 1);
-}
-
-function scoreItem(item, profile) {
-  let score = 45;
-  const reasons = [];
-
-  const levels = item?.eligibility?.levels || [];
-  const stages = item?.eligibility?.careerStages || [];
-  const nationalities = item?.eligibility?.nationalities || [];
-  const disciplines = item?.eligibility?.disciplines || [];
-
-  if (profile.level) {
-    if (levels.length === 0 || levels.includes(profile.level)) {
-      score += 22;
-      reasons.push(`Level match: ${profile.level}`);
-    } else {
-      score -= 24;
-      reasons.push(`Possible level mismatch: target ${levels.join("/")}`);
-    }
+  if (partial.filters && typeof partial.filters === "object") {
+    state.filters = {
+      ...state.filters,
+      ...partial.filters,
+      minMatch: Number(partial.filters.minMatch ?? state.filters.minMatch) || 0,
+      openOnly: Boolean(partial.filters.openOnly),
+      closingSoonOnly: Boolean(partial.filters.closingSoonOnly)
+    };
   }
 
-  if (profile.careerStage) {
-    if (stages.length === 0 || stages.includes(profile.careerStage)) {
-      score += 14;
-      reasons.push(`Career stage match: ${profile.careerStage}`);
-    } else {
-      score -= 12;
-      reasons.push(`Career stage mismatch: target ${stages.join("/")}`);
-    }
+  if (partial.profile && typeof partial.profile === "object") {
+    state.profile = {
+      ...state.profile,
+      ...partial.profile
+    };
   }
+}
 
-  if (profile.nationality) {
-    if (nationalities.includes("any") || nationalities.length === 0 || nationalities.includes(profile.nationality)) {
-      score += 14;
-      reasons.push(`Nationality/status compatible: ${profile.nationality}`);
-    } else {
-      score -= 18;
-      reasons.push(`Nationality restrictions: ${nationalities.join("/")}`);
-    }
+function loadStateFromStorage() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    mergeState(JSON.parse(raw));
+  } catch {
+    // ignore storage parse failures
   }
+}
 
-  if (profile.discipline) {
-    const userTokens = tokenize(profile.discipline);
-    const targetTokens = tokenize(disciplines.join(" "));
-    const intersects = userTokens.filter((token) =>
-      targetTokens.some((target) => target.includes(token) || token.includes(target))
+function loadStateFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if ([...params.keys()].length === 0) return;
+
+  mergeState({
+    filters: {
+      keyword: params.get("q") || state.filters.keyword,
+      type: params.get("type") || state.filters.type,
+      status: params.get("status") || state.filters.status,
+      source: params.get("source") || state.filters.source,
+      sortBy: params.get("sort") || state.filters.sortBy,
+      minMatch: Number(params.get("min") || state.filters.minMatch),
+      openOnly: readBool(params.get("open")),
+      closingSoonOnly: readBool(params.get("closing"))
+    },
+    profile: {
+      level: params.get("level") || state.profile.level,
+      careerStage: params.get("career") || state.profile.careerStage,
+      nationality: params.get("nat") || state.profile.nationality,
+      discipline: params.get("disc") || state.profile.discipline
+    }
+  });
+}
+
+function persistState() {
+  try {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        filters: state.filters,
+        profile: state.profile
+      })
     );
-
-    if (intersects.length > 0 || disciplines.includes("all disciplines")) {
-      score += Math.min(22, 9 + intersects.length * 5);
-      reasons.push(
-        disciplines.includes("all disciplines")
-          ? "Broad discipline coverage"
-          : `Discipline keyword match: ${intersects.slice(0, 3).join("/")}`
-      );
-    } else {
-      reasons.push(`Discipline unclear/mismatch: ${disciplines.slice(0, 2).join("/") || "TBC"}`);
-      score -= 14;
-    }
+  } catch {
+    // ignore storage write failures
   }
 
-  if (item.status === "open") score += 6;
-  if (item.status === "closed") score -= 24;
+  const params = new URLSearchParams();
+  if (state.filters.keyword) params.set("q", state.filters.keyword);
+  if (state.filters.type) params.set("type", state.filters.type);
+  if (state.filters.status) params.set("status", state.filters.status);
+  if (state.filters.source) params.set("source", state.filters.source);
+  if (state.filters.sortBy && state.filters.sortBy !== "match_desc") params.set("sort", state.filters.sortBy);
+  if (state.filters.minMatch > 0) params.set("min", String(state.filters.minMatch));
+  if (state.filters.openOnly) params.set("open", "1");
+  if (state.filters.closingSoonOnly) params.set("closing", "1");
 
-  const left = daysLeft(item.deadline);
-  if (typeof left === "number") {
-    if (left < 0) {
-      score -= 20;
-      reasons.push("Deadline has passed");
-    } else if (left <= 7) {
-      reasons.push(`Deadline is close: D-${left}`);
-    }
-  }
+  if (state.profile.level) params.set("level", state.profile.level);
+  if (state.profile.careerStage) params.set("career", state.profile.careerStage);
+  if (state.profile.nationality) params.set("nat", state.profile.nationality);
+  if (state.profile.discipline) params.set("disc", state.profile.discipline);
 
-  score = Math.max(0, Math.min(100, score));
-  return {
-    score,
-    reasons: reasons.slice(0, 3)
-  };
+  const nextUrl = `${window.location.pathname}${params.toString() ? `?${params.toString()}` : ""}`;
+  window.history.replaceState(null, "", nextUrl);
 }
 
-function statusLabel(status) {
-  if (status === "open") return "Open";
-  if (status === "closed") return "Closed";
-  return "Unknown";
+function applyStateToInputs() {
+  const map = {
+    keyword: state.filters.keyword,
+    typeFilter: state.filters.type,
+    statusFilter: state.filters.status,
+    sourceFilter: state.filters.source,
+    sortBy: state.filters.sortBy,
+    minMatch: String(state.filters.minMatch),
+    profileLevel: state.profile.level,
+    profileCareer: state.profile.careerStage,
+    profileNationality: state.profile.nationality,
+    profileDiscipline: state.profile.discipline
+  };
+
+  for (const [id, value] of Object.entries(map)) {
+    const node = document.getElementById(id);
+    if (!node) continue;
+    node.value = value;
+  }
+
+  const openOnly = document.getElementById("openOnly");
+  const closingSoonOnly = document.getElementById("closingSoonOnly");
+  if (openOnly) openOnly.checked = state.filters.openOnly;
+  if (closingSoonOnly) closingSoonOnly.checked = state.filters.closingSoonOnly;
+  if (el.minMatchValue) el.minMatchValue.textContent = String(state.filters.minMatch);
 }
 
 function renderStats(stats) {
@@ -205,54 +220,22 @@ function renderDigestMeta(digest) {
   }
 }
 
-function matchesFilters(item) {
-  const keyword = state.filters.keyword;
-  const type = state.filters.type;
-  const status = state.filters.status;
-  const source = state.filters.source;
-
-  if (type && item.type !== type) return false;
-  if (status && item.status !== status) return false;
-  if (source && item.sourceId !== source) return false;
-
-  if (keyword) {
-    const merged = [
-      item.title,
-      item.description,
-      item.summary?.en || item.summary?.zh || "",
-      ...(item.eligibility?.disciplines || [])
-    ]
-      .join(" ")
-      .toLowerCase();
-    if (!merged.includes(keyword)) return false;
-  }
-
-  return true;
-}
-
 function renderCards() {
-  const filtered = state.items
-    .filter(matchesFilters)
-    .map((item) => {
-      const scored = scoreItem(item, state.profile);
-      return {
-        ...item,
-        matchScore: scored.score,
-        matchReasons: scored.reasons
-      };
-    })
-    .sort((a, b) => b.matchScore - a.matchScore || (a.deadline || "").localeCompare(b.deadline || ""));
+  const ranked = rankItems(state.items, state.filters, state.profile, Date.now());
 
-  if (filtered.length === 0) {
+  if (ranked.length === 0) {
     el.cards.innerHTML =
       '<div class="empty-state">No opportunities match current filters. Try loosening filters or clearing keyword search.</div>';
     el.resultMeta.textContent = "0 results";
     return;
   }
 
-  el.resultMeta.textContent = `${filtered.length} results, sorted by fit score (top ${filtered[0].matchScore})`;
+  const top = ranked[0];
+  el.resultMeta.textContent = `${ranked.length} results, sorted by ${state.filters.sortBy.replace("_", " ")} (top fit ${
+    top.matchScore
+  })`;
 
-  el.cards.innerHTML = filtered
+  el.cards.innerHTML = ranked
     .slice(0, 180)
     .map((item) => {
       const dl = daysLeft(item.deadline);
@@ -274,7 +257,9 @@ function renderCards() {
             <h3>
               <a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
             </h3>
-            <span class="badge ${escapeHtml(item.status)}">${statusLabel(item.status)}</span>
+            <span class="badge ${escapeHtml(item.status)}">${escapeHtml(
+        item.status.charAt(0).toUpperCase() + item.status.slice(1)
+      )}</span>
           </div>
 
           <div class="meta-line">
@@ -286,7 +271,7 @@ function renderCards() {
           </div>
 
           <div class="match-pill">Fit Score ${item.matchScore}/100</div>
-          <p class="summary">${escapeHtml(item.summary?.en || item.summary?.zh || "No summary")}</p>
+          <p class="summary">${escapeHtml(itemSummaryText(item) || "No summary")}</p>
 
           <div class="hints">
             <p><strong>Best for:</strong> ${fit || "Check official eligibility"}</p>
@@ -302,42 +287,83 @@ function renderCards() {
 }
 
 function bindInputs() {
-  const keyword = document.getElementById("keyword");
-  const typeFilter = document.getElementById("typeFilter");
-  const statusFilter = document.getElementById("statusFilter");
-  const sourceFilter = document.getElementById("sourceFilter");
+  const nodes = {
+    keyword: document.getElementById("keyword"),
+    typeFilter: document.getElementById("typeFilter"),
+    statusFilter: document.getElementById("statusFilter"),
+    sourceFilter: document.getElementById("sourceFilter"),
+    sortBy: document.getElementById("sortBy"),
+    minMatch: document.getElementById("minMatch"),
+    openOnly: document.getElementById("openOnly"),
+    closingSoonOnly: document.getElementById("closingSoonOnly"),
+    profileLevel: document.getElementById("profileLevel"),
+    profileCareer: document.getElementById("profileCareer"),
+    profileNationality: document.getElementById("profileNationality"),
+    profileDiscipline: document.getElementById("profileDiscipline"),
+    clearFilters: document.getElementById("clearFilters")
+  };
 
-  const profileLevel = document.getElementById("profileLevel");
-  const profileCareer = document.getElementById("profileCareer");
-  const profileNationality = document.getElementById("profileNationality");
-  const profileDiscipline = document.getElementById("profileDiscipline");
+  const syncStateFromInputs = () => {
+    state.filters.keyword = normalizeInput(nodes.keyword.value);
+    state.filters.type = nodes.typeFilter.value;
+    state.filters.status = nodes.statusFilter.value;
+    state.filters.source = nodes.sourceFilter.value;
+    state.filters.sortBy = nodes.sortBy.value;
+    state.filters.minMatch = Number(nodes.minMatch.value) || 0;
+    state.filters.openOnly = Boolean(nodes.openOnly.checked);
+    state.filters.closingSoonOnly = Boolean(nodes.closingSoonOnly.checked);
 
-  const onChange = () => {
-    state.filters.keyword = normalizeInput(keyword.value);
-    state.filters.type = typeFilter.value;
-    state.filters.status = statusFilter.value;
-    state.filters.source = sourceFilter.value;
+    state.profile.level = nodes.profileLevel.value;
+    state.profile.careerStage = nodes.profileCareer.value;
+    state.profile.nationality = nodes.profileNationality.value;
+    state.profile.discipline = nodes.profileDiscipline.value;
 
-    state.profile.level = profileLevel.value;
-    state.profile.careerStage = profileCareer.value;
-    state.profile.nationality = profileNationality.value;
-    state.profile.discipline = profileDiscipline.value;
+    if (el.minMatchValue) el.minMatchValue.textContent = String(state.filters.minMatch);
 
+    persistState();
     renderCards();
   };
 
-  [
-    keyword,
-    typeFilter,
-    statusFilter,
-    sourceFilter,
-    profileLevel,
-    profileCareer,
-    profileNationality,
-    profileDiscipline
-  ].forEach((node) => {
-    node.addEventListener("input", onChange);
-    node.addEventListener("change", onChange);
+  const listenTargets = [
+    nodes.keyword,
+    nodes.typeFilter,
+    nodes.statusFilter,
+    nodes.sourceFilter,
+    nodes.sortBy,
+    nodes.minMatch,
+    nodes.openOnly,
+    nodes.closingSoonOnly,
+    nodes.profileLevel,
+    nodes.profileCareer,
+    nodes.profileNationality,
+    nodes.profileDiscipline
+  ];
+
+  listenTargets.forEach((node) => {
+    node.addEventListener("input", syncStateFromInputs);
+    node.addEventListener("change", syncStateFromInputs);
+  });
+
+  nodes.clearFilters.addEventListener("click", () => {
+    state.filters = {
+      keyword: "",
+      type: "",
+      status: "",
+      source: "",
+      sortBy: "match_desc",
+      minMatch: 0,
+      openOnly: false,
+      closingSoonOnly: false
+    };
+    state.profile = {
+      level: "",
+      careerStage: "",
+      nationality: "",
+      discipline: ""
+    };
+    applyStateToInputs();
+    persistState();
+    renderCards();
   });
 }
 
@@ -357,6 +383,9 @@ async function setupSubscription() {
 
 async function init() {
   try {
+    loadStateFromStorage();
+    loadStateFromUrl();
+
     const data = await fetchJson("./data/funding.latest.json");
 
     state.raw = data;
@@ -365,6 +394,7 @@ async function init() {
 
     renderStats(data.stats || {});
     renderSources();
+    applyStateToInputs();
     renderDigestMeta(data.digest || {});
 
     if (data.generatedAt) {
@@ -377,6 +407,7 @@ async function init() {
     }
 
     bindInputs();
+    persistState();
     renderCards();
     await setupSubscription();
   } catch (error) {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-19T11:48:57.488Z",
+  "generatedAt": "2026-02-19T12:53:23.027Z",
   "subject": "UK Funding Daily Brief | 2026-02-19 | 0 new",
-  "shouldSend": true,
+  "shouldSend": false,
   "dryRun": false,
   "provider": "buttondown",
-  "status": "skipped_missing_api_key"
+  "status": "skipped_no_changes"
 }

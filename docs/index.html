@@ -36,6 +36,7 @@
     <main class="layout">
       <section class="panel profile-panel reveal-up">
         <h2>Your Profile (for match scoring)</h2>
+        <p class="hero-desc">Profile and filter state are saved locally in your browser and reflected in the URL for sharing.</p>
         <form id="profileForm" class="grid-form">
           <label>
             Study/Career Level
@@ -117,13 +118,41 @@
               <option value="">All Sources</option>
             </select>
           </label>
+
+          <label>
+            Sort By
+            <select id="sortBy">
+              <option value="match_desc">Best Fit</option>
+              <option value="deadline_asc">Deadline (Soonest)</option>
+              <option value="deadline_desc">Deadline (Latest)</option>
+              <option value="source_asc">Source (A-Z)</option>
+              <option value="title_asc">Title (A-Z)</option>
+            </select>
+          </label>
+
+          <label>
+            Minimum Fit Score
+            <input id="minMatch" type="range" min="0" max="100" step="5" value="0" />
+            <span id="minMatchValue">0</span>
+          </label>
+
+          <label>
+            Open Opportunities Only
+            <input id="openOnly" type="checkbox" />
+          </label>
+
+          <label>
+            Closing in 14 Days
+            <input id="closingSoonOnly" type="checkbox" />
+          </label>
         </form>
+        <button id="clearFilters" type="button">Reset Filters & Profile</button>
       </section>
 
       <section class="panel result-panel reveal-up delay-2">
         <div class="section-head">
           <h2>Funding Opportunities</h2>
-          <p id="resultMeta">Calculating fit scores...</p>
+          <p id="resultMeta" aria-live="polite">Calculating fit scores...</p>
         </div>
         <div id="cards" class="cards"></div>
       </section>

@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.3-70b-instruct:free' }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openrouter/free' }}
       OPENROUTER_MODELS: ${{ vars.OPENROUTER_MODELS }}
       OPENROUTER_SITE_URL: ${{ vars.OPENROUTER_SITE_URL || 'https://github.com/pingfanfan/GrantHunter' }}
       OPENROUTER_SITE_NAME: ${{ vars.OPENROUTER_SITE_NAME || 'GrantHunter' }}
@@ -34,6 +34,9 @@ jobs:
 
       - name: Generate latest funding dataset
         run: npm run update:data
+
+      - name: Validate generated dataset
+        run: npm run validate:data
 
       - name: Send daily digest email
         run: npm run send:digest

@@ -1,7 +1,7 @@
 # UK Academic Funding Daily Brief (2026-02-19)
 
 - New opportunities: **0**
-- Updated opportunities: **5**
+- Updated opportunities: **0**
 - Closing within 14 days: **0**
 
 ## New Opportunities (Top 12)

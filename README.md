@@ -5,23 +5,31 @@ A GitHub Pages-ready UK academic funding aggregator with:
 - Daily collection from multiple UK funding sources
 - AI-generated summaries for quick triage
 - Profile-based fit score (0-100)
+- Advanced filtering (sort, min-fit threshold, open-only, closing-soon)
+- Saved state via URL + local storage for shareable views
 - Daily Markdown digest
 - Email subscription (Buttondown)
+- Automated QA checks (unit tests + dataset contract validation)
 
 ## Project Structure
 
 - `config/sources.json`: Funding source registry (easy to extend)
 - `scripts/update-funding.mjs`: Daily fetch + dedupe + AI summary + dataset build
 - `scripts/send-digest.mjs`: Sends the daily email digest (Buttondown API)
+- `scripts/validate-data.mjs`: Validates generated dataset shape and critical fields
 - `docs/`: Static site for GitHub Pages
 - `.github/workflows/daily-refresh.yml`: Daily scheduled refresh workflow
 - `.github/workflows/deploy-pages.yml`: Pages deployment workflow
+- `.github/workflows/quality-check.yml`: CI test + data validation workflow
 
 ## Run Locally
 
 ```bash
 npm run update:data
 npm run send:digest
+npm run test
+npm run validate:data
+npm run qa
 ```
 
 Generated outputs:
@@ -48,7 +56,7 @@ Use any static server to preview `docs/index.html`.
 
 ### Variables
 
-- `OPENROUTER_MODEL`: default `meta-llama/llama-3.3-70b-instruct:free`
+- `OPENROUTER_MODEL`: default `openrouter/free`
 - `OPENROUTER_MODELS`: optional comma-separated fallback model list (takes priority over `OPENROUTER_MODEL`)
 - `OPENROUTER_SITE_URL`: optional OpenRouter `HTTP-Referer` header
 - `OPENROUTER_SITE_NAME`: optional OpenRouter `X-Title` header
@@ -86,3 +94,4 @@ Edit `config/sources.json` and append entries like:
 - Automated collection depends on source page structure and anti-bot policies.
 - AI summaries are for prioritization only and are not application advice.
 - Always verify eligibility, deadlines, and requirements on official pages.
+- For quality standards and test coverage baseline, see `docs/qa-research.md`.
