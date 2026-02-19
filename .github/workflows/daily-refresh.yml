@@ -23,6 +23,11 @@ jobs:
       BUTTONDOWN_DRY_RUN: ${{ vars.BUTTONDOWN_DRY_RUN || 'false' }}
       MAX_ITEMS_PER_SOURCE: ${{ vars.MAX_ITEMS_PER_SOURCE || '18' }}
       MAX_TOTAL_ITEMS: ${{ vars.MAX_TOTAL_ITEMS || '320' }}
+      URL_CHECK_TIMEOUT_MS: ${{ vars.URL_CHECK_TIMEOUT_MS || '15000' }}
+      URL_CHECK_CONCURRENCY: ${{ vars.URL_CHECK_CONCURRENCY || '8' }}
+      MAX_URL_CHECK_ITEMS: ${{ vars.MAX_URL_CHECK_ITEMS || '320' }}
+      STRICT_URL_VALIDATION: ${{ vars.STRICT_URL_VALIDATION || 'true' }}
+      VALIDATE_STRICT_URLS: ${{ vars.VALIDATE_STRICT_URLS || 'true' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

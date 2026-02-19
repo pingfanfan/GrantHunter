@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-19T12:53:19.092Z",
+  "generatedAt": "2026-02-19T13:00:43.256Z",
   "generatedDate": "2026-02-19",
   "stats": {
     "total": 5,
@@ -261,13 +261,23 @@
       },
       "matchedTags": [],
       "rawSignals": {
-        "extractedAt": "2026-02-19T12:53:19.092Z",
+        "extractedAt": "2026-02-19T13:00:43.256Z",
         "sourceType": "carried_forward"
       },
       "fingerprint": "723ad5e8b402758a8ab8ff5e9c97605e19846020",
-      "lastSeenAt": "2026-02-19T12:53:19.092Z",
+      "lastSeenAt": "2026-02-19T13:00:43.256Z",
       "isNew": false,
-      "isUpdated": false
+      "isUpdated": false,
+      "urlCheck": {
+        "status": "unchecked_network_unavailable",
+        "originalUrl": "https://www.chevening.org/scholarships/",
+        "finalUrl": "https://www.chevening.org/scholarships/",
+        "httpStatus": null,
+        "allowedHost": true,
+        "redirected": false,
+        "checkedAt": "2026-02-19T13:00:43.321Z",
+        "error": "Skipped strict filtering because network was unavailable during URL checks"
+      }
     },
     {
       "id": "750ef4025b444b1bc48510c5d6e8b5ae35eb48b4",
@@ -309,13 +319,23 @@
       },
       "matchedTags": [],
       "rawSignals": {
-        "extractedAt": "2026-02-19T12:53:19.092Z",
+        "extractedAt": "2026-02-19T13:00:43.256Z",
         "sourceType": "carried_forward"
       },
       "fingerprint": "0d55c10783c83ffbb571640f55fd2e0dd73da865",
-      "lastSeenAt": "2026-02-19T12:53:19.092Z",
+      "lastSeenAt": "2026-02-19T13:00:43.256Z",
       "isNew": false,
-      "isUpdated": false
+      "isUpdated": false,
+      "urlCheck": {
+        "status": "unchecked_network_unavailable",
+        "originalUrl": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+        "finalUrl": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+        "httpStatus": null,
+        "allowedHost": true,
+        "redirected": false,
+        "checkedAt": "2026-02-19T13:00:43.321Z",
+        "error": "Skipped strict filtering because network was unavailable during URL checks"
+      }
     },
     {
       "id": "018fb9fdaff669c2f6c3e5572c0edd0752c515e4",
@@ -358,13 +378,23 @@
       },
       "matchedTags": [],
       "rawSignals": {
-        "extractedAt": "2026-02-19T12:53:19.092Z",
+        "extractedAt": "2026-02-19T13:00:43.256Z",
         "sourceType": "carried_forward"
       },
       "fingerprint": "c897b8d0fe900437a7ee301df4d818046e3a17b2",
-      "lastSeenAt": "2026-02-19T12:53:19.092Z",
+      "lastSeenAt": "2026-02-19T13:00:43.256Z",
       "isNew": false,
-      "isUpdated": false
+      "isUpdated": false,
+      "urlCheck": {
+        "status": "unchecked_network_unavailable",
+        "originalUrl": "https://royalsociety.org/grants/",
+        "finalUrl": "https://royalsociety.org/grants/",
+        "httpStatus": null,
+        "allowedHost": true,
+        "redirected": false,
+        "checkedAt": "2026-02-19T13:00:43.321Z",
+        "error": "Skipped strict filtering because network was unavailable during URL checks"
+      }
     },
     {
       "id": "ea7425adf8e42a53caa0946921a08e1eb6e5ead2",
@@ -407,13 +437,23 @@
       },
       "matchedTags": [],
       "rawSignals": {
-        "extractedAt": "2026-02-19T12:53:19.092Z",
+        "extractedAt": "2026-02-19T13:00:43.256Z",
         "sourceType": "carried_forward"
       },
       "fingerprint": "d50dd7edfc6809c91bc3a3c1b84dd349eee6c702",
-      "lastSeenAt": "2026-02-19T12:53:19.092Z",
+      "lastSeenAt": "2026-02-19T13:00:43.256Z",
       "isNew": false,
-      "isUpdated": false
+      "isUpdated": false,
+      "urlCheck": {
+        "status": "unchecked_network_unavailable",
+        "originalUrl": "https://www.ukri.org/opportunity/",
+        "finalUrl": "https://www.ukri.org/opportunity/",
+        "httpStatus": null,
+        "allowedHost": true,
+        "redirected": false,
+        "checkedAt": "2026-02-19T13:00:43.321Z",
+        "error": "Skipped strict filtering because network was unavailable during URL checks"
+      }
     },
     {
       "id": "b81e72a11465e9ea7fe84c0c301b991cbc222bf3",
@@ -456,13 +496,23 @@
       },
       "matchedTags": [],
       "rawSignals": {
-        "extractedAt": "2026-02-19T12:53:19.092Z",
+        "extractedAt": "2026-02-19T13:00:43.256Z",
         "sourceType": "carried_forward"
       },
       "fingerprint": "ee91ffe5b2b4abdba4c3d1bc1283cf747cdcc3bb",
-      "lastSeenAt": "2026-02-19T12:53:19.092Z",
+      "lastSeenAt": "2026-02-19T13:00:43.256Z",
       "isNew": false,
-      "isUpdated": false
+      "isUpdated": false,
+      "urlCheck": {
+        "status": "unchecked_network_unavailable",
+        "originalUrl": "https://wellcome.org/grant-funding",
+        "finalUrl": "https://wellcome.org/grant-funding",
+        "httpStatus": null,
+        "allowedHost": true,
+        "redirected": false,
+        "checkedAt": "2026-02-19T13:00:43.321Z",
+        "error": "Skipped strict filtering because network was unavailable during URL checks"
+      }
     }
   ],
   "diagnostics": {
@@ -632,6 +682,15 @@
       "meta-llama/llama-3.3-70b-instruct:free",
       "qwen/qwen-2.5-72b-instruct:free",
       "google/gemma-2-9b-it:free"
-    ]
+    ],
+    "urlVerification": {
+      "checked": 5,
+      "reachable": 0,
+      "reachableWithRedirect": 0,
+      "dropped": 0,
+      "networkErrors": 5,
+      "networkUnavailable": true,
+      "strictMode": false
+    }
   }
 }

@@ -22,6 +22,7 @@ This document translates external standards into practical acceptance criteria f
 
 3. Trust
 - Every item links to source pages and highlights uncertainty (e.g., unknown deadlines).
+- Every published link should be syntactically valid, reachable, and aligned with expected source domains.
 
 4. Accessibility
 - Core interactions are keyboard-operable and status updates are announced to assistive tech.
@@ -53,6 +54,7 @@ This document translates external standards into practical acceptance criteria f
 4. Data integrity
 - `docs/data/funding.latest.json` passes schema/contract checks.
 - Duplicate IDs fail validation.
+- `urlCheck` metadata is present for each item and records verification outcome.
 
 5. Automated quality gate
 - Unit tests and dataset validation run on each push/PR.
@@ -67,6 +69,7 @@ This document translates external standards into practical acceptance criteria f
 2. Contract tests (`tests/validate-data.test.mjs`)
 - Valid dataset passes.
 - Missing fields and duplicate IDs are flagged.
+- Strict URL mode rejects unverified URL statuses.
 
 3. CI checks (`.github/workflows/quality-check.yml`)
 - Runs `npm run test` and `npm run validate:data`.

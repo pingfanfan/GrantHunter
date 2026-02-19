@@ -19,6 +19,15 @@ function makeDataset(overrides = {}) {
         status: "open",
         deadline: "2026-03-01",
         summary: { en: "Good for early-career applicants" },
+        urlCheck: {
+          status: "reachable",
+          originalUrl: "https://example.org/opportunity",
+          finalUrl: "https://example.org/opportunity",
+          httpStatus: 200,
+          allowedHost: true,
+          redirected: false,
+          checkedAt: "2026-02-19T12:00:00Z"
+        },
         eligibility: {
           levels: ["postdoc"],
           careerStages: ["early"],
@@ -64,4 +73,19 @@ test("validateDataset catches duplicate item ids", () => {
 
   const result = validateDataset(dup);
   assert.ok(result.errors.some((entry) => entry.message.includes("duplicated")));
+});
+
+test("validateDataset strict URL mode fails unverified links", () => {
+  const row = {
+    ...makeDataset().items[0],
+    urlCheck: {
+      status: "network_error",
+      originalUrl: "https://example.org/opportunity",
+      finalUrl: null,
+      allowedHost: true
+    }
+  };
+
+  const result = validateDataset(makeDataset({ items: [row] }), { strictUrls: true });
+  assert.ok(result.errors.some((entry) => entry.message.includes("urlCheck.status")));
 });

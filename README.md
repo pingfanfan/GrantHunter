@@ -9,6 +9,7 @@ A GitHub Pages-ready UK academic funding aggregator with:
 - Saved state via URL + local storage for shareable views
 - Daily Markdown digest
 - Email subscription (Buttondown)
+- Per-item URL verification (syntax + HTTP reachability + allowed-domain checks)
 - Automated QA checks (unit tests + dataset contract validation)
 
 ## Project Structure
@@ -65,6 +66,11 @@ Use any static server to preview `docs/index.html`.
 - `BUTTONDOWN_DRY_RUN`: `true` creates draft only, does not send
 - `MAX_ITEMS_PER_SOURCE`: max detail pages fetched per source (default 18)
 - `MAX_TOTAL_ITEMS`: global retained item limit (default 320)
+- `URL_CHECK_TIMEOUT_MS`: URL verification timeout in ms (default 15000)
+- `URL_CHECK_CONCURRENCY`: URL verification concurrency (default 8)
+- `MAX_URL_CHECK_ITEMS`: max items to URL-verify per run (default 320)
+- `STRICT_URL_VALIDATION`: when `true`, daily refresh fails if URLs cannot be verified
+- `VALIDATE_STRICT_URLS`: when `true`, dataset validation requires verified URL status
 
 ## Subscription Model
 
@@ -95,3 +101,4 @@ Edit `config/sources.json` and append entries like:
 - AI summaries are for prioritization only and are not application advice.
 - Always verify eligibility, deadlines, and requirements on official pages.
 - For quality standards and test coverage baseline, see `docs/qa-research.md`.
+- Each item includes a `urlCheck` object in `funding.latest.json` for auditability.

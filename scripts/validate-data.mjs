@@ -27,7 +27,10 @@ function addWarning(warnings, message) {
   warnings.push({ level: "warning", message });
 }
 
-export function validateDataset(dataset) {
+const VERIFIED_URL_STATUSES = new Set(["reachable", "reachable_with_redirect"]);
+
+export function validateDataset(dataset, options = {}) {
+  const strictUrls = Boolean(options.strictUrls);
   const errors = [];
   const warnings = [];
 
@@ -90,6 +93,36 @@ export function validateDataset(dataset) {
       });
     }
 
+    if (!item.urlCheck || typeof item.urlCheck !== "object") {
+      if (strictUrls) addError(errors, `${prefix}.urlCheck is required in strict URL mode`);
+      else addWarning(warnings, `${prefix}.urlCheck is missing`);
+    } else {
+      const status = String(item.urlCheck.status || "");
+      const finalUrl = item.urlCheck.finalUrl;
+      const allowedHost =
+        typeof item.urlCheck.allowedHost === "boolean" ? item.urlCheck.allowedHost : undefined;
+
+      if (!status) {
+        if (strictUrls) addError(errors, `${prefix}.urlCheck.status is required in strict URL mode`);
+        else addWarning(warnings, `${prefix}.urlCheck.status is missing`);
+      } else if (strictUrls && !VERIFIED_URL_STATUSES.has(status)) {
+        addError(errors, `${prefix}.urlCheck.status must be verified (got: ${status})`);
+      } else if (!strictUrls && !VERIFIED_URL_STATUSES.has(status)) {
+        addWarning(warnings, `${prefix}.urlCheck.status is not verified (${status})`);
+      }
+
+      if (finalUrl && !isValidUrl(finalUrl)) {
+        if (strictUrls) addError(errors, `${prefix}.urlCheck.finalUrl must be valid http/https`);
+        else addWarning(warnings, `${prefix}.urlCheck.finalUrl is not a valid URL`);
+      }
+
+      if (strictUrls && allowedHost === false) {
+        addError(errors, `${prefix}.urlCheck.allowedHost is false`);
+      } else if (!strictUrls && allowedHost === false) {
+        addWarning(warnings, `${prefix}.urlCheck.allowedHost is false`);
+      }
+    }
+
     if (item.id) {
       if (ids.has(item.id)) addError(errors, `${prefix}.id is duplicated (${item.id})`);
       ids.add(item.id);
@@ -117,7 +150,8 @@ async function readJson(filePath) {
 async function main() {
   const fileArg = process.argv[2] || path.join(process.cwd(), "docs", "data", "funding.latest.json");
   const dataset = await readJson(fileArg);
-  const { errors, warnings } = validateDataset(dataset);
+  const strictUrls = process.env.VALIDATE_STRICT_URLS === "true";
+  const { errors, warnings } = validateDataset(dataset, { strictUrls });
 
   for (const warning of warnings) {
     console.log(`[warn] ${warning.message}`);
@@ -131,7 +165,7 @@ async function main() {
   }
 
   console.log(
-    `Dataset validation passed: ${dataset.items.length} items, ${warnings.length} warning(s), 0 error(s).`
+    `Dataset validation passed: ${dataset.items.length} items, ${warnings.length} warning(s), 0 error(s). strictUrls=${strictUrls}`
   );
 }
 

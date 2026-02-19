@@ -244,6 +244,15 @@ function renderCards() {
         : "TBC";
       const fit = (item.summary?.fit || []).slice(0, 2).map(escapeHtml).join("; ");
       const warn = (item.summary?.watchOut || []).slice(0, 2).map(escapeHtml).join("; ");
+      const urlCheckStatus = String(item?.urlCheck?.status || "");
+      const linkHealth =
+        urlCheckStatus === "reachable"
+          ? "Verified"
+          : urlCheckStatus === "reachable_with_redirect"
+          ? "Verified (redirected)"
+          : urlCheckStatus
+          ? `Unverified (${urlCheckStatus})`
+          : "Unverified";
       const tags = [
         ...(item.eligibility?.levels || []).slice(0, 2),
         ...(item.eligibility?.disciplines || []).slice(0, 2)
@@ -268,6 +277,8 @@ function renderCards() {
             <span>${escapeHtml(item.type)}</span>
             <span>·</span>
             <span>Deadline ${escapeHtml(deadlineText)}</span>
+            <span>·</span>
+            <span>Link ${escapeHtml(linkHealth)}</span>
           </div>
 
           <div class="match-pill">Fit Score ${item.matchScore}/100</div>

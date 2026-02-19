@@ -13,6 +13,10 @@ const DEFAULT_MAX_PER_SOURCE = Number(process.env.MAX_ITEMS_PER_SOURCE || 18);
 const MAX_DETAIL_FETCH = Number(process.env.MAX_DETAIL_FETCH || 260);
 const MAX_AI_ITEMS = Number(process.env.MAX_AI_ITEMS || 120);
 const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || 22000);
+const URL_CHECK_TIMEOUT_MS = Number(process.env.URL_CHECK_TIMEOUT_MS || 15000);
+const URL_CHECK_CONCURRENCY = Math.max(1, Number(process.env.URL_CHECK_CONCURRENCY || 8));
+const MAX_URL_CHECK_ITEMS = Number(process.env.MAX_URL_CHECK_ITEMS || 320);
+const STRICT_URL_VALIDATION = process.env.STRICT_URL_VALIDATION === "true";
 const DEFAULT_OPENROUTER_MODELS = [
   "openrouter/free",
   "meta-llama/llama-3.3-70b-instruct:free",
@@ -253,6 +257,347 @@ function getHost(url) {
   } catch {
     return "";
   }
+}
+
+function isHttpUrl(rawUrl) {
+  try {
+    const u = new URL(rawUrl);
+    return u.protocol === "http:" || u.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function hostMatchesAllowed(host, allowedHosts = []) {
+  if (!host) return false;
+  if (!Array.isArray(allowedHosts) || allowedHosts.length === 0) return true;
+  return allowedHosts.some((entry) => host.endsWith(String(entry).toLowerCase()));
+}
+
+function resolveAllowedHosts(source) {
+  const include = Array.isArray(source?.includeHosts) ? source.includeHosts : [];
+  if (include.length > 0) return include.map((x) => String(x).toLowerCase());
+
+  const homepageHost = getHost(source?.homepage || "");
+  return homepageHost ? [homepageHost.toLowerCase()] : [];
+}
+
+function isLikelyNetworkError(message) {
+  const text = String(message || "").toLowerCase();
+  return (
+    text.includes("fetch failed") ||
+    text.includes("network") ||
+    text.includes("enotfound") ||
+    text.includes("econnreset") ||
+    text.includes("econnrefused") ||
+    text.includes("timed out") ||
+    text.includes("abort")
+  );
+}
+
+async function fetchUrlMetadata(url) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), URL_CHECK_TIMEOUT_MS);
+  const requestHeaders = {
+    "user-agent":
+      "Mozilla/5.0 (compatible; UKFundingHubBot/1.0; +https://github.com/)"
+  };
+
+  let headResp = null;
+  try {
+    headResp = await fetch(url, {
+      method: "HEAD",
+      signal: controller.signal,
+      headers: requestHeaders,
+      redirect: "follow"
+    });
+
+    // Some websites block HEAD; fallback to GET in those cases.
+    if ([403, 405, 429, 500, 501].includes(headResp.status)) {
+      try {
+        headResp.body?.cancel();
+      } catch {
+        // ignore
+      }
+
+      const getResp = await fetch(url, {
+        method: "GET",
+        signal: controller.signal,
+        headers: requestHeaders,
+        redirect: "follow"
+      });
+
+      const metadata = {
+        ok: getResp.ok,
+        status: getResp.status,
+        finalUrl: canonicalizeUrl(getResp.url || url),
+        redirected: canonicalizeUrl(getResp.url || url) !== canonicalizeUrl(url),
+        contentType: (getResp.headers.get("content-type") || "").toLowerCase()
+      };
+
+      try {
+        getResp.body?.cancel();
+      } catch {
+        // ignore
+      }
+
+      return metadata;
+    }
+
+    return {
+      ok: headResp.ok,
+      status: headResp.status,
+      finalUrl: canonicalizeUrl(headResp.url || url),
+      redirected: canonicalizeUrl(headResp.url || url) !== canonicalizeUrl(url),
+      contentType: (headResp.headers.get("content-type") || "").toLowerCase()
+    };
+  } finally {
+    clearTimeout(timeout);
+    try {
+      headResp?.body?.cancel();
+    } catch {
+      // ignore
+    }
+  }
+}
+
+async function checkOpportunityUrl(item, source) {
+  const originalUrl = canonicalizeUrl(item.url);
+  const checkedAt = new Date().toISOString();
+  const allowedHosts = resolveAllowedHosts(source);
+
+  if (!isHttpUrl(originalUrl)) {
+    return {
+      status: "invalid_url",
+      originalUrl,
+      finalUrl: null,
+      httpStatus: null,
+      allowedHost: false,
+      redirected: false,
+      checkedAt,
+      error: "URL is not a valid http/https address"
+    };
+  }
+
+  const originalHost = getHost(originalUrl);
+  if (!hostMatchesAllowed(originalHost, allowedHosts)) {
+    return {
+      status: "bad_host",
+      originalUrl,
+      finalUrl: originalUrl,
+      httpStatus: null,
+      allowedHost: false,
+      redirected: false,
+      checkedAt,
+      error: "URL host is not allowed for this source"
+    };
+  }
+
+  try {
+    const meta = await fetchUrlMetadata(originalUrl);
+    const finalHost = getHost(meta.finalUrl);
+    const allowedHost = hostMatchesAllowed(finalHost, allowedHosts);
+
+    if (!meta.ok) {
+      return {
+        status: "http_error",
+        originalUrl,
+        finalUrl: meta.finalUrl,
+        httpStatus: meta.status,
+        allowedHost,
+        redirected: meta.redirected,
+        checkedAt,
+        contentType: meta.contentType,
+        error: `HTTP ${meta.status}`
+      };
+    }
+
+    if (!allowedHost) {
+      return {
+        status: "bad_host",
+        originalUrl,
+        finalUrl: meta.finalUrl,
+        httpStatus: meta.status,
+        allowedHost: false,
+        redirected: meta.redirected,
+        checkedAt,
+        contentType: meta.contentType,
+        error: "Redirected to a host outside allowed domains"
+      };
+    }
+
+    return {
+      status: meta.redirected ? "reachable_with_redirect" : "reachable",
+      originalUrl,
+      finalUrl: meta.finalUrl,
+      httpStatus: meta.status,
+      allowedHost: true,
+      redirected: meta.redirected,
+      checkedAt,
+      contentType: meta.contentType
+    };
+  } catch (error) {
+    return {
+      status: isLikelyNetworkError(error.message) ? "network_error" : "check_error",
+      originalUrl,
+      finalUrl: null,
+      httpStatus: null,
+      allowedHost: true,
+      redirected: false,
+      checkedAt,
+      error: String(error.message || error)
+    };
+  }
+}
+
+async function verifyOpportunityUrls(items, sources) {
+  const sourceMap = new Map(sources.map((source) => [source.id, source]));
+  const inputItems = items.slice(0, MAX_URL_CHECK_ITEMS);
+  const uncheckedTail = items.slice(MAX_URL_CHECK_ITEMS);
+  const checks = new Array(inputItems.length);
+  let cursor = 0;
+
+  async function worker() {
+    while (true) {
+      const index = cursor;
+      cursor += 1;
+      if (index >= inputItems.length) return;
+
+      const item = inputItems[index];
+      const source = sourceMap.get(item.sourceId) || {
+        id: item.sourceId,
+        homepage: item.sourceHomepage || item.url,
+        includeHosts: [getHost(item.url)]
+      };
+      checks[index] = await checkOpportunityUrl(item, source);
+    }
+  }
+
+  if (inputItems.length > 0) {
+    const workers = Array.from({ length: Math.min(URL_CHECK_CONCURRENCY, inputItems.length) }, () => worker());
+    await Promise.all(workers);
+  }
+
+  let checked = 0;
+  let reachable = 0;
+  let reachableWithRedirect = 0;
+  let networkErrors = 0;
+  let dropped = 0;
+
+  const keepItems = [];
+  const droppedItems = [];
+
+  for (let i = 0; i < inputItems.length; i += 1) {
+    const item = inputItems[i];
+    const check = checks[i] || {
+      status: "check_error",
+      originalUrl: item.url,
+      finalUrl: null,
+      checkedAt: new Date().toISOString(),
+      error: "No check result generated"
+    };
+    checked += 1;
+
+    item.urlCheck = check;
+    if (check.finalUrl && (check.status === "reachable" || check.status === "reachable_with_redirect")) {
+      item.url = canonicalizeUrl(check.finalUrl);
+    }
+
+    if (check.status === "network_error") networkErrors += 1;
+    if (check.status === "reachable") reachable += 1;
+    if (check.status === "reachable_with_redirect") reachableWithRedirect += 1;
+
+    const pass = check.status === "reachable" || check.status === "reachable_with_redirect";
+    if (pass) {
+      keepItems.push(item);
+    } else {
+      dropped += 1;
+      droppedItems.push({
+        id: item.id,
+        title: item.title,
+        url: item.url,
+        sourceId: item.sourceId,
+        reason: check.status,
+        detail: check.error || `HTTP ${check.httpStatus || "unknown"}`
+      });
+    }
+  }
+
+  const networkUnavailable = checked > 0 && networkErrors === checked;
+  if (networkUnavailable && !STRICT_URL_VALIDATION) {
+    const preserved = inputItems.map((item) => ({
+      ...item,
+      urlCheck: {
+        status: "unchecked_network_unavailable",
+        originalUrl: item.url,
+        finalUrl: item.url,
+        httpStatus: null,
+        allowedHost: true,
+        redirected: false,
+        checkedAt: new Date().toISOString(),
+        error: "Skipped strict filtering because network was unavailable during URL checks"
+      }
+    }));
+
+    return {
+      items: [...preserved, ...uncheckedTail.map((item) => ({
+        ...item,
+        urlCheck: {
+          status: "unchecked_limit",
+          originalUrl: item.url,
+          finalUrl: item.url,
+          httpStatus: null,
+          allowedHost: true,
+          redirected: false,
+          checkedAt: new Date().toISOString(),
+          error: `Skipped URL check due to MAX_URL_CHECK_ITEMS=${MAX_URL_CHECK_ITEMS}`
+        }
+      }))],
+      droppedItems: [],
+      summary: {
+        checked,
+        reachable: 0,
+        reachableWithRedirect: 0,
+        dropped: 0,
+        networkErrors,
+        networkUnavailable,
+        strictMode: STRICT_URL_VALIDATION
+      }
+    };
+  }
+
+  if (networkUnavailable && STRICT_URL_VALIDATION) {
+    throw new Error("URL validation failed: network unavailable and STRICT_URL_VALIDATION=true");
+  }
+
+  return {
+    items: [
+      ...keepItems,
+      ...uncheckedTail.map((item) => ({
+        ...item,
+        urlCheck: {
+          status: "unchecked_limit",
+          originalUrl: item.url,
+          finalUrl: item.url,
+          httpStatus: null,
+          allowedHost: true,
+          redirected: false,
+          checkedAt: new Date().toISOString(),
+          error: `Skipped URL check due to MAX_URL_CHECK_ITEMS=${MAX_URL_CHECK_ITEMS}`
+        }
+      }))
+    ],
+    droppedItems,
+    summary: {
+      checked,
+      reachable,
+      reachableWithRedirect,
+      dropped,
+      networkErrors,
+      networkUnavailable: false,
+      strictMode: STRICT_URL_VALIDATION
+    }
+  };
 }
 
 function scoreCandidate(link, source) {
@@ -1168,6 +1513,19 @@ async function main() {
     }
   }
 
+  const urlVerification = await verifyOpportunityUrls(deduped, sources);
+  deduped = mergeAndDedupe(urlVerification.items);
+  allErrors.push(
+    ...urlVerification.droppedItems.map((entry) => ({
+      seedUrl: entry.url,
+      error: `URL dropped (${entry.reason}): ${entry.detail}`
+    }))
+  );
+
+  if (deduped.length === 0 && STRICT_URL_VALIDATION) {
+    throw new Error("URL validation removed all opportunities. No verified links remain.");
+  }
+
   deduped = deduped.slice(0, Number(process.env.MAX_TOTAL_ITEMS || 320));
 
   for (const item of deduped) {
@@ -1224,7 +1582,8 @@ async function main() {
       previousItemCount: previousItems.length,
       currentItemCount: finalItems.length,
       aiEnabled: Boolean(process.env.OPENROUTER_API_KEY),
-      aiModelCandidates: getOpenRouterModelCandidates()
+      aiModelCandidates: getOpenRouterModelCandidates(),
+      urlVerification: urlVerification.summary
     }
   };
 
