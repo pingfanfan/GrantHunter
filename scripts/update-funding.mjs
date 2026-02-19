@@ -17,6 +17,7 @@ const URL_CHECK_TIMEOUT_MS = Number(process.env.URL_CHECK_TIMEOUT_MS || 15000);
 const URL_CHECK_CONCURRENCY = Math.max(1, Number(process.env.URL_CHECK_CONCURRENCY || 8));
 const MAX_URL_CHECK_ITEMS = Number(process.env.MAX_URL_CHECK_ITEMS || 320);
 const STRICT_URL_VALIDATION = process.env.STRICT_URL_VALIDATION === "true";
+const INCLUDE_SEED_PAGE_ITEMS = process.env.INCLUDE_SEED_PAGE_ITEMS === "true";
 const DEFAULT_OPENROUTER_MODELS = [
   "openrouter/free",
   "meta-llama/llama-3.3-70b-instruct:free",
@@ -57,6 +58,105 @@ const NEGATIVE_KEYWORDS = [
   "podcast",
   "annual report"
 ];
+
+const GENERIC_OPPORTUNITY_PATTERNS = [
+  "funding opportunities",
+  "find funding",
+  "search funding",
+  "browse funding",
+  "all opportunities",
+  "scholarships and fellowships",
+  "grants and funding",
+  "apply for scholarships",
+  "about us",
+  "frequently asked questions",
+  "code of conduct",
+  "policy and procedure",
+  "template application form",
+  "selection criteria",
+  "host organisations",
+  "partners",
+  "evaluation",
+  "filter search",
+  "funding for research",
+  "funding programmes",
+  "what we do and don t fund",
+  "what we do and dont fund",
+  "apply for funding",
+  "before you apply",
+  "develop your application",
+  "how we make decisions",
+  "manage your award"
+];
+
+const EXCLUDED_URL_SEGMENTS = [
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/cookies",
+  "/accessibility",
+  "/news",
+  "/events",
+  "/blog",
+  "/faq",
+  "/help",
+  "/support",
+  "/search",
+  "/filter",
+  "/logout",
+  "/login",
+  "/apply-for-funding",
+  "/manage-your-award",
+  "/alumni",
+  "/partners",
+  "/evaluation",
+  "/host-organisations"
+];
+
+const DISALLOWED_FILE_EXTENSIONS = [".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".zip"];
+
+const TITLE_URL_STOP_WORDS = new Set([
+  "the",
+  "and",
+  "for",
+  "of",
+  "in",
+  "to",
+  "on",
+  "at",
+  "by",
+  "with",
+  "from",
+  "uk",
+  "united",
+  "kingdom",
+  "scheme"
+]);
+
+const TITLE_URL_GENERIC_WORDS = new Set([
+  "grant",
+  "grants",
+  "funding",
+  "fund",
+  "fellowship",
+  "fellowships",
+  "scholarship",
+  "scholarships",
+  "studentship",
+  "studentships",
+  "award",
+  "awards",
+  "call",
+  "calls",
+  "programme",
+  "programmes",
+  "program",
+  "programs",
+  "opportunity",
+  "opportunities",
+  "research"
+]);
 
 const DISCIPLINE_PATTERNS = {
   "life sciences": ["biolog", "biomedical", "life science", "genetic", "molecular", "neuroscience"],
@@ -251,6 +351,18 @@ function includesAny(text, keywords) {
   return keywords.some((kw) => lower.includes(kw));
 }
 
+function normalizeForKeywordChecks(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenizeForMatching(text) {
+  return normalizeForKeywordChecks(text).split(" ").filter(Boolean);
+}
+
 function getHost(url) {
   try {
     return new URL(url).hostname.replace(/^www\./, "");
@@ -280,6 +392,49 @@ function resolveAllowedHosts(source) {
 
   const homepageHost = getHost(source?.homepage || "");
   return homepageHost ? [homepageHost.toLowerCase()] : [];
+}
+
+function urlPath(url) {
+  try {
+    return new URL(url).pathname.toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function hasDisallowedFileExtension(url) {
+  const path = urlPath(url);
+  return DISALLOWED_FILE_EXTENSIONS.some((ext) => path.endsWith(ext));
+}
+
+function hasExcludedUrlSegment(url) {
+  const path = urlPath(url);
+  return EXCLUDED_URL_SEGMENTS.some((segment) => path.includes(segment));
+}
+
+function isOpportunityDetailUrl(url) {
+  const path = urlPath(url);
+  if (!path.startsWith("/opportunity/")) return false;
+  if (path === "/opportunity/" || path === "/opportunity") return false;
+  if (path.startsWith("/opportunity/page/")) return false;
+  if (path.startsWith("/opportunity/feed")) return false;
+  return true;
+}
+
+function matchesGenericOpportunityPattern(text) {
+  const normalized = normalizeForKeywordChecks(text);
+  return GENERIC_OPPORTUNITY_PATTERNS.some((pattern) => normalized.includes(pattern));
+}
+
+function hasTitleUrlAlignment(title, url) {
+  const pathTokens = new Set(tokenizeForMatching(urlPath(url)));
+  const titleTokens = tokenizeForMatching(title).filter(
+    (token) =>
+      token.length >= 3 && !TITLE_URL_STOP_WORDS.has(token) && !TITLE_URL_GENERIC_WORDS.has(token)
+  );
+
+  if (titleTokens.length === 0) return true;
+  return titleTokens.some((token) => pathTokens.has(token));
 }
 
 function isLikelyNetworkError(message) {
@@ -629,12 +784,22 @@ async function verifyOpportunityUrls(items, sources) {
 function scoreCandidate(link, source) {
   const text = `${link.text} ${link.url}`.toLowerCase();
   let score = 0;
+  const path = urlPath(link.url);
 
   if (includesAny(text, FUNDING_KEYWORDS)) score += 4;
   if (text.includes("deadline") || text.includes("closing")) score += 3;
   if (text.includes("open") || text.includes("now open")) score += 2;
   if (text.includes("apply")) score += 2;
   if (includesAny(text, NEGATIVE_KEYWORDS)) score -= 5;
+  if (isOpportunityDetailUrl(link.url)) score += 6;
+  if (
+    path === "/opportunity/" ||
+    path === "/opportunity" ||
+    path.startsWith("/opportunity/page/") ||
+    path.startsWith("/opportunity/feed")
+  ) {
+    score -= 4;
+  }
 
   const allowedHosts = source.includeHosts || [];
   if (allowedHosts.length > 0) {
@@ -1025,10 +1190,21 @@ async function summarizeWithAI(item, contextText) {
 }
 
 function shouldKeepOpportunity(candidate) {
-  const merged = `${candidate.title} ${candidate.description} ${candidate.url}`.toLowerCase();
-  if (!includesAny(merged, FUNDING_KEYWORDS)) return false;
-  if (includesAny(merged, NEGATIVE_KEYWORDS)) return false;
-  if (candidate.title.length < 8) return false;
+  const title = normalizeWhitespace(candidate.title || "");
+  const titleAndUrl = `${candidate.title || ""} ${candidate.url || ""}`.toLowerCase();
+  const normalizedTitleAndUrl = normalizeForKeywordChecks(titleAndUrl);
+  const normalizedNegativeKeywords = NEGATIVE_KEYWORDS.map((kw) => normalizeForKeywordChecks(kw));
+  const sourceType = candidate?.rawSignals?.sourceType || "";
+  const opportunityDetail = isOpportunityDetailUrl(candidate.url);
+
+  if (!opportunityDetail && !includesAny(titleAndUrl, FUNDING_KEYWORDS)) return false;
+  if (includesAny(normalizedTitleAndUrl, normalizedNegativeKeywords)) return false;
+  if (sourceType === "seed_page") return false;
+  if (hasDisallowedFileExtension(candidate.url)) return false;
+  if (hasExcludedUrlSegment(candidate.url)) return false;
+  if (matchesGenericOpportunityPattern(title)) return false;
+  if (sourceType !== "rss" && !hasTitleUrlAlignment(candidate.title, candidate.url)) return false;
+  if (title.length < 8) return false;
   return true;
 }
 
@@ -1130,9 +1306,10 @@ function daysUntil(isoDate) {
 function buildFallbackItems(sources) {
   const staticExamples = [
     {
-      title: "UKRI Responsive Mode Research Grants",
+      title: "UKRI Funding Opportunities Portal",
       sourceId: "ukri",
-      summary: "Suitable for UK university research teams, typically supporting multi-disciplinary projects.",
+      summary:
+        "Source landing page for UKRI opportunities. Use filters on the official website to find a specific call.",
       level: ["academic", "postdoc"],
       type: "grant",
       url: "https://www.ukri.org/opportunity/",
@@ -1302,13 +1479,15 @@ async function parseSource(source, maxPerSource) {
       }
 
       // Add seed page itself as a potential summary record.
-      candidates.push({
-        seedUrl,
-        source,
-        url: canonicalizeUrl(seedUrl),
-        anchorText: source.name,
-        sourceType: "seed_page"
-      });
+      if (INCLUDE_SEED_PAGE_ITEMS) {
+        candidates.push({
+          seedUrl,
+          source,
+          url: canonicalizeUrl(seedUrl),
+          anchorText: source.name,
+          sourceType: "seed_page"
+        });
+      }
     } catch (error) {
       errors.push({ seedUrl, error: error.message });
     }

@@ -1,28 +1,25 @@
 # UK Academic Funding Daily Brief (2026-02-19)
 
-- New opportunities: **181**
+- New opportunities: **24**
 - Updated opportunities: **0**
-- Closing within 14 days: **4**
+- Closing within 14 days: **1**
 
 ## New Opportunities (Top 12)
-- [An international scholar community](https://www.gatescambridge.org/apply) | Gates Cambridge Scholarships | Deadline: 2026-02-19 | Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.
-- [An international scholar community](https://www.gatescambridge.org/programme) | Gates Cambridge Scholarships | Deadline: 2026-02-19 | Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.
-- [An international scholar community](https://www.gatescambridge.org/our-scholars) | Gates Cambridge Scholarships | Deadline: 2026-02-19 | Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.
-- [An international scholar community](https://www.gatescambridge.org/about) | Gates Cambridge Scholarships | Deadline: 2026-02-19 | Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.
-- [International Fellowships 2026](https://www.thebritishacademy.ac.uk/funding/schemes/international-fellowships) | The British Academy | Deadline: 2026-03-11 | Fellowship. deadline: 2026-03-11. Best suited for phd/postdoc/academic; targeted at uk/international.
+- [Funding competition Contracts for Innovation: industrial human relevant drug models](https://apply-for-innovation-funding.service.gov.uk/competition/2396/overview/d55398bb-ff62-43b9-9ee1-bf3fa4b95c5c) | Innovate UK | Deadline: 2026-03-02 | Funding call. deadline: 2026-03-02. Best suited for no explicit level restriction; nationality rules appear flexible.
 - [Strategic Fund](https://www.nuffieldfoundation.org/funding-for-research/strategic-fund) | Nuffield Foundation | Deadline: 2026-03-16 | Grant opportunity. deadline: 2026-03-16. Best suited for academic; nationality rules appear flexible.
-- [Commonwealth Distance Learning Master’s Scholarships](https://cscuk.fcdo.gov.uk/scholarships/commonwealth-distance-learning-scholarships-candidates) | Commonwealth Scholarships | Deadline: 2026-03-31 | Scholarship. deadline: 2026-03-31. Best suited for academic; targeted at international.
-- [Innovation Funding Service - user feedback](https://engagementhub.ukri.org/iuk-fundingplatform/innovation-funding-service-user-feedback) | Innovate UK | Deadline: 2026-03-31 | Grant opportunity. deadline: 2026-03-31. Best suited for no explicit level restriction; nationality rules appear flexible.
+- [Funding opportunity: AHRC Collaborative Doctoral Project Nominations 2026 invite only](https://www.ukri.org/opportunity/ahrc-collaborative-doctoral-project-nominations-2026-invite-only) | UK Research and Innovation (UKRI) | Deadline: 2026-03-26 | Scholarship. deadline: 2026-03-26. Best suited for phd; targeted at international/eu.
 - [Funding opportunity: Metascience research grants: round two](https://www.ukri.org/opportunity/metascience-research-grants-round-2) | UK Research and Innovation (UKRI) | Deadline: 2026-04-23 | Grant opportunity. deadline: 2026-04-23. Best suited for no explicit level restriction; targeted at international/eu.
-- [Arts and Humanities Research Council AHRC](https://www.ukri.org/councils/ahrc) | Arts and Humanities Research Council (AHRC) | Deadline: 2026-05-13 | Grant opportunity. deadline: 2026-05-13. Best suited for academic; targeted at international/eu.
-- [About the Clarendon Fund](https://www.ox.ac.uk/clarendon/about) | Clarendon Scholarships (Oxford) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.
-- [Admissions](https://www.ox.ac.uk/admissions) | Clarendon Scholarships (Oxford) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.
+- [Global Health Research](https://www.nihr.ac.uk/research-funding/global-health) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
+- [Information for Advisors](https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-advisors) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Information for Institutions and Universities](https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-institutions-and-universities) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Information Sessions](https://www.rhodeshouse.ox.ac.uk/scholarships/information-sessions) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Responsibilities after funding](https://www.nihr.ac.uk/research-funding/responsibilities-after-funding) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
+- [Scholarships](https://www.rhodeshouse.ox.ac.uk/scholarships) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Social care research](https://www.nihr.ac.uk/research-funding/social-care) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
+- [Starting a funding journey](https://www.nihr.ac.uk/research-funding/starting-a-funding-journey) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
 
 ## Closing Soon (Within 14 Days)
-- [An international scholar community](https://www.gatescambridge.org/apply) | Gates Cambridge Scholarships | D-1
-- [An international scholar community](https://www.gatescambridge.org/programme) | Gates Cambridge Scholarships | D-1
-- [An international scholar community](https://www.gatescambridge.org/our-scholars) | Gates Cambridge Scholarships | D-1
-- [An international scholar community](https://www.gatescambridge.org/about) | Gates Cambridge Scholarships | D-1
+- [Funding competition Contracts for Innovation: industrial human relevant drug models](https://apply-for-innovation-funding.service.gov.uk/competition/2396/overview/d55398bb-ff62-43b9-9ee1-bf3fa4b95c5c) | Innovate UK | D-12
 
 ---
 This brief is auto-generated by GitHub Actions. Always verify details on the official source page.
