@@ -259,9 +259,10 @@
     "id": "commonwealth",
     "name": "Commonwealth Scholarships",
     "category": "scholarships",
-    "homepage": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+    "homepage": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-masters-scholarships/",
     "seedUrls": [
-      "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/"
+      "https://cscuk.fcdo.gov.uk/scholarships/",
+      "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-masters-scholarships/"
     ],
     "includeHosts": ["cscuk.fcdo.gov.uk"]
   },

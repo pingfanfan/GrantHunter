@@ -1,91 +1,1976 @@
 {
-  "generatedAt": "2026-02-19T13:00:43.256Z",
+  "generatedAt": "2026-02-19T13:07:35.064Z",
   "stats": {
-    "total": 5,
-    "open": 0,
-    "unknown": 5,
-    "closed": 0,
-    "withDeadline": 0,
-    "newToday": 0,
+    "total": 181,
+    "open": 67,
+    "unknown": 65,
+    "closed": 49,
+    "withDeadline": 51,
+    "newToday": 181,
     "updatedToday": 0,
     "sourcesConfigured": 33
   },
   "items": [
     {
-      "id": "62e01f7fc8e2102ddb23faf19017edc0bcc6852c",
-      "title": "Chevening Scholarships",
-      "url": "https://www.chevening.org/scholarships/",
-      "sourceName": "Chevening Scholarships",
+      "id": "22cddaaa54560e05db8b7d986a2b570f40f3db24",
+      "title": "An international scholar community",
+      "url": "https://www.gatescambridge.org/apply",
+      "sourceName": "Gates Cambridge Scholarships",
       "type": "scholarship",
-      "status": "unknown",
-      "deadline": null,
+      "status": "open",
+      "deadline": "2026-02-19",
       "amount": null,
-      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for masters; nationality rules appear flexible.",
+      "summary": "Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "59901b3313dfeadcadf844c316599b71529cfcd3",
+      "title": "An international scholar community",
+      "url": "https://www.gatescambridge.org/programme",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": "2026-02-19",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "ef9415790b4a5fde15441a56b5b27c0a42cb6f2f",
+      "title": "An international scholar community",
+      "url": "https://www.gatescambridge.org/our-scholars",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": "2026-02-19",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "278154a8a9170b7067ce08bc1a12730a87f7bb50",
+      "title": "An international scholar community",
+      "url": "https://www.gatescambridge.org/about",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": "2026-02-19",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-19. Best suited for no explicit level restriction; targeted at international.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "63aff08817a84b770c7697c1dce1391241967249",
+      "title": "International Fellowships 2026",
+      "url": "https://www.thebritishacademy.ac.uk/funding/schemes/international-fellowships",
+      "sourceName": "The British Academy",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": "2026-03-11",
+      "amount": "£12,000",
+      "summary": "Fellowship. deadline: 2026-03-11. Best suited for phd/postdoc/academic; targeted at uk/international.",
       "levels": [
-        "masters"
+        "phd",
+        "postdoc",
+        "academic"
       ],
       "disciplines": [
-        "all disciplines"
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international"
+      ]
+    },
+    {
+      "id": "b8856146fbe62fab94b17220d77f0230bcddfb38",
+      "title": "Strategic Fund",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/strategic-fund",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-03-16",
+      "amount": "£15m",
+      "summary": "Grant opportunity. deadline: 2026-03-16. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities"
       ],
       "nationalities": [
         "any"
       ]
     },
     {
-      "id": "750ef4025b444b1bc48510c5d6e8b5ae35eb48b4",
-      "title": "Commonwealth Master's Scholarships",
-      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+      "id": "f15b703270796c6b5abcae67169e4fe3cddad6e4",
+      "title": "Commonwealth Distance Learning Master’s Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-distance-learning-scholarships-candidates",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": "2026-03-31",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-03-31. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "ce658dde7d88a03392f4bb5399fcf7a3fac5e221",
+      "title": "Innovation Funding Service - user feedback",
+      "url": "https://engagementhub.ukri.org/iuk-fundingplatform/innovation-funding-service-user-feedback",
+      "sourceName": "Innovate UK",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-03-31",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2026-03-31. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "3868d36ec1f47ea3d1f67aacaafcce3dd695a917",
+      "title": "Funding opportunity: Metascience research grants: round two",
+      "url": "https://www.ukri.org/opportunity/metascience-research-grants-round-2",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-04-23",
+      "amount": "£250,000,",
+      "summary": "Grant opportunity. deadline: 2026-04-23. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "0a5e5169d89f5e04d3f01b96929e8eabeddd7589",
+      "title": "Arts and Humanities Research Council (AHRC)",
+      "url": "https://www.ukri.org/councils/ahrc",
+      "sourceName": "Arts and Humanities Research Council (AHRC)",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-05-13",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2026-05-13. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "38b274abd867478bf59c746ee9770723eb580384",
+      "title": "About the Clarendon Fund",
+      "url": "https://www.ox.ac.uk/clarendon/about",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "4b50016d79502d2ff5e019d4b037a91bd5a75b15",
+      "title": "Admissions",
+      "url": "https://www.ox.ac.uk/admissions",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "8ba5e40aa5a8ac8131feb1803e22a6f2d617e2e8",
+      "title": "Alumni and Lifelong Fellowship",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholar-community/alumni-and-lifelong-fellowship",
+      "sourceName": "Rhodes Scholarship",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "2cf3067404ccbdac18243f9d21f78ef0e86fdfe0",
+      "title": "Application guidance",
+      "url": "https://www.chevening.org/resource-hub/guidance",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "0175a3ad7f0a076c3b04f9c1985da206343f86c5",
+      "title": "Application Overview",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/application-overview",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "fc6d227985582514486fb65db927236b3f7032a9",
+      "title": "Chevening ASEAN Scholarship",
+      "url": "https://www.chevening.org/asean-chevening-scholarship",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "4da2a14a43be6f6fbfa3ad6668fbd31713e1e58b",
+      "title": "Constituency Information",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/constituency-information",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "e426d4a3e0c2410e768210e25f326f56f8e60bae",
+      "title": "CSC development themes",
+      "url": "https://cscuk.fcdo.gov.uk/csc-development-themes",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "808ed6fc323abe9f0d8eea1dbe69c2dd1f207823",
+      "title": "CSC Partners",
+      "url": "https://cscuk.fcdo.gov.uk/apply/csc-partners",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "b8a74c4b98b63322ecd5222859dc51bde5e52fae",
+      "title": "CSC Research Impact Awards",
+      "url": "https://cscuk.fcdo.gov.uk/csc-research-impact-awards",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "award",
+      "status": "open",
+      "deadline": null,
+      "amount": "£1,500",
+      "summary": "Award scheme. deadline must be confirmed on the official page. Best suited for phd/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "physical sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "5d180802a97e19afc7437b3388e7cb62f1b3903c",
+      "title": "Doctoral Award",
+      "url": "https://www.nihr.ac.uk/career-development/research-career-funding-programmes/doctoral-fellowships",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d20d073bd3781d23a80f28eae63c5dc76efa4050",
+      "title": "Engage with us",
+      "url": "https://www.ox.ac.uk/research/engage-with-us",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "cb69c350cba5f8d83646a40c5b339e40dadc56c5",
+      "title": "Fees & funding",
+      "url": "https://www.ox.ac.uk/students/fees-funding",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "3b6dc6d3885b649e7fd837bff645d64b0a320b52",
+      "title": "For researchers",
+      "url": "https://www.cancerresearchuk.org/for-researchers",
+      "sourceName": "Cancer Research UK",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "33024ef42ac7fbb8ca1981fc800d967967e6de94",
+      "title": "Full-time applicants",
+      "url": "https://www.ox.ac.uk/clarendon/information-for-applicants/full-time",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": "£18,622",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "626f15b5fce90d16858bbfafa8233d159a8c775d",
+      "title": "Funding opportunities",
+      "url": "https://www.nihr.ac.uk/funding-opportunities",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "5a77d2074ecdcbe68a9d6934c8fae1c48b75f050",
+      "title": "Funding opportunities",
+      "url": "https://www.nihr.ac.uk/funding-opportunities?page=0",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "832f09a5a3cec5a1df462d5d0542e73ff234d9ee",
+      "title": "Funding opportunities",
+      "url": "https://www.nihr.ac.uk/funding-opportunities?page=1",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "a8e0332e36fd4a8a9c94d4bba646f5285bbc1a8b",
+      "title": "Funding opportunities",
+      "url": "https://www.nihr.ac.uk/funding-opportunities?page=49",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "7af179869602020fb9b9162eaac2e816e7798b34",
+      "title": "Funding programmes",
+      "url": "https://www.nihr.ac.uk/research-funding/funding-programmes",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "0299752b8c42d642171e04240e4be254d13d214f",
+      "title": "Future Leaders Fellowships",
+      "url": "https://www.ukri.org/what-we-offer/developing-people-and-skills/future-leaders-fellowships",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at uk/international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "1200ece7c2d4094de8741c9f1a0727fa1d75567e",
+      "title": "Global Health Research",
+      "url": "https://www.nihr.ac.uk/research-funding/global-health",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "433fd79ddf5f05af412da6afcf319958e013bf9a",
+      "title": "Graduate admissions",
+      "url": "https://www.ox.ac.uk/admissions/graduate",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "b6c87e2c9c5e748686c79c40219de2d272153c0e",
+      "title": "Guidance for teachers",
+      "url": "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/teachers",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "9ee9cc9f08fd9e952af73e5d0b2d72e28675d413",
+      "title": "History of the Rhodes Scholarship",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/history-of-the-rhodes-scholarship",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "9c477ed81051633aa9d5b7560fa0b3c03dfd2601",
+      "title": "Host a Chevening Fellowship",
+      "url": "https://www.chevening.org/fellowships/host-a-fellowship",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "01f1a72a3c819b0cfd2430443d5e40b91d83022e",
+      "title": "I need help costing my research",
+      "url": "https://www.nihr.ac.uk/research-funding/application-support/costing-research",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "7c9abf577b6b7cff7856ba1ef133a017b6030586",
+      "title": "Information for Advisors",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-advisors",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "228cc13190c4fe1ebc48493ddee86adb19440fdf",
+      "title": "Information for applicants",
+      "url": "https://www.ox.ac.uk/clarendon/information-for-applicants",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "ea18b8d49b68c57cc63635c9be02fcbf9944ac91",
+      "title": "Information for Endorsing or Nominating Institutions",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-endorsing-or-nominating-institutions",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "0dcc618ccd416fdf89730af1df24ab5ad1ef6415",
+      "title": "Information for Institutions and Universities",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-institutions-and-universities",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "bf7f516a15092445d9b3b21dc66973a6907a3b58",
+      "title": "Information for Referees",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-referees",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "bd385d45ace5533d39cd85baac54de8b53a950cb",
+      "title": "Information Sessions",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/information-sessions",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "b9a22a7985dfc72b0e31197d1fd9edd837197771",
+      "title": "Key Facts about the Rhodes Scholarship",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/key-facts-about-the-rhodes-scholarship",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "4d4cda72e5045fe149332b0d11161e56077f4d6f",
+      "title": "Main Grants (Research, Development and Analysis Fund)",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/main-grants",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": "£500,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "c9f2b9d3e2d84beb0bbef45f97a64385d9f56aeb",
+      "title": "Manage your award",
+      "url": "https://www.ukri.org/manage-your-award",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Award scheme. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "147e8c79aa1689a7164b770d10e22e2d7d53b283",
+      "title": "Our mission",
+      "url": "https://www.cambridgetrust.org/our-mission",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "d1cb6b4796127c7d7f209e3526eed7f4bc1d7b32",
+      "title": "Outreach Resources",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/outreach-resources",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "e4cded1403872f8656240a40222640f1b8cf9516",
+      "title": "Planning a funding application",
+      "url": "https://www.nihr.ac.uk/research-funding/application-support",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "94165b85a7d8d53a7ff8482b48c3f7fb4782f9a7",
+      "title": "Policy and research",
+      "url": "https://www.thebritishacademy.ac.uk/policy-and-research",
+      "sourceName": "The British Academy",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "a18cc955d7adc8181ce29a5e26a7dbd6c7e7df58",
+      "title": "Positive research culture",
+      "url": "https://www.cancerresearchuk.org/for-researchers/develop-your-research-career/positive-research-culture",
+      "sourceName": "Cancer Research UK",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "4e12c99ea68ade509097cb2826317f97bd2fd64b",
+      "title": "Postdoctoral opportunities",
+      "url": "https://www.nihr.ac.uk/career-development/research-career-funding-programmes/postdoctoral",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d3bd1d999bf28f2340aac9ba3212e927cb97bce1",
+      "title": "Predoctoral opportunities",
+      "url": "https://www.nihr.ac.uk/career-development/research-career-funding-programmes/predoctoral",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "1a3212e5b5fe8ed94960006d6fff8f559fc52a7d",
+      "title": "Professorships and Senior Investigators",
+      "url": "https://www.nihr.ac.uk/career-development/research-career-funding-programmes/professorships-and-senior-investigators",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "e56b6d58ae5e0b6b3215b5a3bcf98cfbbdbc0083",
+      "title": "Regulatory approvals and governance",
+      "url": "https://www.nihr.ac.uk/research-funding/application-support/regulatory-approvals-governance",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d9a7aca0519bc5da65c360c93880bcbf3882b991",
+      "title": "Research career development funding programmes",
+      "url": "https://www.nihr.ac.uk/career-development/research-career-funding-programmes",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ba9c04edc285c6d510a3023eaf934d43ecbfa837",
+      "title": "Research Support Service",
+      "url": "https://www.nihr.ac.uk/support-and-services/research-support-service",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "b11d4a37b0f5c084b660522804a7d15242e02da1",
+      "title": "Responsibilities after funding",
+      "url": "https://www.nihr.ac.uk/research-funding/responsibilities-after-funding",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "43a566ea6b2fe3118233aece5cc900877100e908",
+      "title": "Scholarships",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "cb241a9dc14af351a38b0b2823b48132bfa4b4d7",
+      "title": "Selection criteria",
+      "url": "https://www.ox.ac.uk/clarendon/information-for-applicants/selection-criteria",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "9bf0a4f547467732968b2e73416083e6b68cf597",
+      "title": "Selection Criteria",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/selection-criteria",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d28a691e076b1eb6621a391548ca25dc18e9c4ff",
+      "title": "Social care research",
+      "url": "https://www.nihr.ac.uk/research-funding/social-care",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "cdd92143b7aff1a8ffbb9822178de7ad1ebe03a5",
+      "title": "Starting a funding journey",
+      "url": "https://www.nihr.ac.uk/research-funding/starting-a-funding-journey",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "21f506795a35bd94eb6f02a6d3a2c79a554022aa",
+      "title": "Who can apply for a Chevening ASEAN Scholarship?",
+      "url": "https://www.chevening.org/asean-chevening-scholarship/who-can-apply-for-a-chevening-asean-scholarship",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "280e53d211d9601c5c346673f5b489b138d55a6a",
+      "title": "Who can apply for a Chevening Fellowship?",
+      "url": "https://www.chevening.org/fellowships/who-can-apply",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at uk.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "uk"
+      ]
+    },
+    {
+      "id": "75657861f9992f9227bacef3010442b4f806aa19",
+      "title": "Who can apply for a Chevening SIDS Scholarship?",
+      "url": "https://www.chevening.org/sids-chevening-scholarship/who-can-apply-for-a-chevening-sids-scholarship",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "bf7c7bdb390d71143e6f493cefd4ffc1e240262f",
+      "title": "Why study in the UK?",
+      "url": "https://www.chevening.org/scholarships/why-study-in-the-uk",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "4816002a6578a11cc75428b1c616ad797dd3686f",
+      "title": "About us",
+      "url": "https://cscuk.fcdo.gov.uk/about-us",
       "sourceName": "Commonwealth Scholarships",
       "type": "scholarship",
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for masters; nationality rules appear flexible.",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at uk/international/eu.",
       "levels": [
-        "masters"
-      ],
-      "disciplines": [
-        "all disciplines"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "018fb9fdaff669c2f6c3e5572c0edd0752c515e4",
-      "title": "Royal Society University Research Fellowship",
-      "url": "https://royalsociety.org/grants/",
-      "sourceName": "The Royal Society",
-      "type": "fellowship",
-      "status": "unknown",
-      "deadline": null,
-      "amount": null,
-      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for postdoc/academic; nationality rules appear flexible.",
-      "levels": [
-        "postdoc",
         "academic"
       ],
       "disciplines": [
-        "all disciplines"
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "58d1edee4b0b544face69eca8b757f71de92a052",
+      "title": "Accepted qualifications",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/entry-requirements/accepted-qualifications",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "b81a9e7059bc85dc46a5988705b745323a20eb7f",
+      "title": "Admissions tests",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "7f97b8c4bf77efb9353473fa1bf0146748536b35",
+      "title": "Alumni Community Engagement Fund (ACEF)",
+      "url": "https://cscuk.fcdo.gov.uk/alumni/acef",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "environment and earth",
+        "social sciences"
       ],
       "nationalities": [
         "any"
       ]
     },
     {
-      "id": "ea7425adf8e42a53caa0946921a08e1eb6e5ead2",
-      "title": "UKRI Responsive Mode Research Grants",
-      "url": "https://www.ukri.org/opportunity/",
+      "id": "d07eb39af221183daa873a82c94166ea7572d77d",
+      "title": "Application process",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "3c48414d7862e9a95e931b08dd66ca898310121a",
+      "title": "Application reference",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/reference",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "422f1c73fdc76e6d5565f6394943e2ea5b78e4a3",
+      "title": "Apply for and manage your funding",
+      "url": "https://www.cancerresearchuk.org/for-researchers/apply-for-and-manage-your-funding",
+      "sourceName": "Cancer Research UK",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "724b0c1389cac2d3559001e215371fe4e7b150c9",
+      "title": "Apply for funding",
+      "url": "https://www.ukri.org/apply-for-funding",
       "sourceName": "UK Research and Innovation (UKRI)",
       "type": "grant",
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic/postdoc; nationality rules appear flexible.",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
       "levels": [
-        "academic",
-        "postdoc"
+        "academic"
       ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "049ef83fb1a8afbcd269c88ef52902bb71d91431",
+      "title": "Apply for Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships-filter-search",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; targeted at eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "373277ad27dcc31c70612d923d2c40b90b9ce58b",
+      "title": "Apply to Imperial",
+      "url": "https://www.imperial.ac.uk/study/apply",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "a301d24adbfec4a54f3f315175e629eedcf5e1ee",
+      "title": "Apply undergraduate",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "bb1c47bd5ee1988fd4a0a68d0efa20b7c586e540",
+      "title": "Before you apply",
+      "url": "https://www.ukri.org/apply-for-funding/before-you-apply",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "d4025a4124bfc26cf737de27306d1890e41716f4",
+      "title": "Check if you’re eligible for funding - BBSRC",
+      "url": "https://www.ukri.org/councils/bbsrc/guidance-for-applicants/check-if-youre-eligible-for-funding",
+      "sourceName": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "d760a788f873aeb311ef48e7df58adec47b47d71",
+      "title": "Chevening Fellowships",
+      "url": "https://www.chevening.org/fellowships",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at uk/international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "uk",
+        "international"
+      ]
+    },
+    {
+      "id": "1d97dd90667f22971baa649cbb2ddce451b3db03",
+      "title": "Chevening SIDS Scholarship",
+      "url": "https://www.chevening.org/sids-chevening-scholarship",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "fe1c6656b665a0e8e44d74e6d3e5f3fd5a0f630c",
+      "title": "Choose a course",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/choose-course",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "102747a7bc2a7d6065cb0aee47c48033540b24cb",
+      "title": "Code of Conduct",
+      "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2020/08/CSC-Code-of-Conduct-for-Award-holders-1-1.pdf",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "award",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Award scheme. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
       "disciplines": [
         "all disciplines"
       ],
@@ -94,21 +1979,2218 @@
       ]
     },
     {
-      "id": "b81e72a11465e9ea7fe84c0c301b991cbc222bf3",
-      "title": "Wellcome Early-Career Researcher Schemes",
-      "url": "https://wellcome.org/grant-funding",
+      "id": "bea4910f781ad73418f5e7777e42c0f73e2614a3",
+      "title": "Commonwealth Scholarships FAQs",
+      "url": "https://cscuk.fcdo.gov.uk/commonwealth-scholarships-frequently-asked-questions",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "undergraduate",
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "40d0aec086937d2387f0d137a446fd5dbeccd309",
+      "title": "Contextual admissions",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-schemes",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "7d551887693e16d30a815ff56afcb775f4f61b90",
+      "title": "Deadlines",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/deadlines",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "701ccdb62f492a77c0baea881eea37d11cf4c08d",
+      "title": "Deadlines",
+      "url": "https://www.imperial.ac.uk/study/apply/postgraduate-taught/application-process/deadlines",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "32d8f2837901b027375200a51785768d4f6a9d39",
+      "title": "Develop your application",
+      "url": "https://www.ukri.org/apply-for-funding/develop-your-application",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "39ffede49cfba6b95a5dce59440ecd06571ad34c",
+      "title": "Directory",
+      "url": "https://www.gatescambridge.org/our-scholars/directory",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "2e344cb3dc51ff0cde70f9870d5a7188b068d130",
+      "title": "Disciplinary Policy and Procedure",
+      "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2020/10/CSC-Awardholder-Disciplinary-Policy-and-Procedure.pdf",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "award",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Award scheme. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ba0e1827e7a894dc859820844ed6c32ca8e993fd",
+      "title": "Do your own fundraising",
+      "url": "https://www.cancerresearchuk.org/get-involved/do-your-own-fundraising",
+      "sourceName": "Cancer Research UK",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£10m",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "b3aaf6b13c40a37f489625dd37ddf897e8f3690d",
+      "title": "Eligibility",
+      "url": "https://www.gatescambridge.org/apply/eligibility",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/phd/academic; targeted at uk/international.",
+      "levels": [
+        "undergraduate",
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international"
+      ]
+    },
+    {
+      "id": "48312c0b18c596d5d8767332fc96f9918e101095",
+      "title": "Engineering and Science Admissions Test (ESAT)",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests/esat",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "e20e54a6b1ea814ec2a8aa687be18420380a4d19",
+      "title": "Entry requirements",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/entry-requirements",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "9512edbbb87f5762d1065e3f57d3ed990ef76dbd",
+      "title": "EU Funding & Tenders Portal",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search",
+      "sourceName": "EU Funding & Tenders (Horizon Europe)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at eu.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "d1dcb7d18adc623480224b74add0b0b808e969c2",
+      "title": "Evidence and impact",
+      "url": "https://www.nuffieldfoundation.org/evidence-and-impact",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "1ad5b2c662eae1b09a92b546cee5653463de57b5",
+      "title": "Find a course",
+      "url": "https://www.chevening.org/scholarships/find-a-course",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for masters/academic; targeted at uk.",
+      "levels": [
+        "masters",
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health"
+      ],
+      "nationalities": [
+        "uk"
+      ]
+    },
+    {
+      "id": "8894d76716567a8b69a13b1238160c4265c63816",
+      "title": "Find a scholarship",
+      "url": "https://www.cambridgetrust.org/find-a-scholarship",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at eu.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "4f718166329c2681dccbe7605564d0b82c2de908",
+      "title": "Frequently Asked Questions",
+      "url": "https://www.gatescambridge.org/apply/frequently-asked-questions",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for phd; nationality rules appear flexible.",
+      "levels": [
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "9688f38f299b026a2c2043c4003fdfd6af5e7d7b",
+      "title": "Funding & tenders",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topic-list.html",
+      "sourceName": "EU Funding & Tenders (Horizon Europe)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "69be111546c0fd2968d0bd5a67e6f1f20011f7f8",
+      "title": "Graduate Medical School Admissions Test (GAMSAT)",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests/gamsat",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "fa430fbe09a8663a0b753ac588e113b8d5911429",
+      "title": "Guidance for awardees",
+      "url": "https://www.cambridgetrust.org/current-scholars",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/phd; nationality rules appear flexible.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "0b838eec3c81bfafb258d273411369bb2d7e84fe",
+      "title": "History of the Clarendon Fund",
+      "url": "https://www.ox.ac.uk/clarendon/about/history-of-the-clarendon-fund",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£10.7m",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "engineering",
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "8d8d157cc1a4f017ee655ac647e12d6139d4ef83",
+      "title": "How to apply",
+      "url": "https://www.gatescambridge.org/apply/how-to-apply",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "engineering",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "56be6c67bc2b3680e7ac511be29b291a17b2f3df",
+      "title": "How we select",
+      "url": "https://www.gatescambridge.org/apply/how-we-select",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ec1dc7572c90cee8e550ca1021870e45779e5a26",
+      "title": "Improving your funding experience",
+      "url": "https://www.ukri.org/apply-for-funding/improving-your-funding-experience",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "04baba043eb2b0f79778b28c8c0f21abeec7906c",
+      "title": "International funding and support",
+      "url": "https://www.ukri.org/what-we-offer/international-funding",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "ae33f1bf7478a69c886b9392a97ea7d88af9404d",
+      "title": "Login Template Title",
+      "url": "https://login-funding.wellcome.org/s/login",
       "sourceName": "Wellcome Trust",
       "type": "grant",
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for postdoc/academic; nationality rules appear flexible.",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "06604003b382e7a0028cf38993d1e54779170e3e",
+      "title": "Login to Wellcome Funding",
+      "url": "https://funding.wellcome.org/",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "c2db699ab2784e5918c91662fd876f271bd772a6",
+      "title": "New Scholarships. New Potential.",
+      "url": "https://www.rhodeshouse.ox.ac.uk/potential/creating-scholarships",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£120m",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "418691aa4523696ed6b0996f7908555feb945d5c",
+      "title": "Our funding schemes",
+      "url": "https://find.cancerresearchuk.org/our-funding-schemes",
+      "sourceName": "Cancer Research UK",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
       "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "c97d4ee8ccacd4db1dbba6496c472f6fc9c02b90",
+      "title": "Our institutes",
+      "url": "https://www.cancerresearchuk.org/for-researchers/how-we-deliver-research/our-research-infrastructure/institutes",
+      "sourceName": "Cancer Research UK",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "44381f2151ab8a76c42e5620d3def65fa421468e",
+      "title": "Part-time applicants",
+      "url": "https://www.ox.ac.uk/clarendon/information-for-applicants/part-time",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "d49a352b1ee5134a38e443233c2a80eec0e40d93",
+      "title": "Partnership Awards",
+      "url": "https://www.ox.ac.uk/clarendon/about/partnership-awards",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£9.3m",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "f02ac4e1b2861026ed2b0da13b24ba706113f944",
+      "title": "Personal statement",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/personal-statement",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "f8a971b17ad039fd85854a877f3f5f1fd430abb5",
+      "title": "Postgraduate applicants",
+      "url": "https://www.cambridgetrust.org/postgraduate-applicants",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; nationality rules appear flexible.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "fbd17aeae7dcba2ddb1a608af40b33d5052f2899",
+      "title": "Professional Fellowship Host Organisations",
+      "url": "https://cscuk.fcdo.gov.uk/host-organisations",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "232c9f3f45eb80c90506aba5042f00e4752551cf",
+      "title": "Requesting a change to your project",
+      "url": "https://www.ukri.org/manage-your-award/requesting-a-change-to-your-project",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Award scheme. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "6eddb7fd89540111091dd2246e7430ddacc0973b",
+      "title": "Scholarship timeline",
+      "url": "https://www.ox.ac.uk/clarendon/information-for-applicants/timeline",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "5ab5e2d72bbfac3c7bfcfbc17a327e65b079b854",
+      "title": "Scholarships and Fellowships",
+      "url": "https://cscuk.fcdo.gov.uk/about-us/scholarships-and-fellowships",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for phd/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "d971aeb65c0fdf6428f70b46b1414216b89b7c24",
+      "title": "Search our scholarships",
+      "url": "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "39ff453202e021843dc19508ce696963f82e5f8d",
+      "title": "selection criteria",
+      "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2020/09/Selection-criteria-for-assessment-of-Commonwealth-Scholarship-applications.docx",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "df3156f731a697e15b1f4214f0dee5be78de9b96",
+      "title": "Teacher reference guidance",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/reference/teachers",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "1d80fe415957de279b5deab47c31e6ee1b28e51b",
+      "title": "template application form",
+      "url": "https://cscuk.fcdo.gov.uk/wp-content/uploads/2020/09/Masters-template-application-form.pdf",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "35f1090265f02b0b963c6cbdb97dd20413ab9260",
+      "title": "Test of Mathematics for University Admissions (TMUA)",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests/tmua",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "e1bae4ba88900f1a33ed27db307246e57de94b63",
+      "title": "The Fund's purpose",
+      "url": "https://www.ox.ac.uk/clarendon/about/purpose",
+      "sourceName": "Clarendon Scholarships (Oxford)",
+      "type": "call",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Funding call. deadline must be confirmed on the official page. Best suited for undergraduate/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "0c3f0a2eb67af7226ff30d3cbb6060dd34991085",
+      "title": "The scholarship",
+      "url": "https://www.gatescambridge.org/programme/the-scholarship",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£21,000",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for phd; targeted at international.",
+      "levels": [
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "9e29eda24b25c7fefe8f4ba5edbedf5dc124540a",
+      "title": "Undergraduate applicants",
+      "url": "https://www.cambridgetrust.org/undergraduate-applicants",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for undergraduate; targeted at international.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "f3246c5675c637856a355165120485fefd4b6353",
+      "title": "University Clinical Aptitude Test (UCAT)",
+      "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/admissions-tests/ucat",
+      "sourceName": "Imperial Scholarships Search",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "0705af1eaaffca89add0dbf93abc6b1775b21ef6",
+      "title": "We fund research, encourage innovation, and support the use of sound evidence to improve lives.",
+      "url": "https://www.nuffieldfoundation.org/",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£150m",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "87292bd21fc3b899b864fa1ab24bc984b642d4e0",
+      "title": "What we’ve funded",
+      "url": "https://www.ukri.org/what-we-do/what-we-have-funded",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "0481acef05fb83ecbe5b23105f6caf5fb621023f",
+      "title": "Criteria",
+      "url": "https://www.gatescambridge.org/apply/criteria",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2020-04-20",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2020-04-20. Best suited for phd; nationality rules appear flexible.",
+      "levels": [
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "df4dc7a9acd437e4578a1a566b3550b2f13f42d7",
+      "title": "Commonwealth Professional Fellowships – information for prospective Fellows",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-professional-fellowships-information-for-candidates",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2020-08-18",
+      "amount": null,
+      "summary": "Fellowship. deadline: 2020-08-18. Best suited for academic; targeted at eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "df284dde7fe89dc07a225f95643b5851f98144ae",
+      "title": "Commonwealth Master’s Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-masters-scholarships",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2020-09-15",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2020-09-15. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "f6457ea44ba7683e06bff3f3ff2da2f4a516774e",
+      "title": "Commonwealth Split-site Phd Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-split-site-scholarships-for-low-and-middle-income-countries",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2020-09-15",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2020-09-15. Best suited for phd/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "a556b76c443309aaa0cdc1c7e48905b4429cb2b8",
+      "title": "Commonwealth Shared Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-shared-scholarships-applications",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2021-11-03",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2021-11-03. Best suited for undergraduate/phd/academic; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "0c50d97561b8962d1292867ac86c909cd445ad58",
+      "title": "Newton Fund: Official Development Assistance guidance",
+      "url": "https://www.ukri.org/publications/newton-fund-official-development-assistance-guidance",
+      "sourceName": "The Newton Fund related opportunities",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2021-12-23",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2021-12-23. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "f1b0df17055b68a7ae04c1cae1e8865851b61536",
+      "title": "Find a funding opportunity",
+      "url": "https://wellcome.org/research-funding/schemes",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for undergraduate/phd/postdoc; nationality rules appear flexible.",
+      "levels": [
+        "undergraduate",
+        "phd",
+        "postdoc"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "1b77557e0cf9ef40a2efdb2791258ca7102a7238",
+      "title": "Funded grants",
+      "url": "https://wellcome.org/research-funding/funding-portfolio/funded-grants",
+      "sourceName": "Wellcome Trust",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "79c8d7c31315b85d5fddea6ac8ec9b0d845aeb59",
+      "title": "Funding guidance",
+      "url": "https://wellcome.org/research-funding/guidance",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "3f5fde27a433ed2ad11937b3ff845d5e62356c20",
+      "title": "Funding policies and grant conditions",
+      "url": "https://wellcome.org/research-funding/guidance/policies-grant-conditions",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "813debc359c3c126bbc9e98e673ca6d8dbc5d37b",
+      "title": "Funding portfolio: funded people and projects",
+      "url": "https://wellcome.org/research-funding/funding-portfolio",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "23d776870726e152a2755c771a3c0b597b7ca249",
+      "title": "Major initiatives and directed funding",
+      "url": "https://wellcome.org/research-funding/funding-portfolio/major-initiatives",
+      "sourceName": "Wellcome Trust",
+      "type": "call",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Funding call. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "dfda4c9b0d28bea2dadb87bdc184155ff85ff019",
+      "title": "Managing your grant",
+      "url": "https://wellcome.org/research-funding/guidance/managing-grant",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "df0ff45a783d701d6d3783d2d5515e3eaef6a399",
+      "title": "Prepare to apply",
+      "url": "https://wellcome.org/research-funding/guidance/prepare-to-apply",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "e8557e59a4713579f283e0ec94058b70d0cda892",
+      "title": "Research funding",
+      "url": "https://wellcome.org/research-funding",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ffc2f50f89a71b4f99666f1fb017f0d440b7de39",
+      "title": "What we do and don’t fund in discovery research",
+      "url": "https://wellcome.org/research-funding/guidance/prepare-to-apply/discovery-research-schemes-remit",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "0cf060872c6f16f449d6fe39284e4bd0702310b1",
+      "title": "What we do and don’t fund in mental health",
+      "url": "https://wellcome.org/research-funding/guidance/what-we-do-and-dont-fund-mental-health",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2022-06-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "662783f0ec5856db4a5457670e977ab6d2f52d3f",
+      "title": "Commonwealth PhD Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-phd-scholarships-for-least-developed-countries-and-vulnerable-states",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2022-08-02",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2022-08-02. Best suited for phd/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "28b835d76915bc01f6ec46896a707dedc3b1fb62",
+      "title": "Additional Needs",
+      "url": "https://www.thebritishacademy.ac.uk/funding/schemes/additional-needs",
+      "sourceName": "The British Academy",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2023-02-16",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2023-02-16. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
         "postdoc",
         "academic"
       ],
       "disciplines": [
-        "all disciplines"
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "24d82aee248337df6b80cd2490edd39362022c16",
+      "title": "Commonwealth Professional Fellowships – information for UK Host organisations",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-professional-fellowships-information-for-uk-host-organisations",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2023-03-07",
+      "amount": "£30,000",
+      "summary": "Fellowship. deadline: 2023-03-07. Best suited for academic; targeted at eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "a17f176632efa865b1d1bee395ab60c9fba0d8c0",
+      "title": "Commonwealth PhD Scholarships for high income countries (as defined by the OECD)",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-phd-scholarships-for-high-income-countries",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2023-08-03",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2023-08-03. Best suited for phd/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "56c9448ac8bc59f21e3938c0ac6bc28cb80830cc",
+      "title": "Horizon Europe: help for UK applicants",
+      "url": "https://www.ukri.org/apply-for-funding/horizon-europe",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2023-09-07",
+      "amount": "£1 billion",
+      "summary": "Grant opportunity. deadline: 2023-09-07. Best suited for no explicit level restriction; targeted at uk/international/eu.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "955dcd602cab2e0cfae4aa590b0774424f7ea6d4",
+      "title": "Area of investment and support: Newton Fund",
+      "url": "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/newton-fund",
+      "sourceName": "The Newton Fund related opportunities",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2024-07-09",
+      "amount": "£735 m",
+      "summary": "Grant opportunity. deadline: 2024-07-09. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "cdeb970effc5ac1d25c2d62d894aeb5b92c7f083",
+      "title": "POST Fellowship",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/post-fellowship",
+      "sourceName": "Nuffield Foundation",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2024-10-20",
+      "amount": "£8,000,",
+      "summary": "Fellowship. deadline: 2024-10-20. Best suited for phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "8b068fb523574ee02f400faf5e0584c9f0887ab5",
+      "title": "Getting your funding",
+      "url": "https://www.ukri.org/manage-your-award/getting-your-funding",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2025-03-27",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2025-03-27. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "78eb086e011f9cf71184b59549597267f890aa74",
+      "title": "How we make decisions",
+      "url": "https://www.ukri.org/apply-for-funding/how-we-make-decisions",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2025-04-01",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2025-04-01. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "d027e2334df2b42abd53946c439b245efb9ec807",
+      "title": "Publishing your research findings",
+      "url": "https://www.ukri.org/manage-your-award/publishing-your-research-findings",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2025-05-12",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2025-05-12. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "0144d58d746a29705785614ade18e4dded3b667a",
+      "title": "Reporting your project’s spending",
+      "url": "https://www.ukri.org/manage-your-award/reporting-your-projects-spending",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2025-05-12",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2025-05-12. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "77760ab6b4cb560807cffa7caeba40a48d6b6390",
+      "title": "Who we fund",
+      "url": "https://www.ukri.org/who-we-are/who-we-fund",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2025-05-15",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2025-05-15. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "500c19618cf63a65e87d59250b63ddb441d2fa1d",
+      "title": "Timeline",
+      "url": "https://www.gatescambridge.org/apply/timeline",
+      "sourceName": "Gates Cambridge Scholarships",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2025-09-10",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2025-09-10. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "13a20456c44f8709c8b1922c5bfe06c81f9107df",
+      "title": "Application timeline",
+      "url": "https://www.chevening.org/scholarships/application-timeline",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2025-10-07",
+      "amount": null,
+      "summary": "Fellowship. deadline: 2025-10-07. Best suited for undergraduate/academic; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "dc24a4230edfd4ad3ca8f610df5fc5637eda838f",
+      "title": "Commonwealth Startup Fellowship – information for candidates",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-startup-fellowship-information-for-candidates",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2025-11-30",
+      "amount": null,
+      "summary": "Fellowship. deadline: 2025-11-30. Best suited for academic; targeted at eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "6a39437c9cdde307bb1ce6292947acaae1d7dc36",
+      "title": "Accepting your offer",
+      "url": "https://www.ukri.org/manage-your-award/accepting-your-offer",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2026-01-15",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2026-01-15. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "289ec58abf6ef7d89159a15db9927ced9c4b78a0",
+      "title": "Reporting your project’s outcomes",
+      "url": "https://www.ukri.org/manage-your-award/reporting-your-projects-outcomes",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "award",
+      "status": "closed",
+      "deadline": "2026-02-02",
+      "amount": null,
+      "summary": "Award scheme. deadline: 2026-02-02. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "572ccb59bc53762ea8cdd364b92e9ed0bb67deff",
+      "title": "Support for grant-holders",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/support-for-grant-holders",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2026-02-11",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2026-02-11. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "a04c1f0c56ddf7281a60451fcb904e433aed2f29",
+      "title": "Changing the World One Scholar at a Time",
+      "url": "https://www.cambridgetrust.org/impact",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2026-02-17",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-17. Best suited for undergraduate/phd; targeted at international/eu.",
+      "levels": [
+        "undergraduate",
+        "phd"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "d1247a47ca9f3e2793559e252b9a942d88042388",
+      "title": "News from our community",
+      "url": "https://www.cambridgetrust.org/news",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2026-02-17",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-17. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "ed64330665691c7c2538bade0e66127302329d79",
+      "title": "Supporting outstanding students",
+      "url": "https://www.cambridgetrust.org/",
+      "sourceName": "Cambridge Trust Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": "2026-02-17",
+      "amount": null,
+      "summary": "Scholarship. deadline: 2026-02-17. Best suited for undergraduate; targeted at international/eu.",
+      "levels": [
+        "undergraduate"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "64ee9265b658dcda18cc31b55b7d69f7b29703c7",
+      "title": "CSC Evaluation",
+      "url": "https://cscuk.fcdo.gov.uk/csc-evaluation",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2026-02-18",
+      "amount": null,
+      "summary": "Fellowship. deadline: 2026-02-18. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d09fc008ae068956a4760b595c4d83e20078651c",
+      "title": "Funding finder",
+      "url": "https://www.ukri.org/opportunity",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2026-02-18",
+      "amount": "£20 m",
+      "summary": "Grant opportunity. deadline: 2026-02-18. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "cc45868cfe0db0e74fc530ebaf8cf18dce2350cf",
+      "title": "Funding for research",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "closed",
+      "deadline": "2026-03-16",
+      "amount": "£150 m",
+      "summary": "Grant opportunity. deadline: 2026-03-16. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "488e13212df68987c83162dff82a7dc45c575eb4",
+      "title": "Check your Eligibility and Apply",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/applications",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "6a282e36922b4db868b4532a4afc40d8cfe6383a",
+      "title": "Chevening Scholarships",
+      "url": "https://www.chevening.org/scholarships",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for masters/academic; nationality rules appear flexible.",
+      "levels": [
+        "masters",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "d81a2723353d36a0ca34ff5427a4028338c47182",
+      "title": "Find a programme",
+      "url": "https://www.chevening.org/fellowships/find-a-programme",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "f15539211aa47a1632953bbfd23ea2447a1f9f99",
+      "title": "Find awards in your country or territory",
+      "url": "https://www.chevening.org/apply",
+      "sourceName": "Chevening Scholarships",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "df612792a73d771cd7b523afc15302eb23954df1",
+      "title": "Oliver Bird Fund",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/oliver-bird-fund",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "closed",
+      "deadline": null,
+      "amount": "£750,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; targeted at eu.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "eu"
+      ]
+    },
+    {
+      "id": "f2c12c982e2f7c69ca4c4d0459c3858c5aac0287",
+      "title": "Racial Diversity UK Fund",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/racial-diversity-uk-fund",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
+      "status": "closed",
+      "deadline": null,
+      "amount": "£500,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ae9b7172af3886bb19d0dd425b273462f719b1e5",
+      "title": "The Rhodes Scholarship",
+      "url": "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship",
+      "sourceName": "Rhodes Scholarship",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ecda1ad92c11989b12d462915bbf0f69ed9404ca",
+      "title": "Who can apply for a Chevening Scholarship?",
+      "url": "https://www.chevening.org/scholarships/who-can-apply",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "closed",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai"
       ],
       "nationalities": [
         "any"

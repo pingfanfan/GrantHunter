@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-19T13:00:43.256Z",
-  "subject": "UK Funding Daily Brief | 2026-02-19 | 0 new",
+  "generatedAt": "2026-02-19T13:07:35.064Z",
+  "subject": "UK Funding Daily Brief | 2026-02-19 | 181 new",
   "stats": {
-    "newItems": 0,
+    "newItems": 181,
     "updatedItems": 0,
-    "closingSoon": 0
+    "closingSoon": 4
   },
   "markdownPath": "./digest.latest.md"
 }

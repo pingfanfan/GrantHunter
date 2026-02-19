@@ -250,6 +250,8 @@ function renderCards() {
           ? "Verified"
           : urlCheckStatus === "reachable_with_redirect"
           ? "Verified (redirected)"
+          : urlCheckStatus === "reachable_restricted"
+          ? "Verified (restricted to bots)"
           : urlCheckStatus
           ? `Unverified (${urlCheckStatus})`
           : "Unverified";

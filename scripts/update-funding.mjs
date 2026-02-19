@@ -399,6 +399,20 @@ async function checkOpportunityUrl(item, source) {
     const allowedHost = hostMatchesAllowed(finalHost, allowedHosts);
 
     if (!meta.ok) {
+      if ([401, 403, 429].includes(meta.status) && allowedHost) {
+        return {
+          status: "reachable_restricted",
+          originalUrl,
+          finalUrl: meta.finalUrl,
+          httpStatus: meta.status,
+          allowedHost: true,
+          redirected: meta.redirected,
+          checkedAt,
+          contentType: meta.contentType,
+          error: `Restricted response (HTTP ${meta.status}) from source host`
+        };
+      }
+
       return {
         status: "http_error",
         originalUrl,
@@ -481,6 +495,7 @@ async function verifyOpportunityUrls(items, sources) {
   let checked = 0;
   let reachable = 0;
   let reachableWithRedirect = 0;
+  let reachableRestricted = 0;
   let networkErrors = 0;
   let dropped = 0;
 
@@ -499,15 +514,24 @@ async function verifyOpportunityUrls(items, sources) {
     checked += 1;
 
     item.urlCheck = check;
-    if (check.finalUrl && (check.status === "reachable" || check.status === "reachable_with_redirect")) {
+    if (
+      check.finalUrl &&
+      (check.status === "reachable" ||
+        check.status === "reachable_with_redirect" ||
+        check.status === "reachable_restricted")
+    ) {
       item.url = canonicalizeUrl(check.finalUrl);
     }
 
     if (check.status === "network_error") networkErrors += 1;
     if (check.status === "reachable") reachable += 1;
     if (check.status === "reachable_with_redirect") reachableWithRedirect += 1;
+    if (check.status === "reachable_restricted") reachableRestricted += 1;
 
-    const pass = check.status === "reachable" || check.status === "reachable_with_redirect";
+    const pass =
+      check.status === "reachable" ||
+      check.status === "reachable_with_redirect" ||
+      check.status === "reachable_restricted";
     if (pass) {
       keepItems.push(item);
     } else {
@@ -558,6 +582,7 @@ async function verifyOpportunityUrls(items, sources) {
         checked,
         reachable: 0,
         reachableWithRedirect: 0,
+        reachableRestricted: 0,
         dropped: 0,
         networkErrors,
         networkUnavailable,
@@ -592,6 +617,7 @@ async function verifyOpportunityUrls(items, sources) {
       checked,
       reachable,
       reachableWithRedirect,
+      reachableRestricted,
       dropped,
       networkErrors,
       networkUnavailable: false,
@@ -1127,7 +1153,7 @@ function buildFallbackItems(sources) {
       summary: "Suitable for applicants from Commonwealth countries pursuing a UK master's degree.",
       level: ["masters"],
       type: "scholarship",
-      url: "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+      url: "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-masters-scholarships/",
       deadline: null
     },
     {
@@ -1500,13 +1526,29 @@ async function main() {
   if (deduped.length === 0) {
     const disableCarryForward = process.env.DISABLE_CARRY_FORWARD === "true";
     if (previousItems.length > 0 && !disableCarryForward) {
+      const sourceById = new Map(sources.map((source) => [source.id, source]));
       deduped = previousItems.map((item) => ({
-        ...item,
-        rawSignals: {
-          ...(item.rawSignals || {}),
-          extractedAt: now.toISOString(),
-          sourceType: "carried_forward"
-        }
+        ...(() => {
+          const source = sourceById.get(item.sourceId);
+          const previousSourceHomepage = item.sourceHomepage || source?.homepage || item.url;
+          const nextSourceHomepage = source?.homepage || previousSourceHomepage;
+          const previousSourceType = item?.rawSignals?.sourceType || "";
+          const shouldRefreshUrlFromSource =
+            (previousSourceType === "fallback" || previousSourceType === "carried_forward") &&
+            typeof nextSourceHomepage === "string" &&
+            nextSourceHomepage.trim().length > 0;
+
+          return {
+            ...item,
+            url: shouldRefreshUrlFromSource ? canonicalizeUrl(nextSourceHomepage) : item.url,
+            sourceHomepage: nextSourceHomepage,
+            rawSignals: {
+              ...(item.rawSignals || {}),
+              extractedAt: now.toISOString(),
+              sourceType: "carried_forward"
+            }
+          };
+        })()
       }));
     } else {
       deduped = buildFallbackItems(sources);

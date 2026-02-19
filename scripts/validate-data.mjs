@@ -27,7 +27,7 @@ function addWarning(warnings, message) {
   warnings.push({ level: "warning", message });
 }
 
-const VERIFIED_URL_STATUSES = new Set(["reachable", "reachable_with_redirect"]);
+const VERIFIED_URL_STATUSES = new Set(["reachable", "reachable_with_redirect", "reachable_restricted"]);
 
 export function validateDataset(dataset, options = {}) {
   const strictUrls = Boolean(options.strictUrls);
