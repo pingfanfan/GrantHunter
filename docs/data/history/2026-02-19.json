@@ -1,0 +1,636 @@
+{
+  "generatedAt": "2026-02-19T11:20:46.978Z",
+  "generatedDate": "2026-02-19",
+  "stats": {
+    "total": 5,
+    "open": 0,
+    "unknown": 5,
+    "closed": 0,
+    "withDeadline": 0,
+    "newToday": 0,
+    "updatedToday": 0,
+    "sourcesConfigured": 33
+  },
+  "digest": {
+    "subject": "UK Funding Daily Brief | 2026-02-19 | 新增 0 条",
+    "markdown": "# UK Academic Funding 每日简报 (2026-02-19)\n\n- 新增机会: **0**\n- 变更机会: **0**\n- 即将截止(14天内): **0**\n\n## 新增机会（Top 12）\n- 今日未发现新增条目（可能是源站无更新或抓取受限）。\n\n## 即将截止（14天内）\n- 暂无 14 天内截止条目。\n\n\n---\n本简报由 GitHub Actions 自动生成。申请前请以官方页面为准。\n",
+    "stats": {
+      "newItems": 0,
+      "updatedItems": 0,
+      "closingSoon": 0
+    }
+  },
+  "sources": [
+    {
+      "id": "ukri",
+      "name": "UK Research and Innovation (UKRI)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/opportunity/"
+    },
+    {
+      "id": "ahrc",
+      "name": "Arts and Humanities Research Council (AHRC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/ahrc/"
+    },
+    {
+      "id": "bbsrc",
+      "name": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/bbsrc/"
+    },
+    {
+      "id": "epsrc",
+      "name": "Engineering and Physical Sciences Research Council (EPSRC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/epsrc/"
+    },
+    {
+      "id": "esrc",
+      "name": "Economic and Social Research Council (ESRC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/esrc/"
+    },
+    {
+      "id": "mrc",
+      "name": "Medical Research Council (MRC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/mrc/"
+    },
+    {
+      "id": "nerc",
+      "name": "Natural Environment Research Council (NERC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/nerc/"
+    },
+    {
+      "id": "stfc",
+      "name": "Science and Technology Facilities Council (STFC)",
+      "category": "research_grants",
+      "homepage": "https://www.ukri.org/councils/stfc/"
+    },
+    {
+      "id": "innovate-uk",
+      "name": "Innovate UK",
+      "category": "innovation_grants",
+      "homepage": "https://www.ukri.org/councils/innovate-uk/"
+    },
+    {
+      "id": "wellcome",
+      "name": "Wellcome Trust",
+      "category": "research_grants",
+      "homepage": "https://wellcome.org/grant-funding"
+    },
+    {
+      "id": "nihr",
+      "name": "National Institute for Health and Care Research (NIHR)",
+      "category": "health_research",
+      "homepage": "https://www.nihr.ac.uk/funding"
+    },
+    {
+      "id": "royal-society",
+      "name": "The Royal Society",
+      "category": "fellowships",
+      "homepage": "https://royalsociety.org/grants/"
+    },
+    {
+      "id": "british-academy",
+      "name": "The British Academy",
+      "category": "research_grants",
+      "homepage": "https://www.thebritishacademy.ac.uk/funding/"
+    },
+    {
+      "id": "leverhulme",
+      "name": "Leverhulme Trust",
+      "category": "fellowships",
+      "homepage": "https://www.leverhulme.ac.uk/research-funding"
+    },
+    {
+      "id": "raeng",
+      "name": "Royal Academy of Engineering",
+      "category": "engineering_funding",
+      "homepage": "https://www.raeng.org.uk/grants-prizes/grants"
+    },
+    {
+      "id": "cruk",
+      "name": "Cancer Research UK",
+      "category": "health_research",
+      "homepage": "https://www.cancerresearchuk.org/funding-for-researchers"
+    },
+    {
+      "id": "bhf",
+      "name": "British Heart Foundation",
+      "category": "health_research",
+      "homepage": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available"
+    },
+    {
+      "id": "alzheimers-society",
+      "name": "Alzheimer's Society Research Funding",
+      "category": "health_research",
+      "homepage": "https://www.alzheimers.org.uk/research/researchers/research-funding"
+    },
+    {
+      "id": "nuffield",
+      "name": "Nuffield Foundation",
+      "category": "social_research",
+      "homepage": "https://www.nuffieldfoundation.org/funding"
+    },
+    {
+      "id": "royal-society-edinburgh",
+      "name": "Royal Society of Edinburgh",
+      "category": "fellowships",
+      "homepage": "https://rse.org.uk/grants/"
+    },
+    {
+      "id": "newton",
+      "name": "The Newton Fund related opportunities",
+      "category": "international_collaboration",
+      "homepage": "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/newton-fund/"
+    },
+    {
+      "id": "horizon-europe",
+      "name": "EU Funding & Tenders (Horizon Europe)",
+      "category": "eu_funding",
+      "homepage": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search"
+    },
+    {
+      "id": "euraxess-uk",
+      "name": "EURAXESS UK Funding Opportunities",
+      "category": "international_mobility",
+      "homepage": "https://euraxess.ec.europa.eu/worldwide/united-kingdom/funding-opportunities-uk"
+    },
+    {
+      "id": "british-council",
+      "name": "British Council Scholarships",
+      "category": "scholarships",
+      "homepage": "https://study-uk.britishcouncil.org/scholarships-funding"
+    },
+    {
+      "id": "chevening",
+      "name": "Chevening Scholarships",
+      "category": "scholarships",
+      "homepage": "https://www.chevening.org/scholarships/"
+    },
+    {
+      "id": "commonwealth",
+      "name": "Commonwealth Scholarships",
+      "category": "scholarships",
+      "homepage": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/"
+    },
+    {
+      "id": "gates-cambridge",
+      "name": "Gates Cambridge Scholarships",
+      "category": "scholarships",
+      "homepage": "https://www.gatescambridge.org/apply/"
+    },
+    {
+      "id": "rhodes",
+      "name": "Rhodes Scholarship",
+      "category": "scholarships",
+      "homepage": "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/"
+    },
+    {
+      "id": "clarendon",
+      "name": "Clarendon Scholarships (Oxford)",
+      "category": "scholarships",
+      "homepage": "https://www.ox.ac.uk/clarendon/information-for-applicants"
+    },
+    {
+      "id": "cambridge-trust",
+      "name": "Cambridge Trust Scholarships",
+      "category": "scholarships",
+      "homepage": "https://www.cambridgetrust.org/scholarships/"
+    },
+    {
+      "id": "imperial-scholarships",
+      "name": "Imperial Scholarships Search",
+      "category": "scholarships",
+      "homepage": "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search/"
+    },
+    {
+      "id": "findaphd",
+      "name": "FindAPhD funded opportunities",
+      "category": "studentships",
+      "homepage": "https://www.findaphd.com/phds/funded/"
+    },
+    {
+      "id": "findamasters",
+      "name": "FindAMasters funding",
+      "category": "scholarships",
+      "homepage": "https://www.findamasters.com/masters-degrees/funding/"
+    }
+  ],
+  "items": [
+    {
+      "id": "62e01f7fc8e2102ddb23faf19017edc0bcc6852c",
+      "title": "Chevening Scholarships",
+      "url": "https://www.chevening.org/scholarships/",
+      "sourceId": "chevening",
+      "sourceName": "Chevening Scholarships",
+      "sourceHomepage": "https://www.chevening.org/scholarships/",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "description": "适合有领导力潜力的国际申请者申请英国硕士。",
+      "eligibility": {
+        "levels": [
+          "masters"
+        ],
+        "careerStages": [
+          "early"
+        ],
+        "nationalities": [
+          "any"
+        ],
+        "disciplines": [
+          "all disciplines"
+        ]
+      },
+      "summary": {
+        "zh": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+        "fit": [
+          "硕士申请人",
+          "早期职业阶段"
+        ],
+        "watchOut": [
+          "未自动识别到明确截止日期，需二次确认"
+        ],
+        "model": "heuristic",
+        "reasoning": "基于标题/正文关键词规则生成：Chevening Scholarships"
+      },
+      "matchedTags": [],
+      "rawSignals": {
+        "extractedAt": "2026-02-19T11:20:46.978Z",
+        "sourceType": "carried_forward"
+      },
+      "fingerprint": "d1f0b261a449f0bcb325fe67d8a8ba1196869667",
+      "lastSeenAt": "2026-02-19T11:20:46.978Z",
+      "isNew": false,
+      "isUpdated": false
+    },
+    {
+      "id": "750ef4025b444b1bc48510c5d6e8b5ae35eb48b4",
+      "title": "Commonwealth Master's Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+      "sourceId": "commonwealth",
+      "sourceName": "Commonwealth Scholarships",
+      "sourceHomepage": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "description": "适合英联邦国家申请者攻读英国硕士课程。",
+      "eligibility": {
+        "levels": [
+          "masters"
+        ],
+        "careerStages": [
+          "early"
+        ],
+        "nationalities": [
+          "any"
+        ],
+        "disciplines": [
+          "all disciplines"
+        ]
+      },
+      "summary": {
+        "zh": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+        "fit": [
+          "硕士申请人",
+          "早期职业阶段"
+        ],
+        "watchOut": [
+          "未自动识别到明确截止日期，需二次确认"
+        ],
+        "model": "heuristic",
+        "reasoning": "基于标题/正文关键词规则生成：Commonwealth Master's Scholarships"
+      },
+      "matchedTags": [],
+      "rawSignals": {
+        "extractedAt": "2026-02-19T11:20:46.978Z",
+        "sourceType": "carried_forward"
+      },
+      "fingerprint": "bbe083c819aa0ae4d84ce776102d4542015cca08",
+      "lastSeenAt": "2026-02-19T11:20:46.978Z",
+      "isNew": false,
+      "isUpdated": false
+    },
+    {
+      "id": "018fb9fdaff669c2f6c3e5572c0edd0752c515e4",
+      "title": "Royal Society University Research Fellowship",
+      "url": "https://royalsociety.org/grants/",
+      "sourceId": "royal-society",
+      "sourceName": "The Royal Society",
+      "sourceHomepage": "https://royalsociety.org/grants/",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "description": "适合早期独立研究者，强调长期科研潜力与宿主机构支持。",
+      "eligibility": {
+        "levels": [
+          "postdoc",
+          "academic"
+        ],
+        "careerStages": [
+          "early"
+        ],
+        "nationalities": [
+          "any"
+        ],
+        "disciplines": [
+          "all disciplines"
+        ]
+      },
+      "summary": {
+        "zh": "学者项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+        "fit": [
+          "博士后或早期研究人员",
+          "早期职业阶段"
+        ],
+        "watchOut": [
+          "未自动识别到明确截止日期，需二次确认"
+        ],
+        "model": "heuristic",
+        "reasoning": "基于标题/正文关键词规则生成：Royal Society University Research Fellowship"
+      },
+      "matchedTags": [],
+      "rawSignals": {
+        "extractedAt": "2026-02-19T11:20:46.978Z",
+        "sourceType": "carried_forward"
+      },
+      "fingerprint": "ea7c7c6cb8866f1a1f1d62210b82028f66052ddd",
+      "lastSeenAt": "2026-02-19T11:20:46.978Z",
+      "isNew": false,
+      "isUpdated": false
+    },
+    {
+      "id": "ea7425adf8e42a53caa0946921a08e1eb6e5ead2",
+      "title": "UKRI Responsive Mode Research Grants",
+      "url": "https://www.ukri.org/opportunity/",
+      "sourceId": "ukri",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "sourceHomepage": "https://www.ukri.org/opportunity/",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "description": "适合 UK 高校研究团队，通常支持多学科研究课题。",
+      "eligibility": {
+        "levels": [
+          "academic",
+          "postdoc"
+        ],
+        "careerStages": [
+          "early"
+        ],
+        "nationalities": [
+          "any"
+        ],
+        "disciplines": [
+          "all disciplines"
+        ]
+      },
+      "summary": {
+        "zh": "资助项目，截止日期需在官网确认。适合academic/postdoc申请者，国籍限制较少。",
+        "fit": [
+          "博士后或早期研究人员",
+          "早期职业阶段"
+        ],
+        "watchOut": [
+          "未自动识别到明确截止日期，需二次确认"
+        ],
+        "model": "heuristic",
+        "reasoning": "基于标题/正文关键词规则生成：UKRI Responsive Mode Research Grants"
+      },
+      "matchedTags": [],
+      "rawSignals": {
+        "extractedAt": "2026-02-19T11:20:46.978Z",
+        "sourceType": "carried_forward"
+      },
+      "fingerprint": "cf353149474ece6f6e2976677d0e35626b0b9eab",
+      "lastSeenAt": "2026-02-19T11:20:46.978Z",
+      "isNew": false,
+      "isUpdated": false
+    },
+    {
+      "id": "b81e72a11465e9ea7fe84c0c301b991cbc222bf3",
+      "title": "Wellcome Early-Career Researcher Schemes",
+      "url": "https://wellcome.org/grant-funding",
+      "sourceId": "wellcome",
+      "sourceName": "Wellcome Trust",
+      "sourceHomepage": "https://wellcome.org/grant-funding",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "description": "适合健康与生命科学相关的早期研究人员。",
+      "eligibility": {
+        "levels": [
+          "postdoc",
+          "academic"
+        ],
+        "careerStages": [
+          "early"
+        ],
+        "nationalities": [
+          "any"
+        ],
+        "disciplines": [
+          "all disciplines"
+        ]
+      },
+      "summary": {
+        "zh": "资助项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+        "fit": [
+          "博士后或早期研究人员",
+          "早期职业阶段"
+        ],
+        "watchOut": [
+          "未自动识别到明确截止日期，需二次确认"
+        ],
+        "model": "heuristic",
+        "reasoning": "基于标题/正文关键词规则生成：Wellcome Early-Career Researcher Schemes"
+      },
+      "matchedTags": [],
+      "rawSignals": {
+        "extractedAt": "2026-02-19T11:20:46.978Z",
+        "sourceType": "carried_forward"
+      },
+      "fingerprint": "04800f6c3dd901204e5791265ae909d349f2a86f",
+      "lastSeenAt": "2026-02-19T11:20:46.978Z",
+      "isNew": false,
+      "isUpdated": false
+    }
+  ],
+  "diagnostics": {
+    "errors": [
+      {
+        "seedUrl": "https://www.ukri.org/opportunity/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/what-we-do/developing-people-and-skills/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/ahrc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/bbsrc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/epsrc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/epsrc/guidance-for-applicants/funding-opportunities/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/esrc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/mrc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/nerc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/stfc/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/councils/innovate-uk/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://apply-for-innovation-funding.service.gov.uk/competition/search",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://wellcome.org/grant-funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.nihr.ac.uk/funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.nihr.ac.uk/funding/our-funding-programmes",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://royalsociety.org/grants/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://royalsociety.org/grants-schemes-awards/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.thebritishacademy.ac.uk/funding/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.leverhulme.ac.uk/research-funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.raeng.org.uk/grants-prizes/grants",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.cancerresearchuk.org/funding-for-researchers",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.alzheimers.org.uk/research/researchers/research-funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.nuffieldfoundation.org/funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://rse.org.uk/grants/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/newton-fund/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://euraxess.ec.europa.eu/worldwide/united-kingdom/funding-opportunities-uk",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://study-uk.britishcouncil.org/scholarships-funding",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://study-uk.britishcouncil.org/scholarships-funding/great-scholarships",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.chevening.org/scholarships/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.gatescambridge.org/apply/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.ox.ac.uk/clarendon/information-for-applicants",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.cambridgetrust.org/scholarships/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.findaphd.com/phds/funded/",
+        "error": "fetch failed"
+      },
+      {
+        "seedUrl": "https://www.findamasters.com/masters-degrees/funding/",
+        "error": "fetch failed"
+      }
+    ],
+    "previousItemCount": 5,
+    "currentItemCount": 5,
+    "aiEnabled": false,
+    "aiModelCandidates": [
+      "meta-llama/llama-3.3-70b-instruct:free",
+      "qwen/qwen-2.5-72b-instruct:free",
+      "google/gemma-2-9b-it:free"
+    ]
+  }
+}

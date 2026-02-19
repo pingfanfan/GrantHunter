@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UK Academic Funding Hub</title>
+    <meta
+      name="description"
+      content="每日更新 UK Academic Funding 聚合页，提供 AI 摘要、申请匹配度与订阅简报。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+
+    <header class="hero">
+      <div class="hero-top">
+        <p class="eyebrow">Daily-updated Funding Intelligence</p>
+        <h1>UK Academic Funding Hub</h1>
+        <p class="hero-desc">
+          聚合 UK 学术资助机会，自动抓取 + AI 摘要 + 个性化匹配度。你只需要先填写个人画像，再快速筛选你最值得申请的机会。
+        </p>
+      </div>
+      <div class="hero-stats" id="stats"></div>
+      <p class="last-updated" id="lastUpdated">正在加载最新数据...</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel profile-panel reveal-up">
+        <h2>你的画像（用于匹配度）</h2>
+        <form id="profileForm" class="grid-form">
+          <label>
+            学习/职业阶段
+            <select id="profileLevel" name="level">
+              <option value="">未选择</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="masters">Masters</option>
+              <option value="phd">PhD</option>
+              <option value="postdoc">Postdoc</option>
+              <option value="academic">Academic / PI</option>
+            </select>
+          </label>
+
+          <label>
+            职业阶段
+            <select id="profileCareer" name="careerStage">
+              <option value="">未选择</option>
+              <option value="early">Early Career</option>
+              <option value="mid">Mid Career</option>
+              <option value="senior">Senior</option>
+            </select>
+          </label>
+
+          <label>
+            国籍/身份
+            <select id="profileNationality" name="nationality">
+              <option value="">未选择</option>
+              <option value="uk">UK</option>
+              <option value="eu">EU</option>
+              <option value="international">International</option>
+            </select>
+          </label>
+
+          <label>
+            研究学科关键词
+            <input
+              id="profileDiscipline"
+              name="discipline"
+              type="text"
+              placeholder="例如: neuroscience, climate, ai"
+            />
+          </label>
+        </form>
+      </section>
+
+      <section class="panel filter-panel reveal-up delay-1">
+        <h2>机会筛选</h2>
+        <form id="filters" class="grid-form">
+          <label>
+            搜索关键词
+            <input id="keyword" type="text" placeholder="标题 / 摘要 / 学科" />
+          </label>
+
+          <label>
+            机会类型
+            <select id="typeFilter">
+              <option value="">全部</option>
+              <option value="grant">Grant</option>
+              <option value="fellowship">Fellowship</option>
+              <option value="scholarship">Scholarship</option>
+              <option value="call">Call</option>
+              <option value="award">Award</option>
+            </select>
+          </label>
+
+          <label>
+            状态
+            <select id="statusFilter">
+              <option value="">全部</option>
+              <option value="open">Open</option>
+              <option value="unknown">Unknown</option>
+              <option value="closed">Closed</option>
+            </select>
+          </label>
+
+          <label>
+            Funding Source
+            <select id="sourceFilter">
+              <option value="">全部来源</option>
+            </select>
+          </label>
+        </form>
+      </section>
+
+      <section class="panel result-panel reveal-up delay-2">
+        <div class="section-head">
+          <h2>Funding Opportunities</h2>
+          <p id="resultMeta">正在计算匹配...</p>
+        </div>
+        <div id="cards" class="cards"></div>
+      </section>
+
+      <aside class="panel side-panel reveal-up delay-3">
+        <section class="digest-box">
+          <h2>每日简报</h2>
+          <p id="digestMeta">加载中...</p>
+          <a id="digestLink" href="./data/digest.latest.md" target="_blank" rel="noreferrer">查看最新简报</a>
+        </section>
+
+        <section class="subscribe-box">
+          <h2>邮箱订阅</h2>
+          <p>每天自动推送最新变更到邮箱（双重确认订阅）。</p>
+          <form id="subscribeForm" method="post" target="_blank" rel="noopener noreferrer">
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+              aria-label="Email"
+            />
+            <input type="hidden" value="1" name="embed" />
+            <button type="submit">订阅 Daily Brief</button>
+          </form>
+          <p class="mini-tip" id="subscribeHint">订阅服务加载中...</p>
+        </section>
+
+        <section class="source-box">
+          <h2>Funding Resource Directory</h2>
+          <ul id="sourceList"></ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        数据由 GitHub Actions 每日更新；AI 摘要用于快速筛选，申请前请以官方页面为准。
+      </p>
+    </footer>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "ukri",
+    "name": "UK Research and Innovation (UKRI)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/opportunity/",
+    "seedUrls": [
+      "https://www.ukri.org/opportunity/",
+      "https://www.ukri.org/what-we-do/developing-people-and-skills/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "ahrc",
+    "name": "Arts and Humanities Research Council (AHRC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/ahrc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/ahrc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "bbsrc",
+    "name": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/bbsrc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/bbsrc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "epsrc",
+    "name": "Engineering and Physical Sciences Research Council (EPSRC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/epsrc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/epsrc/",
+      "https://www.ukri.org/councils/epsrc/guidance-for-applicants/funding-opportunities/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "esrc",
+    "name": "Economic and Social Research Council (ESRC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/esrc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/esrc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "mrc",
+    "name": "Medical Research Council (MRC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/mrc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/mrc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "nerc",
+    "name": "Natural Environment Research Council (NERC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/nerc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/nerc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "stfc",
+    "name": "Science and Technology Facilities Council (STFC)",
+    "category": "research_grants",
+    "homepage": "https://www.ukri.org/councils/stfc/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/stfc/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "innovate-uk",
+    "name": "Innovate UK",
+    "category": "innovation_grants",
+    "homepage": "https://www.ukri.org/councils/innovate-uk/",
+    "seedUrls": [
+      "https://www.ukri.org/councils/innovate-uk/",
+      "https://apply-for-innovation-funding.service.gov.uk/competition/search"
+    ],
+    "includeHosts": ["ukri.org", "service.gov.uk"]
+  },
+  {
+    "id": "wellcome",
+    "name": "Wellcome Trust",
+    "category": "research_grants",
+    "homepage": "https://wellcome.org/grant-funding",
+    "seedUrls": [
+      "https://wellcome.org/grant-funding"
+    ],
+    "includeHosts": ["wellcome.org"]
+  },
+  {
+    "id": "nihr",
+    "name": "National Institute for Health and Care Research (NIHR)",
+    "category": "health_research",
+    "homepage": "https://www.nihr.ac.uk/funding",
+    "seedUrls": [
+      "https://www.nihr.ac.uk/funding",
+      "https://www.nihr.ac.uk/funding/our-funding-programmes"
+    ],
+    "includeHosts": ["nihr.ac.uk"]
+  },
+  {
+    "id": "royal-society",
+    "name": "The Royal Society",
+    "category": "fellowships",
+    "homepage": "https://royalsociety.org/grants/",
+    "seedUrls": [
+      "https://royalsociety.org/grants/",
+      "https://royalsociety.org/grants-schemes-awards/"
+    ],
+    "includeHosts": ["royalsociety.org"]
+  },
+  {
+    "id": "british-academy",
+    "name": "The British Academy",
+    "category": "research_grants",
+    "homepage": "https://www.thebritishacademy.ac.uk/funding/",
+    "seedUrls": [
+      "https://www.thebritishacademy.ac.uk/funding/"
+    ],
+    "includeHosts": ["thebritishacademy.ac.uk"]
+  },
+  {
+    "id": "leverhulme",
+    "name": "Leverhulme Trust",
+    "category": "fellowships",
+    "homepage": "https://www.leverhulme.ac.uk/research-funding",
+    "seedUrls": [
+      "https://www.leverhulme.ac.uk/research-funding"
+    ],
+    "includeHosts": ["leverhulme.ac.uk"]
+  },
+  {
+    "id": "raeng",
+    "name": "Royal Academy of Engineering",
+    "category": "engineering_funding",
+    "homepage": "https://www.raeng.org.uk/grants-prizes/grants",
+    "seedUrls": [
+      "https://www.raeng.org.uk/grants-prizes/grants"
+    ],
+    "includeHosts": ["raeng.org.uk"]
+  },
+  {
+    "id": "cruk",
+    "name": "Cancer Research UK",
+    "category": "health_research",
+    "homepage": "https://www.cancerresearchuk.org/funding-for-researchers",
+    "seedUrls": [
+      "https://www.cancerresearchuk.org/funding-for-researchers"
+    ],
+    "includeHosts": ["cancerresearchuk.org"]
+  },
+  {
+    "id": "bhf",
+    "name": "British Heart Foundation",
+    "category": "health_research",
+    "homepage": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available",
+    "seedUrls": [
+      "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available"
+    ],
+    "includeHosts": ["bhf.org.uk"]
+  },
+  {
+    "id": "alzheimers-society",
+    "name": "Alzheimer's Society Research Funding",
+    "category": "health_research",
+    "homepage": "https://www.alzheimers.org.uk/research/researchers/research-funding",
+    "seedUrls": [
+      "https://www.alzheimers.org.uk/research/researchers/research-funding"
+    ],
+    "includeHosts": ["alzheimers.org.uk"]
+  },
+  {
+    "id": "nuffield",
+    "name": "Nuffield Foundation",
+    "category": "social_research",
+    "homepage": "https://www.nuffieldfoundation.org/funding",
+    "seedUrls": [
+      "https://www.nuffieldfoundation.org/funding"
+    ],
+    "includeHosts": ["nuffieldfoundation.org"]
+  },
+  {
+    "id": "royal-society-edinburgh",
+    "name": "Royal Society of Edinburgh",
+    "category": "fellowships",
+    "homepage": "https://rse.org.uk/grants/",
+    "seedUrls": [
+      "https://rse.org.uk/grants/"
+    ],
+    "includeHosts": ["rse.org.uk"]
+  },
+  {
+    "id": "newton",
+    "name": "The Newton Fund related opportunities",
+    "category": "international_collaboration",
+    "homepage": "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/newton-fund/",
+    "seedUrls": [
+      "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/newton-fund/"
+    ],
+    "includeHosts": ["ukri.org"]
+  },
+  {
+    "id": "horizon-europe",
+    "name": "EU Funding & Tenders (Horizon Europe)",
+    "category": "eu_funding",
+    "homepage": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search",
+    "seedUrls": [
+      "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search"
+    ],
+    "includeHosts": ["ec.europa.eu", "europa.eu"]
+  },
+  {
+    "id": "euraxess-uk",
+    "name": "EURAXESS UK Funding Opportunities",
+    "category": "international_mobility",
+    "homepage": "https://euraxess.ec.europa.eu/worldwide/united-kingdom/funding-opportunities-uk",
+    "seedUrls": [
+      "https://euraxess.ec.europa.eu/worldwide/united-kingdom/funding-opportunities-uk"
+    ],
+    "includeHosts": ["euraxess.ec.europa.eu"]
+  },
+  {
+    "id": "british-council",
+    "name": "British Council Scholarships",
+    "category": "scholarships",
+    "homepage": "https://study-uk.britishcouncil.org/scholarships-funding",
+    "seedUrls": [
+      "https://study-uk.britishcouncil.org/scholarships-funding",
+      "https://study-uk.britishcouncil.org/scholarships-funding/great-scholarships"
+    ],
+    "includeHosts": ["britishcouncil.org"]
+  },
+  {
+    "id": "chevening",
+    "name": "Chevening Scholarships",
+    "category": "scholarships",
+    "homepage": "https://www.chevening.org/scholarships/",
+    "seedUrls": [
+      "https://www.chevening.org/scholarships/"
+    ],
+    "includeHosts": ["chevening.org"]
+  },
+  {
+    "id": "commonwealth",
+    "name": "Commonwealth Scholarships",
+    "category": "scholarships",
+    "homepage": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+    "seedUrls": [
+      "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/"
+    ],
+    "includeHosts": ["cscuk.fcdo.gov.uk"]
+  },
+  {
+    "id": "gates-cambridge",
+    "name": "Gates Cambridge Scholarships",
+    "category": "scholarships",
+    "homepage": "https://www.gatescambridge.org/apply/",
+    "seedUrls": [
+      "https://www.gatescambridge.org/apply/"
+    ],
+    "includeHosts": ["gatescambridge.org"]
+  },
+  {
+    "id": "rhodes",
+    "name": "Rhodes Scholarship",
+    "category": "scholarships",
+    "homepage": "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/",
+    "seedUrls": [
+      "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/"
+    ],
+    "includeHosts": ["rhodeshouse.ox.ac.uk"]
+  },
+  {
+    "id": "clarendon",
+    "name": "Clarendon Scholarships (Oxford)",
+    "category": "scholarships",
+    "homepage": "https://www.ox.ac.uk/clarendon/information-for-applicants",
+    "seedUrls": [
+      "https://www.ox.ac.uk/clarendon/information-for-applicants"
+    ],
+    "includeHosts": ["ox.ac.uk"]
+  },
+  {
+    "id": "cambridge-trust",
+    "name": "Cambridge Trust Scholarships",
+    "category": "scholarships",
+    "homepage": "https://www.cambridgetrust.org/scholarships/",
+    "seedUrls": [
+      "https://www.cambridgetrust.org/scholarships/"
+    ],
+    "includeHosts": ["cambridgetrust.org"]
+  },
+  {
+    "id": "imperial-scholarships",
+    "name": "Imperial Scholarships Search",
+    "category": "scholarships",
+    "homepage": "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search/",
+    "seedUrls": [
+      "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search/"
+    ],
+    "includeHosts": ["imperial.ac.uk"]
+  },
+  {
+    "id": "findaphd",
+    "name": "FindAPhD funded opportunities",
+    "category": "studentships",
+    "homepage": "https://www.findaphd.com/phds/funded/",
+    "seedUrls": [
+      "https://www.findaphd.com/phds/funded/"
+    ],
+    "includeHosts": ["findaphd.com"]
+  },
+  {
+    "id": "findamasters",
+    "name": "FindAMasters funding",
+    "category": "scholarships",
+    "homepage": "https://www.findamasters.com/masters-degrees/funding/",
+    "seedUrls": [
+      "https://www.findamasters.com/masters-degrees/funding/"
+    ],
+    "includeHosts": ["findamasters.com"]
+  }
+]

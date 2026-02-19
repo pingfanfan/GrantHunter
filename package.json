@@ -1,0 +1,15 @@
+{
+  "name": "uk-academic-funding-hub",
+  "version": "1.0.0",
+  "description": "Daily-updated UK academic funding aggregator for GitHub Pages",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "update:data": "node scripts/update-funding.mjs",
+    "send:digest": "node scripts/send-digest.mjs",
+    "refresh": "npm run update:data && npm run send:digest"
+  }
+}

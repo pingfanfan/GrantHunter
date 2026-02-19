@@ -1,0 +1,51 @@
+name: Daily Funding Refresh
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.3-70b-instruct:free' }}
+      OPENROUTER_MODELS: ${{ vars.OPENROUTER_MODELS }}
+      OPENROUTER_SITE_URL: ${{ vars.OPENROUTER_SITE_URL || 'https://github.com/pingfanfan/GrantHunter' }}
+      OPENROUTER_SITE_NAME: ${{ vars.OPENROUTER_SITE_NAME || 'GrantHunter' }}
+      BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+      BUTTONDOWN_USERNAME: ${{ vars.BUTTONDOWN_USERNAME }}
+      BUTTONDOWN_NEWSLETTER_ID: ${{ vars.BUTTONDOWN_NEWSLETTER_ID }}
+      BUTTONDOWN_DRY_RUN: ${{ vars.BUTTONDOWN_DRY_RUN || 'false' }}
+      MAX_ITEMS_PER_SOURCE: ${{ vars.MAX_ITEMS_PER_SOURCE || '18' }}
+      MAX_TOTAL_ITEMS: ${{ vars.MAX_TOTAL_ITEMS || '320' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate latest funding dataset
+        run: npm run update:data
+
+      - name: Send daily digest email
+        run: npm run send:digest
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(data): daily funding refresh"
+          git push

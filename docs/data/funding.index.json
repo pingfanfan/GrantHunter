@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-02-19T11:20:46.978Z",
+  "stats": {
+    "total": 5,
+    "open": 0,
+    "unknown": 5,
+    "closed": 0,
+    "withDeadline": 0,
+    "newToday": 0,
+    "updatedToday": 0,
+    "sourcesConfigured": 33
+  },
+  "items": [
+    {
+      "id": "62e01f7fc8e2102ddb23faf19017edc0bcc6852c",
+      "title": "Chevening Scholarships",
+      "url": "https://www.chevening.org/scholarships/",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+      "levels": [
+        "masters"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "750ef4025b444b1bc48510c5d6e8b5ae35eb48b4",
+      "title": "Commonwealth Master's Scholarships",
+      "url": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
+      "sourceName": "Commonwealth Scholarships",
+      "type": "scholarship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+      "levels": [
+        "masters"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "018fb9fdaff669c2f6c3e5572c0edd0752c515e4",
+      "title": "Royal Society University Research Fellowship",
+      "url": "https://royalsociety.org/grants/",
+      "sourceName": "The Royal Society",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "学者项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+      "levels": [
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "ea7425adf8e42a53caa0946921a08e1eb6e5ead2",
+      "title": "UKRI Responsive Mode Research Grants",
+      "url": "https://www.ukri.org/opportunity/",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "资助项目，截止日期需在官网确认。适合academic/postdoc申请者，国籍限制较少。",
+      "levels": [
+        "academic",
+        "postdoc"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "b81e72a11465e9ea7fe84c0c301b991cbc222bf3",
+      "title": "Wellcome Early-Career Researcher Schemes",
+      "url": "https://wellcome.org/grant-funding",
+      "sourceName": "Wellcome Trust",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "资助项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+      "levels": [
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    }
+  ]
+}

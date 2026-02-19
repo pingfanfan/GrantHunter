@@ -1,0 +1,6 @@
+{
+  "appName": "UK Academic Funding Hub",
+  "subscriptionAction": "https://buttondown.email/api/emails/embed-subscribe/your-buttondown-username",
+  "buttondownUsername": "your-buttondown-username",
+  "note": "Set BUTTONDOWN_USERNAME in GitHub Actions secrets/vars so the subscribe form points to your newsletter."
+}
