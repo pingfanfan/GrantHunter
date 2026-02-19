@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-02-19T20:54:09.551Z",
+  "generatedAt": "2026-02-19T22:22:03.060Z",
   "stats": {
-    "total": 59,
-    "open": 22,
-    "unknown": 18,
-    "closed": 19,
-    "withDeadline": 23,
-    "newToday": 24,
+    "total": 57,
+    "open": 24,
+    "unknown": 19,
+    "closed": 14,
+    "withDeadline": 18,
+    "newToday": 5,
     "updatedToday": 0,
     "sourcesConfigured": 33
   },
@@ -199,6 +199,27 @@
       "nationalities": [
         "international",
         "eu"
+      ]
+    },
+    {
+      "id": "2cf3067404ccbdac18243f9d21f78ef0e86fdfe0",
+      "title": "Application guidance",
+      "url": "https://www.chevening.org/resource-hub/guidance",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
       ]
     },
     {
@@ -523,6 +544,26 @@
       ]
     },
     {
+      "id": "75657861f9992f9227bacef3010442b4f806aa19",
+      "title": "Who can apply for a Chevening SIDS Scholarship?",
+      "url": "https://www.chevening.org/sids-chevening-scholarship/who-can-apply-for-a-chevening-sids-scholarship",
+      "sourceName": "Chevening Scholarships",
+      "type": "scholarship",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "social sciences"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
       "id": "58d1edee4b0b544face69eca8b757f71de92a052",
       "title": "Accepted qualifications",
       "url": "https://www.imperial.ac.uk/study/apply/undergraduate/process/entry-requirements/accepted-qualifications",
@@ -577,22 +618,30 @@
       ]
     },
     {
-      "id": "422f1c73fdc76e6d5565f6394943e2ea5b78e4a3",
-      "title": "Apply for and manage your funding",
-      "url": "https://www.cancerresearchuk.org/for-researchers/apply-for-and-manage-your-funding",
-      "sourceName": "Cancer Research UK",
+      "id": "373277ad27dcc31c70612d923d2c40b90b9ce58b",
+      "title": "Apply to Imperial",
+      "url": "https://www.imperial.ac.uk/study/apply",
+      "sourceName": "Imperial Scholarships Search",
       "type": "grant",
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.",
+      "levels": [
+        "undergraduate",
+        "masters",
+        "phd"
+      ],
       "disciplines": [
         "medicine and health",
-        "computer science and ai"
+        "engineering",
+        "computer science and ai",
+        "physical sciences",
+        "social sciences",
+        "business"
       ],
       "nationalities": [
-        "any"
+        "international"
       ]
     },
     {
@@ -890,6 +939,27 @@
       ]
     },
     {
+      "id": "418691aa4523696ed6b0996f7908555feb945d5c",
+      "title": "Our funding schemes",
+      "url": "https://find.cancerresearchuk.org/our-funding-schemes",
+      "sourceName": "Cancer Research UK",
+      "type": "fellowship",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
       "id": "7f775bdebe450c9f3162977fc765c4ff4a3e26c5",
       "title": "Resources",
       "url": "https://www.nuffieldfoundation.org/funding-for-research/resources",
@@ -974,121 +1044,6 @@
         "computer science and ai",
         "environment and earth",
         "social sciences"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "1b77557e0cf9ef40a2efdb2791258ca7102a7238",
-      "title": "Funded grants",
-      "url": "https://wellcome.org/research-funding/funding-portfolio/funded-grants",
-      "sourceName": "Wellcome Trust",
-      "type": "award",
-      "status": "closed",
-      "deadline": "2022-06-15",
-      "amount": null,
-      "summary": "Award scheme. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "environment and earth",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "79c8d7c31315b85d5fddea6ac8ec9b0d845aeb59",
-      "title": "Funding guidance",
-      "url": "https://wellcome.org/research-funding/guidance",
-      "sourceName": "Wellcome Trust",
-      "type": "grant",
-      "status": "closed",
-      "deadline": "2022-06-15",
-      "amount": null,
-      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "environment and earth",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "3f5fde27a433ed2ad11937b3ff845d5e62356c20",
-      "title": "Funding policies and grant conditions",
-      "url": "https://wellcome.org/research-funding/guidance/policies-grant-conditions",
-      "sourceName": "Wellcome Trust",
-      "type": "grant",
-      "status": "closed",
-      "deadline": "2022-06-15",
-      "amount": null,
-      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "environment and earth",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "813debc359c3c126bbc9e98e673ca6d8dbc5d37b",
-      "title": "Funding portfolio: funded people and projects",
-      "url": "https://wellcome.org/research-funding/funding-portfolio",
-      "sourceName": "Wellcome Trust",
-      "type": "grant",
-      "status": "closed",
-      "deadline": "2022-06-15",
-      "amount": null,
-      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "environment and earth",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "any"
-      ]
-    },
-    {
-      "id": "df0ff45a783d701d6d3783d2d5515e3eaef6a399",
-      "title": "Prepare to apply",
-      "url": "https://wellcome.org/research-funding/guidance/prepare-to-apply",
-      "sourceName": "Wellcome Trust",
-      "type": "grant",
-      "status": "closed",
-      "deadline": "2022-06-15",
-      "amount": null,
-      "summary": "Grant opportunity. deadline: 2022-06-15. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "environment and earth",
-        "social sciences",
-        "humanities",
-        "business"
       ],
       "nationalities": [
         "any"
@@ -1352,7 +1307,7 @@
       ]
     },
     {
-      "id": "10c315dbe400a12639c13d083d05b9ce61313e59",
+      "id": "ecda1ad92c11989b12d462915bbf0f69ed9404ca",
       "title": "Who can apply for a Chevening Scholarship?",
       "url": "https://www.chevening.org/scholarships/who-can-apply",
       "sourceName": "Chevening Scholarships",

@@ -89,3 +89,15 @@ test("validateDataset strict URL mode fails unverified links", () => {
   const result = validateDataset(makeDataset({ items: [row] }), { strictUrls: true });
   assert.ok(result.errors.some((entry) => entry.message.includes("urlCheck.status")));
 });
+
+test("validateDataset fails generic non-specific titles", () => {
+  const row = {
+    ...makeDataset().items[0],
+    title: "Apply for and manage your funding",
+    url: "https://example.org/for-researchers/apply-for-and-manage-your-funding"
+  };
+
+  const result = validateDataset(makeDataset({ items: [row] }));
+  assert.ok(result.errors.some((entry) => entry.message.includes("generic and not a specific grant")));
+  assert.ok(result.errors.some((entry) => entry.message.includes("generic apply/manage page")));
+});

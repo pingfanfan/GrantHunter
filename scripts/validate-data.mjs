@@ -28,6 +28,60 @@ function addWarning(warnings, message) {
 }
 
 const VERIFIED_URL_STATUSES = new Set(["reachable", "reachable_with_redirect", "reachable_restricted"]);
+const NON_SPECIFIC_TITLE_PATTERNS = [
+  /\bapply for and manage your funding\b/i,
+  /\bapply for and manage funding\b/i,
+  /^apply for funding$/i,
+  /^manage your award$/i,
+  /^before you apply$/i,
+  /^develop your application$/i,
+  /^how we make decisions$/i,
+  /^funding opportunities$/i,
+  /^funding for research$/i,
+  /^scholarships and fellowships$/i,
+  /^about us$/i,
+  /^(frequently asked questions|faq|faqs)$/i,
+  /^code of conduct$/i,
+  /^policy and procedure$/i,
+  /^template application form$/i,
+  /^selection criteria$/i,
+  /^host organisations?$/i,
+  /^partners?$/i,
+  /^evaluation$/i,
+  /^filter search$/i
+];
+
+const NON_SPECIFIC_URL_SEGMENTS = [
+  "/apply-for-and-manage-your-funding",
+  "/apply-for-funding",
+  "/manage-your-award",
+  "/before-you-apply",
+  "/develop-your-application",
+  "/how-we-make-decisions"
+];
+
+function normalizeTitle(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^\w\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isNonSpecificTitle(title) {
+  const normalized = normalizeTitle(title);
+  if (!normalized) return false;
+  return NON_SPECIFIC_TITLE_PATTERNS.some((pattern) => pattern.test(normalized));
+}
+
+function hasNonSpecificUrlSegment(url) {
+  try {
+    const path = new URL(url).pathname.toLowerCase();
+    return NON_SPECIFIC_URL_SEGMENTS.some((segment) => path.includes(segment));
+  } catch {
+    return false;
+  }
+}
 
 export function validateDataset(dataset, options = {}) {
   const strictUrls = Boolean(options.strictUrls);
@@ -65,6 +119,12 @@ export function validateDataset(dataset, options = {}) {
     if (!isValidUrl(item.url)) addError(errors, `${prefix}.url must be a valid http/https URL`);
     if (!isNonEmptyString(item.sourceId)) addError(errors, `${prefix}.sourceId is required`);
     if (!isNonEmptyString(item.sourceName)) addError(errors, `${prefix}.sourceName is required`);
+    if (isNonSpecificTitle(item.title)) {
+      addError(errors, `${prefix}.title is generic and not a specific grant (${item.title})`);
+    }
+    if (hasNonSpecificUrlSegment(item.url)) {
+      addError(errors, `${prefix}.url points to a generic apply/manage page (${item.url})`);
+    }
 
     if (!validStatuses.has(item.status)) {
       addError(errors, `${prefix}.status must be one of open/closed/unknown`);

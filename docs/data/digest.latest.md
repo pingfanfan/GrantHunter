@@ -1,22 +1,15 @@
 # UK Academic Funding Daily Brief (2026-02-19)
 
-- New opportunities: **24**
+- New opportunities: **5**
 - Updated opportunities: **0**
 - Closing within 14 days: **1**
 
 ## New Opportunities (Top 12)
-- [Funding competition Contracts for Innovation: industrial human relevant drug models](https://apply-for-innovation-funding.service.gov.uk/competition/2396/overview/d55398bb-ff62-43b9-9ee1-bf3fa4b95c5c) | Innovate UK | Deadline: 2026-03-02 | Funding call. deadline: 2026-03-02. Best suited for no explicit level restriction; nationality rules appear flexible.
-- [Strategic Fund](https://www.nuffieldfoundation.org/funding-for-research/strategic-fund) | Nuffield Foundation | Deadline: 2026-03-16 | Grant opportunity. deadline: 2026-03-16. Best suited for academic; nationality rules appear flexible.
-- [Funding opportunity: AHRC Collaborative Doctoral Project Nominations 2026 invite only](https://www.ukri.org/opportunity/ahrc-collaborative-doctoral-project-nominations-2026-invite-only) | UK Research and Innovation (UKRI) | Deadline: 2026-03-26 | Scholarship. deadline: 2026-03-26. Best suited for phd; targeted at international/eu.
-- [Funding opportunity: Metascience research grants: round two](https://www.ukri.org/opportunity/metascience-research-grants-round-2) | UK Research and Innovation (UKRI) | Deadline: 2026-04-23 | Grant opportunity. deadline: 2026-04-23. Best suited for no explicit level restriction; targeted at international/eu.
-- [Global Health Research](https://www.nihr.ac.uk/research-funding/global-health) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
-- [Information for Advisors](https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-advisors) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
-- [Information for Institutions and Universities](https://www.rhodeshouse.ox.ac.uk/scholarships/information-for-institutions-and-universities) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
-- [Information Sessions](https://www.rhodeshouse.ox.ac.uk/scholarships/information-sessions) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
-- [Responsibilities after funding](https://www.nihr.ac.uk/research-funding/responsibilities-after-funding) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
-- [Scholarships](https://www.rhodeshouse.ox.ac.uk/scholarships) | Rhodes Scholarship | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
-- [Social care research](https://www.nihr.ac.uk/research-funding/social-care) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
-- [Starting a funding journey](https://www.nihr.ac.uk/research-funding/starting-a-funding-journey) | National Institute for Health and Care Research (NIHR) | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
+- [Application guidance](https://www.chevening.org/resource-hub/guidance) | Chevening Scholarships | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Who can apply for a Chevening SIDS Scholarship?](https://www.chevening.org/sids-chevening-scholarship/who-can-apply-for-a-chevening-sids-scholarship) | Chevening Scholarships | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
+- [Apply to Imperial](https://www.imperial.ac.uk/study/apply) | Imperial Scholarships Search | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for undergraduate/masters/phd; targeted at international.
+- [Our funding schemes](https://find.cancerresearchuk.org/our-funding-schemes) | Cancer Research UK | Deadline: TBC | Fellowship. deadline must be confirmed on the official page. Best suited for academic; targeted at international.
+- [Who can apply for a Chevening Scholarship?](https://www.chevening.org/scholarships/who-can-apply) | Chevening Scholarships | Deadline: TBC | Scholarship. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.
 
 ## Closing Soon (Within 14 Days)
 - [Funding competition Contracts for Innovation: industrial human relevant drug models](https://apply-for-innovation-funding.service.gov.uk/competition/2396/overview/d55398bb-ff62-43b9-9ee1-bf3fa4b95c5c) | Innovate UK | D-12
