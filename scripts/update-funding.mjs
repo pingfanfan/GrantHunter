@@ -465,47 +465,47 @@ function inferDisciplines(text) {
 }
 
 function heuristicSummary(item, contextText) {
-  const levelText = item.eligibility.levels.length > 0 ? item.eligibility.levels.join("/") : "未明确限制";
+  const levelText = item.eligibility.levels.length > 0 ? item.eligibility.levels.join("/") : "no explicit level restriction";
   const nationalityText = item.eligibility.nationalities.includes("any")
-    ? "国籍限制较少"
-    : `主要面向${item.eligibility.nationalities.join("/")}`;
+    ? "nationality rules appear flexible"
+    : `targeted at ${item.eligibility.nationalities.join("/")}`;
 
-  const deadlineText = item.deadline ? `截止日期 ${item.deadline}` : "截止日期需在官网确认";
-  const typeZh = {
-    grant: "资助项目",
-    fellowship: "学者项目",
-    scholarship: "奖学金",
-    call: "申报征集",
-    award: "奖励计划"
-  }[item.type] || "资助信息";
+  const deadlineText = item.deadline ? `deadline: ${item.deadline}` : "deadline must be confirmed on the official page";
+  const typeLabel = {
+    grant: "Grant opportunity",
+    fellowship: "Fellowship",
+    scholarship: "Scholarship",
+    call: "Funding call",
+    award: "Award scheme"
+  }[item.type] || "Funding opportunity";
 
   const titleHint = item.title.slice(0, 80);
-  const summary = `${typeZh}，${deadlineText}。适合${levelText}申请者，${nationalityText}。`;
+  const summary = `${typeLabel}. ${deadlineText}. Best suited for ${levelText}; ${nationalityText}.`;
 
   const bestFor = [];
-  if (item.eligibility.levels.includes("phd")) bestFor.push("正在申请或就读博士");
-  if (item.eligibility.levels.includes("postdoc")) bestFor.push("博士后或早期研究人员");
-  if (item.eligibility.levels.includes("masters")) bestFor.push("硕士申请人");
-  if (item.eligibility.careerStages.includes("early")) bestFor.push("早期职业阶段");
+  if (item.eligibility.levels.includes("phd")) bestFor.push("Applicants preparing for or currently in a PhD");
+  if (item.eligibility.levels.includes("postdoc")) bestFor.push("Postdoctoral or early-career researchers");
+  if (item.eligibility.levels.includes("masters")) bestFor.push("Master's applicants");
+  if (item.eligibility.careerStages.includes("early")) bestFor.push("Early-career stage");
   if (item.eligibility.disciplines[0] !== "all disciplines") {
-    bestFor.push(`研究方向含 ${item.eligibility.disciplines.slice(0, 2).join("/")}`);
+    bestFor.push(`Research focus includes ${item.eligibility.disciplines.slice(0, 2).join("/")}`);
   }
-  if (bestFor.length === 0) bestFor.push("对该领域资助感兴趣且满足官网条件的人");
+  if (bestFor.length === 0) bestFor.push("Anyone aligned with this theme and meeting official eligibility");
 
   const watchOut = [];
-  if (item.status === "closed") watchOut.push("当前状态可能已关闭，请查官网最新公告");
-  if (!item.deadline) watchOut.push("未自动识别到明确截止日期，需二次确认");
+  if (item.status === "closed") watchOut.push("Status may be closed; verify the latest official notice");
+  if (!item.deadline) watchOut.push("No explicit deadline was detected; verify before applying");
   if (item.eligibility.nationalities.includes("uk") && !item.eligibility.nationalities.includes("international")) {
-    watchOut.push("可能要求 UK 机构或身份条件");
+    watchOut.push("May require UK institution affiliation or UK-specific eligibility");
   }
-  if (watchOut.length === 0) watchOut.push("注意查看资助金额上限、合作方要求与材料清单");
+  if (watchOut.length === 0) watchOut.push("Check max budget, partnership rules, and required documents");
 
   return {
-    zh: summary,
+    en: summary,
     fit: bestFor,
     watchOut,
     model: "heuristic",
-    reasoning: `基于标题/正文关键词规则生成：${titleHint}`
+    reasoning: `Generated from title/content keyword heuristics: ${titleHint}`
   };
 }
 
@@ -556,26 +556,26 @@ async function summarizeWithAI(item, contextText) {
 
   const models = getOpenRouterModelCandidates();
   const prompt = [
-    "你是 UK 学术资助申请顾问。",
-    "请基于给定 opportunity 信息输出 JSON（不要输出额外解释）。",
+    "You are a UK academic funding advisor.",
+    "Based on the opportunity information below, output JSON only (no extra text).",
     "JSON schema:",
     "{",
-    '  "summary_zh": "一句中文总结（<=70字）",',
-    '  "fit": ["适合谁1", "适合谁2"],',
-    '  "watch_out": ["不适合或风险点1", "不适合或风险点2"],',
+    '  "summary_en": "One-sentence English summary (<=35 words)",',
+    '  "fit": ["Who this is good for #1", "Who this is good for #2"],',
+    '  "watch_out": ["Risk or mismatch #1", "Risk or mismatch #2"],',
     '  "eligibility": {',
     '    "levels": ["undergraduate|masters|phd|postdoc|academic"],',
     '    "career_stages": ["early|mid|senior"],',
     '    "nationalities": ["uk|eu|international|any"],',
-    '    "disciplines": ["学科名"]',
+    '    "disciplines": ["discipline name"]',
     "  }",
     "}",
-    "规则:",
-    "1) 不确定时保守，nationalities 用 any。",
-    "2) fit 与 watch_out 各至少 2 条。",
-    "3) 若信息不足，明确提示需到官网确认。",
-    "4) 输出必须是合法 JSON。",
-    "输入:",
+    "Rules:",
+    "1) Be conservative when unsure; use nationality 'any'.",
+    "2) fit and watch_out must each contain at least 2 entries.",
+    "3) If info is incomplete, explicitly say to verify on the official page.",
+    "4) Output must be valid JSON.",
+    "Input:",
     JSON.stringify(
       {
         title: item.title,
@@ -628,7 +628,7 @@ async function summarizeWithAI(item, contextText) {
         throw new Error("AI summary JSON parse failed");
       }
 
-      const summaryZh = normalizeWhitespace(parsed.summary_zh || "");
+      const summaryEn = normalizeWhitespace(parsed.summary_en || parsed.summary || parsed.summary_zh || "");
       const fit = Array.isArray(parsed.fit) ? parsed.fit.map((x) => normalizeWhitespace(String(x))).filter(Boolean) : [];
       const watchOut = Array.isArray(parsed.watch_out)
         ? parsed.watch_out.map((x) => normalizeWhitespace(String(x))).filter(Boolean)
@@ -637,7 +637,7 @@ async function summarizeWithAI(item, contextText) {
       const eligibility = parsed.eligibility && typeof parsed.eligibility === "object" ? parsed.eligibility : {};
 
       return {
-        zh: summaryZh || heuristicSummary(item, contextText).zh,
+        en: summaryEn || heuristicSummary(item, contextText).en,
         fit: fit.length > 0 ? fit.slice(0, 4) : heuristicSummary(item, contextText).fit,
         watchOut: watchOut.length > 0 ? watchOut.slice(0, 4) : heuristicSummary(item, contextText).watchOut,
         eligibility,
@@ -697,33 +697,33 @@ function createDigest(items, previousMap) {
     .filter((item) => item.daysLeft >= 0 && item.daysLeft <= 14)
     .sort((a, b) => a.daysLeft - b.daysLeft);
 
-  const subject = `UK Funding Daily Brief | ${new Date().toISOString().slice(0, 10)} | 新增 ${newItems.length} 条`;
+  const subject = `UK Funding Daily Brief | ${new Date().toISOString().slice(0, 10)} | ${newItems.length} new`;
 
   const lines = [];
-  lines.push(`# UK Academic Funding 每日简报 (${new Date().toISOString().slice(0, 10)})`);
+  lines.push(`# UK Academic Funding Daily Brief (${new Date().toISOString().slice(0, 10)})`);
   lines.push("");
-  lines.push(`- 新增机会: **${newItems.length}**`);
-  lines.push(`- 变更机会: **${updatedItems.length}**`);
-  lines.push(`- 即将截止(14天内): **${closingSoon.length}**`);
+  lines.push(`- New opportunities: **${newItems.length}**`);
+  lines.push(`- Updated opportunities: **${updatedItems.length}**`);
+  lines.push(`- Closing within 14 days: **${closingSoon.length}**`);
   lines.push("");
 
-  lines.push("## 新增机会（Top 12）");
+  lines.push("## New Opportunities (Top 12)");
   if (newItems.length === 0) {
-    lines.push("- 今日未发现新增条目（可能是源站无更新或抓取受限）。");
+    lines.push("- No new items were detected today (source updates may be limited or blocked).");
   } else {
     for (const item of newItems.slice(0, 12)) {
       lines.push(
-        `- [${escapeMd(item.title)}](${item.url}) | ${item.sourceName} | 截止: ${item.deadline || "待确认"} | ${escapeMd(
-          item.summary?.zh || ""
+        `- [${escapeMd(item.title)}](${item.url}) | ${item.sourceName} | Deadline: ${item.deadline || "TBC"} | ${escapeMd(
+          item.summary?.en || item.summary?.zh || ""
         )}`
       );
     }
   }
 
   lines.push("");
-  lines.push("## 即将截止（14天内）");
+  lines.push("## Closing Soon (Within 14 Days)");
   if (closingSoon.length === 0) {
-    lines.push("- 暂无 14 天内截止条目。\n");
+    lines.push("- No opportunities close within the next 14 days.\n");
   } else {
     for (const item of closingSoon.slice(0, 12)) {
       lines.push(`- [${escapeMd(item.title)}](${item.url}) | ${item.sourceName} | D-${item.daysLeft}`);
@@ -732,7 +732,7 @@ function createDigest(items, previousMap) {
 
   lines.push("");
   lines.push("---");
-  lines.push("本简报由 GitHub Actions 自动生成。申请前请以官方页面为准。\n");
+  lines.push("This brief is auto-generated by GitHub Actions. Always verify details on the official source page.\n");
 
   return {
     subject,
@@ -760,7 +760,7 @@ function buildFallbackItems(sources) {
     {
       title: "UKRI Responsive Mode Research Grants",
       sourceId: "ukri",
-      summary: "适合 UK 高校研究团队，通常支持多学科研究课题。",
+      summary: "Suitable for UK university research teams, typically supporting multi-disciplinary projects.",
       level: ["academic", "postdoc"],
       type: "grant",
       url: "https://www.ukri.org/opportunity/",
@@ -769,7 +769,7 @@ function buildFallbackItems(sources) {
     {
       title: "Royal Society University Research Fellowship",
       sourceId: "royal-society",
-      summary: "适合早期独立研究者，强调长期科研潜力与宿主机构支持。",
+      summary: "Suitable for early independent researchers with strong long-term potential and host support.",
       level: ["postdoc", "academic"],
       type: "fellowship",
       url: "https://royalsociety.org/grants/",
@@ -778,7 +778,7 @@ function buildFallbackItems(sources) {
     {
       title: "Commonwealth Master's Scholarships",
       sourceId: "commonwealth",
-      summary: "适合英联邦国家申请者攻读英国硕士课程。",
+      summary: "Suitable for applicants from Commonwealth countries pursuing a UK master's degree.",
       level: ["masters"],
       type: "scholarship",
       url: "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-scholarships/",
@@ -787,7 +787,7 @@ function buildFallbackItems(sources) {
     {
       title: "Chevening Scholarships",
       sourceId: "chevening",
-      summary: "适合有领导力潜力的国际申请者申请英国硕士。",
+      summary: "Suitable for international master's applicants with leadership potential.",
       level: ["masters"],
       type: "scholarship",
       url: "https://www.chevening.org/scholarships/",
@@ -796,7 +796,7 @@ function buildFallbackItems(sources) {
     {
       title: "Wellcome Early-Career Researcher Schemes",
       sourceId: "wellcome",
-      summary: "适合健康与生命科学相关的早期研究人员。",
+      summary: "Suitable for early-career researchers in health and life sciences.",
       level: ["postdoc", "academic"],
       type: "grant",
       url: "https://wellcome.org/grant-funding",
@@ -825,9 +825,9 @@ function buildFallbackItems(sources) {
         disciplines: ["all disciplines"]
       },
       summary: {
-        zh: `${it.summary}（当前为保底示例条目，建议点击官方链接确认开放状态）`,
-        fit: ["目标方向与项目主题一致", "愿意按官方要求准备材料"],
-        watchOut: ["请以官方最新时间和资格条件为准"],
+        en: `${it.summary} (Fallback sample item: check the official link for current opening status.)`,
+        fit: ["Your profile aligns with the scheme focus", "You can prepare required documents per official guidance"],
+        watchOut: ["Always verify current dates and eligibility on the official page"],
         model: "fallback",
         reasoning: "No live source fetched"
       },
@@ -1068,7 +1068,7 @@ async function enrichWithSummaries(items, previousMap) {
     const aiSummary = await summarizeWithAI(item, context);
 
     item.summary = {
-      zh: aiSummary.zh,
+      en: aiSummary.en || aiSummary.zh || "",
       fit: Array.isArray(aiSummary.fit) ? aiSummary.fit.slice(0, 4) : [],
       watchOut: Array.isArray(aiSummary.watchOut) ? aiSummary.watchOut.slice(0, 4) : [],
       model: aiSummary.model,
@@ -1152,7 +1152,8 @@ async function main() {
   let deduped = mergeAndDedupe(allItems);
 
   if (deduped.length === 0) {
-    if (previousItems.length > 0) {
+    const disableCarryForward = process.env.DISABLE_CARRY_FORWARD === "true";
+    if (previousItems.length > 0 && !disableCarryForward) {
       deduped = previousItems.map((item) => ({
         ...item,
         rawSignals: {
@@ -1245,7 +1246,7 @@ async function main() {
       status: item.status,
       deadline: item.deadline,
       amount: item.amount,
-      summary: item.summary?.zh || "",
+      summary: item.summary?.en || item.summary?.zh || "",
       levels: item.eligibility?.levels || [],
       disciplines: item.eligibility?.disciplines || [],
       nationalities: item.eligibility?.nationalities || []

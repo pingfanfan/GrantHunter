@@ -45,7 +45,7 @@ async function fetchJson(url) {
 }
 
 function formatDate(iso) {
-  if (!iso) return "待确认";
+  if (!iso) return "TBC";
   const d = new Date(`${iso}T00:00:00Z`);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toISOString().slice(0, 10);
@@ -83,30 +83,30 @@ function scoreItem(item, profile) {
   if (profile.level) {
     if (levels.length === 0 || levels.includes(profile.level)) {
       score += 22;
-      reasons.push(`阶段匹配: ${profile.level}`);
+      reasons.push(`Level match: ${profile.level}`);
     } else {
       score -= 24;
-      reasons.push(`阶段可能不匹配: 目标 ${levels.join("/")}`);
+      reasons.push(`Possible level mismatch: target ${levels.join("/")}`);
     }
   }
 
   if (profile.careerStage) {
     if (stages.length === 0 || stages.includes(profile.careerStage)) {
       score += 14;
-      reasons.push(`职业阶段匹配: ${profile.careerStage}`);
+      reasons.push(`Career stage match: ${profile.careerStage}`);
     } else {
       score -= 12;
-      reasons.push(`职业阶段偏差: 目标 ${stages.join("/")}`);
+      reasons.push(`Career stage mismatch: target ${stages.join("/")}`);
     }
   }
 
   if (profile.nationality) {
     if (nationalities.includes("any") || nationalities.length === 0 || nationalities.includes(profile.nationality)) {
       score += 14;
-      reasons.push(`国籍/身份兼容: ${profile.nationality}`);
+      reasons.push(`Nationality/status compatible: ${profile.nationality}`);
     } else {
       score -= 18;
-      reasons.push(`国籍限制: ${nationalities.join("/")}`);
+      reasons.push(`Nationality restrictions: ${nationalities.join("/")}`);
     }
   }
 
@@ -121,12 +121,12 @@ function scoreItem(item, profile) {
       score += Math.min(22, 9 + intersects.length * 5);
       reasons.push(
         disciplines.includes("all disciplines")
-          ? "学科开放范围较广"
-          : `学科关键词匹配: ${intersects.slice(0, 3).join("/")}`
+          ? "Broad discipline coverage"
+          : `Discipline keyword match: ${intersects.slice(0, 3).join("/")}`
       );
     } else {
+      reasons.push(`Discipline unclear/mismatch: ${disciplines.slice(0, 2).join("/") || "TBC"}`);
       score -= 14;
-      reasons.push(`学科不明显匹配: ${disciplines.slice(0, 2).join("/") || "待确认"}`);
     }
   }
 
@@ -137,9 +137,9 @@ function scoreItem(item, profile) {
   if (typeof left === "number") {
     if (left < 0) {
       score -= 20;
-      reasons.push("已过截止日期");
+      reasons.push("Deadline has passed");
     } else if (left <= 7) {
-      reasons.push(`截止很近: D-${left}`);
+      reasons.push(`Deadline is close: D-${left}`);
     }
   }
 
@@ -158,12 +158,12 @@ function statusLabel(status) {
 
 function renderStats(stats) {
   const cards = [
-    { label: "总机会", value: stats.total ?? 0 },
+    { label: "Total", value: stats.total ?? 0 },
     { label: "Open", value: stats.open ?? 0 },
-    { label: "有截止日期", value: stats.withDeadline ?? 0 },
-    { label: "今日新增", value: stats.newToday ?? 0 },
-    { label: "今日更新", value: stats.updatedToday ?? 0 },
-    { label: "数据源", value: stats.sourcesConfigured ?? 0 }
+    { label: "With Deadline", value: stats.withDeadline ?? 0 },
+    { label: "New Today", value: stats.newToday ?? 0 },
+    { label: "Updated Today", value: stats.updatedToday ?? 0 },
+    { label: "Sources", value: stats.sourcesConfigured ?? 0 }
   ];
 
   el.stats.innerHTML = cards
@@ -196,12 +196,12 @@ function renderSources() {
 
 function renderDigestMeta(digest) {
   const stats = digest?.stats || {};
-  el.digestMeta.textContent = `新增 ${stats.newItems || 0} 条，更新 ${stats.updatedItems || 0} 条，即将截止 ${
+  el.digestMeta.textContent = `${stats.newItems || 0} new, ${stats.updatedItems || 0} updated, ${
     stats.closingSoon || 0
-  } 条`;
+  } closing soon`;
 
   if (digest?.subject) {
-    el.digestLink.textContent = `查看：${digest.subject}`;
+    el.digestLink.textContent = `View: ${digest.subject}`;
   }
 }
 
@@ -216,7 +216,12 @@ function matchesFilters(item) {
   if (source && item.sourceId !== source) return false;
 
   if (keyword) {
-    const merged = [item.title, item.description, item.summary?.zh, ...(item.eligibility?.disciplines || [])]
+    const merged = [
+      item.title,
+      item.description,
+      item.summary?.en || item.summary?.zh || "",
+      ...(item.eligibility?.disciplines || [])
+    ]
       .join(" ")
       .toLowerCase();
     if (!merged.includes(keyword)) return false;
@@ -239,12 +244,13 @@ function renderCards() {
     .sort((a, b) => b.matchScore - a.matchScore || (a.deadline || "").localeCompare(b.deadline || ""));
 
   if (filtered.length === 0) {
-    el.cards.innerHTML = `<div class="empty-state">没有符合当前筛选条件的机会，尝试放宽筛选或清空关键词。</div>`;
-    el.resultMeta.textContent = "0 条结果";
+    el.cards.innerHTML =
+      '<div class="empty-state">No opportunities match current filters. Try loosening filters or clearing keyword search.</div>';
+    el.resultMeta.textContent = "0 results";
     return;
   }
 
-  el.resultMeta.textContent = `${filtered.length} 条结果，按匹配度排序（最高 ${filtered[0].matchScore}）`;
+  el.resultMeta.textContent = `${filtered.length} results, sorted by fit score (top ${filtered[0].matchScore})`;
 
   el.cards.innerHTML = filtered
     .slice(0, 180)
@@ -252,9 +258,9 @@ function renderCards() {
       const dl = daysLeft(item.deadline);
       const deadlineText = item.deadline
         ? `${formatDate(item.deadline)}${typeof dl === "number" ? ` (D${dl >= 0 ? `-${dl}` : `+${Math.abs(dl)}`})` : ""}`
-        : "待确认";
-      const fit = (item.summary?.fit || []).slice(0, 2).map(escapeHtml).join("；");
-      const warn = (item.summary?.watchOut || []).slice(0, 2).map(escapeHtml).join("；");
+        : "TBC";
+      const fit = (item.summary?.fit || []).slice(0, 2).map(escapeHtml).join("; ");
+      const warn = (item.summary?.watchOut || []).slice(0, 2).map(escapeHtml).join("; ");
       const tags = [
         ...(item.eligibility?.levels || []).slice(0, 2),
         ...(item.eligibility?.disciplines || []).slice(0, 2)
@@ -276,16 +282,16 @@ function renderCards() {
             <span>·</span>
             <span>${escapeHtml(item.type)}</span>
             <span>·</span>
-            <span>截止 ${escapeHtml(deadlineText)}</span>
+            <span>Deadline ${escapeHtml(deadlineText)}</span>
           </div>
 
-          <div class="match-pill">匹配度 ${item.matchScore}/100</div>
-          <p class="summary">${escapeHtml(item.summary?.zh || "暂无摘要")}</p>
+          <div class="match-pill">Fit Score ${item.matchScore}/100</div>
+          <p class="summary">${escapeHtml(item.summary?.en || item.summary?.zh || "No summary")}</p>
 
           <div class="hints">
-            <p><strong>适合谁:</strong> ${fit || "请查看官网 eligibility"}</p>
-            <p><strong>注意:</strong> ${warn || "申请前确认官方条件"}</p>
-            <p><strong>匹配理由:</strong> ${escapeHtml(item.matchReasons.join("；") || "基础规则评分")}</p>
+            <p><strong>Best for:</strong> ${fit || "Check official eligibility"}</p>
+            <p><strong>Watch out:</strong> ${warn || "Verify requirements before applying"}</p>
+            <p><strong>Scoring notes:</strong> ${escapeHtml(item.matchReasons.join("; ") || "Baseline rules applied")}</p>
           </div>
 
           <div class="tags">${tags}</div>
@@ -340,12 +346,12 @@ async function setupSubscription() {
     const config = await fetchJson("./data/site-config.json");
     if (config?.subscriptionAction) {
       el.subscribeForm.setAttribute("action", config.subscriptionAction);
-      el.subscribeHint.textContent = "订阅服务已启用，提交后将跳转到确认页面。";
+      el.subscribeHint.textContent = "Subscription is enabled. Submitting the form opens the confirmation page.";
     } else {
-      el.subscribeHint.textContent = "未配置订阅服务，请先设置 BUTTONDOWN_USERNAME。";
+      el.subscribeHint.textContent = "Subscription is not configured yet. Set BUTTONDOWN_USERNAME first.";
     }
   } catch {
-    el.subscribeHint.textContent = "未加载到订阅配置，请检查 data/site-config.json。";
+    el.subscribeHint.textContent = "Subscription config not found. Check data/site-config.json.";
   }
 }
 
@@ -362,9 +368,12 @@ async function init() {
     renderDigestMeta(data.digest || {});
 
     if (data.generatedAt) {
-      el.lastUpdated.textContent = `最近更新: ${new Date(data.generatedAt).toISOString().slice(0, 19).replace("T", " ")} UTC`;
+      el.lastUpdated.textContent = `Last updated: ${new Date(data.generatedAt)
+        .toISOString()
+        .slice(0, 19)
+        .replace("T", " ")} UTC`;
     } else {
-      el.lastUpdated.textContent = "最近更新时间未知";
+      el.lastUpdated.textContent = "Last update time unknown";
     }
 
     bindInputs();
@@ -372,9 +381,9 @@ async function init() {
     await setupSubscription();
   } catch (error) {
     console.error(error);
-    el.cards.innerHTML = `<div class="empty-state">加载数据失败：${escapeHtml(error.message)}</div>`;
-    el.resultMeta.textContent = "数据加载失败";
-    el.lastUpdated.textContent = "请先运行数据更新脚本生成 data 文件";
+    el.cards.innerHTML = `<div class="empty-state">Data load failed: ${escapeHtml(error.message)}</div>`;
+    el.resultMeta.textContent = "Data load failed";
+    el.lastUpdated.textContent = "Run the data update script to generate docs/data files first.";
   }
 }
 

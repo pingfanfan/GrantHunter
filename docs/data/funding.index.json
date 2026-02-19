@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-19T11:20:46.978Z",
+  "generatedAt": "2026-02-19T11:48:45.440Z",
   "stats": {
     "total": 5,
     "open": 0,
@@ -7,7 +7,7 @@
     "closed": 0,
     "withDeadline": 0,
     "newToday": 0,
-    "updatedToday": 0,
+    "updatedToday": 5,
     "sourcesConfigured": 33
   },
   "items": [
@@ -20,7 +20,7 @@
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for masters; nationality rules appear flexible.",
       "levels": [
         "masters"
       ],
@@ -40,7 +40,7 @@
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "奖学金，截止日期需在官网确认。适合masters申请者，国籍限制较少。",
+      "summary": "Scholarship. deadline must be confirmed on the official page. Best suited for masters; nationality rules appear flexible.",
       "levels": [
         "masters"
       ],
@@ -60,7 +60,7 @@
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "学者项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for postdoc/academic; nationality rules appear flexible.",
       "levels": [
         "postdoc",
         "academic"
@@ -81,7 +81,7 @@
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "资助项目，截止日期需在官网确认。适合academic/postdoc申请者，国籍限制较少。",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic/postdoc; nationality rules appear flexible.",
       "levels": [
         "academic",
         "postdoc"
@@ -102,7 +102,7 @@
       "status": "unknown",
       "deadline": null,
       "amount": null,
-      "summary": "资助项目，截止日期需在官网确认。适合postdoc/academic申请者，国籍限制较少。",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for postdoc/academic; nationality rules appear flexible.",
       "levels": [
         "postdoc",
         "academic"

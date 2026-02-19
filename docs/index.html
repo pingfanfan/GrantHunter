@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UK Academic Funding Hub</title>
     <meta
       name="description"
-      content="每日更新 UK Academic Funding 聚合页，提供 AI 摘要、申请匹配度与订阅简报。"
+      content="Daily UK academic funding aggregator with AI summaries, fit scoring, and email digest subscriptions."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,21 +25,22 @@
         <p class="eyebrow">Daily-updated Funding Intelligence</p>
         <h1>UK Academic Funding Hub</h1>
         <p class="hero-desc">
-          聚合 UK 学术资助机会，自动抓取 + AI 摘要 + 个性化匹配度。你只需要先填写个人画像，再快速筛选你最值得申请的机会。
+          Aggregate UK academic funding opportunities with automated collection, AI summaries, and profile-based fit scoring.
+          Fill in your profile once, then quickly identify which opportunities are worth your time.
         </p>
       </div>
       <div class="hero-stats" id="stats"></div>
-      <p class="last-updated" id="lastUpdated">正在加载最新数据...</p>
+      <p class="last-updated" id="lastUpdated">Loading latest dataset...</p>
     </header>
 
     <main class="layout">
       <section class="panel profile-panel reveal-up">
-        <h2>你的画像（用于匹配度）</h2>
+        <h2>Your Profile (for match scoring)</h2>
         <form id="profileForm" class="grid-form">
           <label>
-            学习/职业阶段
+            Study/Career Level
             <select id="profileLevel" name="level">
-              <option value="">未选择</option>
+              <option value="">Not selected</option>
               <option value="undergraduate">Undergraduate</option>
               <option value="masters">Masters</option>
               <option value="phd">PhD</option>
@@ -49,9 +50,9 @@
           </label>
 
           <label>
-            职业阶段
+            Career Stage
             <select id="profileCareer" name="careerStage">
-              <option value="">未选择</option>
+              <option value="">Not selected</option>
               <option value="early">Early Career</option>
               <option value="mid">Mid Career</option>
               <option value="senior">Senior</option>
@@ -59,9 +60,9 @@
           </label>
 
           <label>
-            国籍/身份
+            Nationality/Status
             <select id="profileNationality" name="nationality">
-              <option value="">未选择</option>
+              <option value="">Not selected</option>
               <option value="uk">UK</option>
               <option value="eu">EU</option>
               <option value="international">International</option>
@@ -69,29 +70,29 @@
           </label>
 
           <label>
-            研究学科关键词
+            Discipline Keywords
             <input
               id="profileDiscipline"
               name="discipline"
               type="text"
-              placeholder="例如: neuroscience, climate, ai"
+              placeholder="e.g. neuroscience, climate, ai"
             />
           </label>
         </form>
       </section>
 
       <section class="panel filter-panel reveal-up delay-1">
-        <h2>机会筛选</h2>
+        <h2>Opportunity Filters</h2>
         <form id="filters" class="grid-form">
           <label>
-            搜索关键词
-            <input id="keyword" type="text" placeholder="标题 / 摘要 / 学科" />
+            Search Keyword
+            <input id="keyword" type="text" placeholder="title / summary / discipline" />
           </label>
 
           <label>
-            机会类型
+            Opportunity Type
             <select id="typeFilter">
-              <option value="">全部</option>
+              <option value="">All</option>
               <option value="grant">Grant</option>
               <option value="fellowship">Fellowship</option>
               <option value="scholarship">Scholarship</option>
@@ -101,9 +102,9 @@
           </label>
 
           <label>
-            状态
+            Status
             <select id="statusFilter">
-              <option value="">全部</option>
+              <option value="">All</option>
               <option value="open">Open</option>
               <option value="unknown">Unknown</option>
               <option value="closed">Closed</option>
@@ -113,7 +114,7 @@
           <label>
             Funding Source
             <select id="sourceFilter">
-              <option value="">全部来源</option>
+              <option value="">All Sources</option>
             </select>
           </label>
         </form>
@@ -122,21 +123,21 @@
       <section class="panel result-panel reveal-up delay-2">
         <div class="section-head">
           <h2>Funding Opportunities</h2>
-          <p id="resultMeta">正在计算匹配...</p>
+          <p id="resultMeta">Calculating fit scores...</p>
         </div>
         <div id="cards" class="cards"></div>
       </section>
 
       <aside class="panel side-panel reveal-up delay-3">
         <section class="digest-box">
-          <h2>每日简报</h2>
-          <p id="digestMeta">加载中...</p>
-          <a id="digestLink" href="./data/digest.latest.md" target="_blank" rel="noreferrer">查看最新简报</a>
+          <h2>Daily Brief</h2>
+          <p id="digestMeta">Loading...</p>
+          <a id="digestLink" href="./data/digest.latest.md" target="_blank" rel="noreferrer">View latest brief</a>
         </section>
 
         <section class="subscribe-box">
-          <h2>邮箱订阅</h2>
-          <p>每天自动推送最新变更到邮箱（双重确认订阅）。</p>
+          <h2>Email Subscription</h2>
+          <p>Receive a daily update email with the latest funding changes (double opt-in enabled).</p>
           <form id="subscribeForm" method="post" target="_blank" rel="noopener noreferrer">
             <input
               type="email"
@@ -146,9 +147,9 @@
               aria-label="Email"
             />
             <input type="hidden" value="1" name="embed" />
-            <button type="submit">订阅 Daily Brief</button>
+            <button type="submit">Subscribe to Daily Brief</button>
           </form>
-          <p class="mini-tip" id="subscribeHint">订阅服务加载中...</p>
+          <p class="mini-tip" id="subscribeHint">Loading subscription service...</p>
         </section>
 
         <section class="source-box">
@@ -160,7 +161,7 @@
 
     <footer>
       <p>
-        数据由 GitHub Actions 每日更新；AI 摘要用于快速筛选，申请前请以官方页面为准。
+        Data is refreshed daily by GitHub Actions. AI summaries are for triage only; always verify details on official pages.
       </p>
     </footer>
 
