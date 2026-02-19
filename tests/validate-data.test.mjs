@@ -101,3 +101,15 @@ test("validateDataset fails generic non-specific titles", () => {
   assert.ok(result.errors.some((entry) => entry.message.includes("generic and not a specific grant")));
   assert.ok(result.errors.some((entry) => entry.message.includes("generic apply/manage page")));
 });
+
+test("validateDataset fails funding-journey style guidance pages", () => {
+  const row = {
+    ...makeDataset().items[0],
+    title: "Starting a funding journey",
+    url: "https://example.org/research-funding/starting-a-funding-journey"
+  };
+
+  const result = validateDataset(makeDataset({ items: [row] }));
+  assert.ok(result.errors.some((entry) => entry.message.includes("generic and not a specific grant")));
+  assert.ok(result.errors.some((entry) => entry.message.includes("generic apply/manage page")));
+});

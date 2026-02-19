@@ -88,8 +88,50 @@ const GENERIC_OPPORTUNITY_PATTERNS = [
   "before you apply",
   "develop your application",
   "how we make decisions",
-  "manage your award"
+  "manage your award",
+  "starting a funding journey",
+  "planning a funding application",
+  "responsibilities after funding",
+  "eligibility guide for applicants",
+  "application guidance",
+  "guidance for applicants",
+  "guidance for teachers",
+  "information for advisors",
+  "information for institutions and universities",
+  "information sessions",
+  "apply to imperial",
+  "apply undergraduate",
+  "application process",
+  "accepted qualifications",
+  "choose a course",
+  "entry requirements",
+  "do your own fundraising",
+  "how to apply",
+  "how we select",
+  "find a scholarship",
+  "funding tenders",
+  "our funding schemes",
+  "scholarship timeline",
+  "social care research",
+  "global health research",
+  "who can apply for",
+  "guide for applicants",
+  "funded grants",
+  "funding guidance",
+  "funding policies and grant conditions",
+  "funding portfolio",
+  "prepare to apply"
 ];
+
+const EXACT_GENERIC_TITLES = new Set(
+  [
+    "resources",
+    "eligibility",
+    "criteria",
+    "timeline",
+    "scholarships"
+  ].map((x) => normalizeForKeywordChecks(x))
+);
 
 const EXCLUDED_URL_SEGMENTS = [
   "/about",
@@ -111,6 +153,27 @@ const EXCLUDED_URL_SEGMENTS = [
   "/apply-for-and-manage-your-funding",
   "/apply-for-funding",
   "/manage-your-award",
+  "/starting-a-funding-journey",
+  "/application-support",
+  "/responsibilities-after-funding",
+  "/resource-hub/guidance",
+  "/information-for-advisors",
+  "/information-for-institutions-and-universities",
+  "/information-sessions",
+  "/study/apply",
+  "/do-your-own-fundraising",
+  "/apply/eligibility",
+  "/how-to-apply",
+  "/how-we-select",
+  "/find-a-scholarship",
+  "/our-funding-schemes",
+  "/apply/criteria",
+  "/apply/timeline",
+  "/information-for-applicants/timeline",
+  "/scholarships/who-can-apply",
+  "/fellowships/who-can-apply",
+  "/who-can-apply-for-a-chevening",
+  "/funding-tenders/opportunities/data/topic-list.html",
   "/alumni",
   "/partners",
   "/evaluation",
@@ -427,6 +490,12 @@ function isOpportunityDetailUrl(url) {
 function matchesGenericOpportunityPattern(text) {
   const normalized = normalizeForKeywordChecks(text);
   return GENERIC_OPPORTUNITY_PATTERNS.some((pattern) => normalized.includes(pattern));
+}
+
+function isExactGenericTitle(title) {
+  const normalized = normalizeForKeywordChecks(title);
+  if (!normalized) return false;
+  return EXACT_GENERIC_TITLES.has(normalized);
 }
 
 function hasTitleUrlAlignment(title, url) {
@@ -1205,6 +1274,7 @@ function shouldKeepOpportunity(candidate) {
   if (sourceType === "seed_page") return false;
   if (hasDisallowedFileExtension(candidate.url)) return false;
   if (hasExcludedUrlSegment(candidate.url)) return false;
+  if (isExactGenericTitle(title)) return false;
   if (matchesGenericOpportunityPattern(title)) return false;
   if (sourceType !== "rss" && !hasTitleUrlAlignment(candidate.title, candidate.url)) return false;
   if (title.length < 8) return false;
