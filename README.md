@@ -71,6 +71,7 @@ Use any static server to preview `docs/index.html`.
 - `MAX_URL_CHECK_ITEMS`: max items to URL-verify per run (default 320)
 - `STRICT_URL_VALIDATION`: when `true`, daily refresh fails if URLs cannot be verified
 - `VALIDATE_STRICT_URLS`: when `true`, dataset validation requires verified URL status
+- `INCLUDE_SEED_PAGE_ITEMS`: when `true`, source landing pages can be kept as items (default `false`, recommended)
 
 ## Subscription Model
 
