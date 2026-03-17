@@ -6,6 +6,7 @@
     "homepage": "https://www.ukri.org/opportunity/",
     "seedUrls": [
       "https://www.ukri.org/opportunity/",
+      "https://www.ukri.org/opportunity/feed/",
       "https://www.ukri.org/what-we-do/developing-people-and-skills/"
     ],
     "includeHosts": ["ukri.org"]
@@ -146,9 +147,9 @@
     "id": "raeng",
     "name": "Royal Academy of Engineering",
     "category": "engineering_funding",
-    "homepage": "https://www.raeng.org.uk/grants-prizes/grants",
+    "homepage": "https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/",
     "seedUrls": [
-      "https://www.raeng.org.uk/grants-prizes/grants"
+      "https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/"
     ],
     "includeHosts": ["raeng.org.uk"]
   },
@@ -166,9 +167,9 @@
     "id": "bhf",
     "name": "British Heart Foundation",
     "category": "health_research",
-    "homepage": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available",
+    "homepage": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund",
     "seedUrls": [
-      "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-funding-is-available"
+      "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund"
     ],
     "includeHosts": ["bhf.org.uk"]
   },

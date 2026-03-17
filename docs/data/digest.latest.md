@@ -1,17 +1,15 @@
 # UK Academic Funding Daily Brief (2026-03-17)
 
-- New opportunities: **7**
+- New opportunities: **5**
 - Updated opportunities: **0**
 - Closing within 14 days: **3**
 
 ## New Opportunities (Top 12)
-- [Major Research Fellowships](https://www.leverhulme.ac.uk/major-research-fellowships) | Leverhulme Trust | Deadline: 2026-05-08 | Fellowship. deadline: 2026-05-08. Best suited for phd/academic; nationality rules appear flexible.
-- [Emeritus Fellowships](https://www.leverhulme.ac.uk/emeritus-fellowships) | Leverhulme Trust | Deadline: 2026-08-01 | Fellowship. deadline: 2026-08-01. Best suited for phd/academic; nationality rules appear flexible.
-- [Leverhulme Doctoral Scholarships](https://www.leverhulme.ac.uk/leverhulme-doctoral-scholarships) | Leverhulme Trust | Deadline: TBC | Fellowship. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; targeted at international.
-- [Research Fellowships](https://www.leverhulme.ac.uk/research-fellowships) | Leverhulme Trust | Deadline: TBC | Fellowship. deadline must be confirmed on the official page. Best suited for phd/academic; targeted at uk/international.
-- [Art Scholarship Bursaries for Undergraduates and Postgraduates](https://www.leverhulme.ac.uk/art-scholarship-bursaries-undergraduates-and-postgraduates) | Leverhulme Trust | Deadline: 2025-09-01 | Fellowship. deadline: 2025-09-01. Best suited for undergraduate/masters/phd/academic; nationality rules appear flexible.
-- [Art Scholarship Training Opportunities for Under 18s](https://www.leverhulme.ac.uk/art-scholarship-training-opportunities-under-18s) | Leverhulme Trust | Deadline: 2025-09-01 | Fellowship. deadline: 2025-09-01. Best suited for undergraduate/phd/academic; nationality rules appear flexible.
-- [Early Career Fellowships](https://www.leverhulme.ac.uk/early-career-fellowships) | Leverhulme Trust | Deadline: 2026-02-19 | Fellowship. deadline: 2026-02-19. Best suited for phd/academic; nationality rules appear flexible.
+- [Fundraise for BHF](https://www.bhf.org.uk/how-you-can-help/fundraise) | British Heart Foundation | Deadline: 2026-06-21 | Grant opportunity. deadline: 2026-06-21. Best suited for no explicit level restriction; nationality rules appear flexible.
+- [Clinical Study Grants](https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/clinical-study) | British Heart Foundation | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.
+- [Programme Grants](https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/programme-grant) | British Heart Foundation | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.
+- [Project Grants](https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/project-grants) | British Heart Foundation | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.
+- [Special Project Grants](https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/special-project-grants) | British Heart Foundation | Deadline: TBC | Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.
 
 ## Closing Soon (Within 14 Days)
 - [Funding competition AI Champions: Frontier AI Phase 1](https://apply-for-innovation-funding.service.gov.uk/competition/2419/overview/bb8d7d28-0e63-4ee1-bf4a-790dfb3ae02f) | Innovate UK | D-1

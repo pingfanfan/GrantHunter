@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-17T11:22:18.108Z",
+  "generatedAt": "2026-03-17T11:32:16.137Z",
   "stats": {
-    "total": 32,
-    "open": 17,
-    "unknown": 1,
-    "closed": 14,
+    "total": 39,
+    "open": 19,
+    "unknown": 7,
+    "closed": 13,
     "withDeadline": 23,
-    "newToday": 7,
+    "newToday": 5,
     "updatedToday": 0,
     "sourcesConfigured": 33
   },
@@ -249,6 +249,27 @@
       ]
     },
     {
+      "id": "7239c7c1ff13ad03e4ba30483c2b518ce7140c08",
+      "title": "Fundraise for BHF",
+      "url": "https://www.bhf.org.uk/how-you-can-help/fundraise",
+      "sourceName": "British Heart Foundation",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-06-21",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2026-06-21. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
       "id": "2737e4116e47bc2127702774357788349dbdbbb0",
       "title": "Funding opportunity: Clean maritime demonstration competition seven: pre-deployment trials",
       "url": "https://www.ukri.org/opportunity/clean-maritime-demonstration-competition-seven-pre-deployment-trials",
@@ -413,6 +434,155 @@
       ]
     },
     {
+      "id": "60847916a2aeb63a83aa886616b3b4012fc1ab3d",
+      "title": "UK Grants and Prizes",
+      "url": "https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes",
+      "sourceName": "Royal Academy of Engineering",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "engineering",
+        "computer science and ai",
+        "environment and earth",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "7e32c3ccf998cc09fb47d1ec62ceecf44686713b",
+      "title": "Clean Maritime Demonstration Competition 7: Deployment trials",
+      "url": "https://www.ukri.org/opportunity/clean-maritime-demonstration-competition-7-deployment-trials",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "call",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Funding call. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "3852e70e04e53b28f19ae623030b4925b83b9e28",
+      "title": "Clinical Study Grants",
+      "url": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/clinical-study",
+      "sourceName": "British Heart Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£350,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "8b0ac3982c3692736f43943bb2797c8d8190d39c",
+      "title": "Pre-announcement: MRC: new investigator research grant: applicant-led",
+      "url": "https://www.ukri.org/opportunity/mrc-new-investigator-research-grant-applicant-led",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
+      "disciplines": [
+        "all disciplines"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "2b0c6373bb499f2be579504d6fe5ab06e2744efa",
+      "title": "Programme Grants",
+      "url": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/programme-grant",
+      "sourceName": "British Heart Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "70a2f8ae8b78039b4dcc5526d34060b11b424fd7",
+      "title": "Project Grants",
+      "url": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/project-grants",
+      "sourceName": "British Heart Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£500,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "682abee3c24bed80bb301855dacc1ed45884ac57",
+      "title": "Special Project Grants",
+      "url": "https://www.bhf.org.uk/for-professionals/information-for-researchers/what-we-fund/special-project-grants",
+      "sourceName": "British Heart Foundation",
+      "type": "grant",
+      "status": "unknown",
+      "deadline": null,
+      "amount": "£500,000",
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
       "id": "0c3f0a2eb67af7226ff30d3cbb6060dd34991085",
       "title": "The scholarship",
       "url": "https://www.gatescambridge.org/programme/the-scholarship",
@@ -569,32 +739,6 @@
       ],
       "nationalities": [
         "any"
-      ]
-    },
-    {
-      "id": "c8db55f25a2ed2501166f6b58758dc4886a21be9",
-      "title": "Funding opportunity: Pre-announcement: MRC: new investigator research grant: applicant-led",
-      "url": "https://www.ukri.org/opportunity/mrc-new-investigator-research-grant-applicant-led",
-      "sourceName": "UK Research and Innovation (UKRI)",
-      "type": "grant",
-      "status": "closed",
-      "deadline": "2026-03-13",
-      "amount": "£1 m",
-      "summary": "Grant opportunity. deadline: 2026-03-13. Best suited for phd/postdoc/academic; targeted at international/eu.",
-      "levels": [
-        "phd",
-        "postdoc",
-        "academic"
-      ],
-      "disciplines": [
-        "medicine and health",
-        "computer science and ai",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "international",
-        "eu"
       ]
     },
     {
