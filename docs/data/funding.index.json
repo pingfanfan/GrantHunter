@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-02-19T22:56:33.213Z",
+  "generatedAt": "2026-03-17T11:22:18.108Z",
   "stats": {
-    "total": 22,
-    "open": 10,
+    "total": 32,
+    "open": 17,
     "unknown": 1,
-    "closed": 11,
-    "withDeadline": 16,
-    "newToday": 0,
+    "closed": 14,
+    "withDeadline": 23,
+    "newToday": 7,
     "updatedToday": 0,
     "sourcesConfigured": 33
   },
   "items": [
     {
-      "id": "cba9c7745eac6349d363c78f4e12924eccc2f470",
-      "title": "Funding competition Contracts for Innovation: industrial human relevant drug models",
-      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2396/overview/d55398bb-ff62-43b9-9ee1-bf3fa4b95c5c",
+      "id": "6ca9962361ec3e5acfc0f7b8ebd5009c9002129d",
+      "title": "Funding competition AI Champions: Frontier AI Phase 1",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2419/overview/bb8d7d28-0e63-4ee1-bf4a-790dfb3ae02f",
       "sourceName": "Innovate UK",
       "type": "call",
       "status": "open",
-      "deadline": "2026-03-02",
-      "amount": "£2 m",
-      "summary": "Funding call. deadline: 2026-03-02. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "deadline": "2026-03-17",
+      "amount": "£3 m",
+      "summary": "Funding call. deadline: 2026-03-17. Best suited for no explicit level restriction; nationality rules appear flexible.",
       "levels": [],
       "disciplines": [
-        "medicine and health",
+        "engineering",
         "computer science and ai",
         "business"
       ],
@@ -32,87 +32,43 @@
       ]
     },
     {
-      "id": "3242e80eb92be075daa90c81399920d0167f1521",
-      "title": "Funding opportunity: Decision Maker Panel 2026 to 2029 (invite only)",
-      "url": "https://www.ukri.org/opportunity/decision-maker-panel-2026-to-2029-invite-only",
-      "sourceName": "Economic and Social Research Council (ESRC)",
-      "type": "grant",
-      "status": "open",
-      "deadline": "2026-03-10",
-      "amount": "£1.97 m",
-      "summary": "Grant opportunity. deadline: 2026-03-10. Best suited for no explicit level restriction; targeted at international/eu.",
-      "levels": [],
-      "disciplines": [
-        "computer science and ai",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "international",
-        "eu"
-      ]
-    },
-    {
-      "id": "b8856146fbe62fab94b17220d77f0230bcddfb38",
-      "title": "Strategic Fund",
-      "url": "https://www.nuffieldfoundation.org/funding-for-research/strategic-fund",
+      "id": "cdeb970effc5ac1d25c2d62d894aeb5b92c7f083",
+      "title": "POST Fellowship",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/post-fellowship",
       "sourceName": "Nuffield Foundation",
-      "type": "grant",
+      "type": "fellowship",
       "status": "open",
-      "deadline": "2026-03-16",
-      "amount": "£15m",
-      "summary": "Grant opportunity. deadline: 2026-03-16. Best suited for academic; nationality rules appear flexible.",
+      "deadline": "2026-03-23",
+      "amount": "£8,000",
+      "summary": "Fellowship. deadline: 2026-03-23. Best suited for phd/academic; nationality rules appear flexible.",
       "levels": [
+        "phd",
         "academic"
       ],
       "disciplines": [
         "computer science and ai",
         "environment and earth",
-        "social sciences",
-        "humanities"
+        "social sciences"
       ],
       "nationalities": [
         "any"
       ]
     },
     {
-      "id": "cc3226de3e03f4ba91a98920cb41252e87702fc8",
-      "title": "Funding opportunity: AHRC Collaborative Doctoral Project Nominations 2026 (invite only)",
-      "url": "https://www.ukri.org/opportunity/ahrc-collaborative-doctoral-project-nominations-2026-invite-only",
-      "sourceName": "UK Research and Innovation (UKRI)",
-      "type": "scholarship",
+      "id": "ee4d20e4298fe5418667cf0538640bc428b6c4f5",
+      "title": "Funding opportunity: Sandpit: market access acceleration in consumer led flexibility",
+      "url": "https://www.ukri.org/opportunity/sandpit-market-access-acceleration-in-consumer-led-flexibility",
+      "sourceName": "Economic and Social Research Council (ESRC)",
+      "type": "grant",
       "status": "open",
       "deadline": "2026-03-26",
       "amount": null,
-      "summary": "Scholarship. deadline: 2026-03-26. Best suited for phd; targeted at international/eu.",
-      "levels": [
-        "phd"
-      ],
-      "disciplines": [
-        "computer science and ai",
-        "social sciences",
-        "humanities",
-        "business"
-      ],
-      "nationalities": [
-        "international",
-        "eu"
-      ]
-    },
-    {
-      "id": "8f3345f5efd14e2f8676b37551cedb8cd7d23204",
-      "title": "Funding opportunity: UK-Germany Collaborative Innovation for Quantum Technologies 2026",
-      "url": "https://www.ukri.org/opportunity/uk-germany-collaborative-innovation-for-quantum-technologies-2026",
-      "sourceName": "Innovate UK",
-      "type": "grant",
-      "status": "open",
-      "deadline": "2026-04-15",
-      "amount": "£3 m",
-      "summary": "Grant opportunity. deadline: 2026-04-15. Best suited for no explicit level restriction; targeted at international/eu.",
+      "summary": "Grant opportunity. deadline: 2026-03-26. Best suited for no explicit level restriction; targeted at international/eu.",
       "levels": [],
       "disciplines": [
+        "engineering",
         "computer science and ai",
+        "environment and earth",
         "social sciences",
         "humanities",
         "business"
@@ -123,10 +79,32 @@
       ]
     },
     {
-      "id": "3868d36ec1f47ea3d1f67aacaafcce3dd695a917",
+      "id": "e860eea511c393e4836b38288b6b5747e53f64a3",
+      "title": "Funding competition Frontier AI Discovery",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2422/overview/a5c16dd4-c60d-4cc1-8035-33fe76a52489",
+      "sourceName": "Innovate UK",
+      "type": "call",
+      "status": "open",
+      "deadline": "2026-04-14",
+      "amount": "£2.5 m",
+      "summary": "Funding call. deadline: 2026-04-14. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "35d71a4ac53a33f012251154a291ed32407eda4e",
       "title": "Funding opportunity: Metascience research grants: round two",
       "url": "https://www.ukri.org/opportunity/metascience-research-grants-round-2",
-      "sourceName": "UK Research and Innovation (UKRI)",
+      "sourceName": "Science and Technology Facilities Council (STFC)",
       "type": "grant",
       "status": "open",
       "deadline": "2026-04-23",
@@ -149,41 +127,41 @@
       ]
     },
     {
-      "id": "f0517e62a0bdfc720103c7c5336a473756e3a141",
-      "title": "Funding opportunity: Contracts for Innovation in drug and alcohol addiction healthcare",
-      "url": "https://www.ukri.org/opportunity/contracts-for-innovation-in-drug-and-alcohol-addiction-healthcare",
-      "sourceName": "Innovate UK",
-      "type": "grant",
+      "id": "167b7046fb20c3acee4634fa0a3236431917f35f",
+      "title": "Major Research Fellowships",
+      "url": "https://www.leverhulme.ac.uk/major-research-fellowships",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
       "status": "open",
-      "deadline": "2026-05-06",
-      "amount": "£20 m",
-      "summary": "Grant opportunity. deadline: 2026-05-06. Best suited for no explicit level restriction; targeted at international/eu.",
-      "levels": [],
+      "deadline": "2026-05-08",
+      "amount": "£6,000",
+      "summary": "Fellowship. deadline: 2026-05-08. Best suited for phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
       "disciplines": [
-        "life sciences",
-        "medicine and health",
         "computer science and ai",
         "social sciences",
-        "humanities",
-        "business"
+        "humanities"
       ],
       "nationalities": [
-        "international",
-        "eu"
+        "any"
       ]
     },
     {
-      "id": "1fda11285598ba484513c92d56e514ded2c5e45e",
-      "title": "Funding opportunity: Pre-announcement: UKRI Translation: Proof of Concept",
+      "id": "7ea4b04ba9c41e68a31d9c900c39dc3191f0f53b",
+      "title": "Funding opportunity: UKRI Translation: Proof of Concept",
       "url": "https://www.ukri.org/opportunity/ukri-translation-proof-of-concept",
       "sourceName": "Arts and Humanities Research Council (AHRC)",
       "type": "grant",
       "status": "open",
       "deadline": "2026-05-13",
       "amount": "£250,000",
-      "summary": "Grant opportunity. deadline: 2026-05-13. Best suited for phd/academic; targeted at international/eu.",
+      "summary": "Grant opportunity. deadline: 2026-05-13. Best suited for phd/postdoc/academic; targeted at international/eu.",
       "levels": [
         "phd",
+        "postdoc",
         "academic"
       ],
       "disciplines": [
@@ -199,6 +177,121 @@
       "nationalities": [
         "international",
         "eu"
+      ]
+    },
+    {
+      "id": "3f1b9747488150235fad8a1033b7f2a25e89f9af",
+      "title": "Funding opportunity: UK National Coordinator and survey data collection for the European Social Survey, Round 13 and 14",
+      "url": "https://www.ukri.org/opportunity/uk-national-coordinator-and-survey-data-collection-for-the-european-social-survey-round-13-and-14",
+      "sourceName": "Economic and Social Research Council (ESRC)",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-05-21",
+      "amount": "£2,310,000",
+      "summary": "Grant opportunity. deadline: 2026-05-21. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "48a623fd7c34fd1feb888d8817894b3cbf835d3c",
+      "title": "Funding opportunity: Artificial intelligence humanities sandpits: Canada, UK and US invite only",
+      "url": "https://www.ukri.org/opportunity/artificial-intelligence-humanities-sandpits-canada-uk-and-us-invite-only",
+      "sourceName": "Arts and Humanities Research Council (AHRC)",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-05-28",
+      "amount": "£780,000",
+      "summary": "Grant opportunity. deadline: 2026-05-28. Best suited for no explicit level restriction; targeted at uk/international/eu.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "engineering",
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "uk",
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "bf03a5805378338a1fbbab150e4283ae095cd319",
+      "title": "Funding opportunity: National PET Imaging Platform: Data Platform",
+      "url": "https://www.ukri.org/opportunity/national-pet-imaging-platform-data-platform",
+      "sourceName": "Medical Research Council (MRC)",
+      "type": "grant",
+      "status": "open",
+      "deadline": "2026-06-17",
+      "amount": "£4.7 m",
+      "summary": "Grant opportunity. deadline: 2026-06-17. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "2737e4116e47bc2127702774357788349dbdbbb0",
+      "title": "Funding opportunity: Clean maritime demonstration competition seven: pre-deployment trials",
+      "url": "https://www.ukri.org/opportunity/clean-maritime-demonstration-competition-seven-pre-deployment-trials",
+      "sourceName": "Innovate UK",
+      "type": "call",
+      "status": "open",
+      "deadline": "2026-07-15",
+      "amount": "£121 m",
+      "summary": "Funding call. deadline: 2026-07-15. Best suited for no explicit level restriction; targeted at international/eu.",
+      "levels": [],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "international",
+        "eu"
+      ]
+    },
+    {
+      "id": "385103004dca99dbfd8df91ed008e3dab23df5ee",
+      "title": "Emeritus Fellowships",
+      "url": "https://www.leverhulme.ac.uk/emeritus-fellowships",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": "2026-08-01",
+      "amount": "£3,000",
+      "summary": "Fellowship. deadline: 2026-08-01. Best suited for phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
       ]
     },
     {
@@ -218,6 +311,55 @@
       "disciplines": [
         "computer science and ai",
         "physical sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "e31b1085f0f9dcf3367a8272548ba8dda50550b6",
+      "title": "International research",
+      "url": "https://www.nihr.ac.uk/research-funding/international-research",
+      "sourceName": "National Institute for Health and Care Research (NIHR)",
+      "type": "grant",
+      "status": "open",
+      "deadline": null,
+      "amount": null,
+      "summary": "Grant opportunity. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "life sciences",
+        "medicine and health",
+        "computer science and ai",
+        "social sciences"
+      ],
+      "nationalities": [
+        "international"
+      ]
+    },
+    {
+      "id": "ea86657d5cd4b124c80438dc0dc764ab8cb9110e",
+      "title": "Leverhulme Doctoral Scholarships",
+      "url": "https://www.leverhulme.ac.uk/leverhulme-doctoral-scholarships",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": "£100 m",
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for phd/postdoc/academic; targeted at international.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
       ],
       "nationalities": [
         "international"
@@ -244,6 +386,30 @@
       ],
       "nationalities": [
         "any"
+      ]
+    },
+    {
+      "id": "b201ae796a614002e5de124d89030bbf852f90d6",
+      "title": "Research Fellowships",
+      "url": "https://www.leverhulme.ac.uk/research-fellowships",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
+      "status": "open",
+      "deadline": null,
+      "amount": "£70,000",
+      "summary": "Fellowship. deadline must be confirmed on the official page. Best suited for phd/academic; targeted at uk/international.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "uk",
+        "international"
       ]
     },
     {
@@ -291,23 +457,50 @@
       ]
     },
     {
-      "id": "cdeb970effc5ac1d25c2d62d894aeb5b92c7f083",
-      "title": "POST Fellowship",
-      "url": "https://www.nuffieldfoundation.org/funding-for-research/post-fellowship",
-      "sourceName": "Nuffield Foundation",
+      "id": "36185c8061b27938559eb5c7405e39b626ebbad7",
+      "title": "Art Scholarship Bursaries for Undergraduates and Postgraduates",
+      "url": "https://www.leverhulme.ac.uk/art-scholarship-bursaries-undergraduates-and-postgraduates",
+      "sourceName": "Leverhulme Trust",
       "type": "fellowship",
       "status": "closed",
-      "deadline": "2024-10-20",
-      "amount": "£8,000,",
-      "summary": "Fellowship. deadline: 2024-10-20. Best suited for phd/academic; nationality rules appear flexible.",
+      "deadline": "2025-09-01",
+      "amount": "£5,000",
+      "summary": "Fellowship. deadline: 2025-09-01. Best suited for undergraduate/masters/phd/academic; nationality rules appear flexible.",
       "levels": [
+        "undergraduate",
+        "masters",
         "phd",
         "academic"
       ],
       "disciplines": [
         "computer science and ai",
-        "environment and earth",
-        "social sciences"
+        "social sciences",
+        "humanities",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "92728dbf952e6c3735cbe681517078db0967262a",
+      "title": "Art Scholarship Training Opportunities for Under 18s",
+      "url": "https://www.leverhulme.ac.uk/art-scholarship-training-opportunities-under-18s",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2025-09-01",
+      "amount": null,
+      "summary": "Fellowship. deadline: 2025-09-01. Best suited for undergraduate/phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "undergraduate",
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "computer science and ai",
+        "social sciences",
+        "humanities"
       ],
       "nationalities": [
         "any"
@@ -336,39 +529,66 @@
       ]
     },
     {
-      "id": "8d7b6993a9b1ed8e67efb8aeafd03f685db5ad9c",
-      "title": "Funding competition UK-Germany Collaborative Innovation for Quantum Technologies 2026",
-      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2392/overview/b8b93732-6326-4aed-9af3-334e4cc5ecc0",
+      "id": "837d4a6efcb4451161462564225698f1a2dbc283",
+      "title": "Early Career Fellowships",
+      "url": "https://www.leverhulme.ac.uk/early-career-fellowships",
+      "sourceName": "Leverhulme Trust",
+      "type": "fellowship",
+      "status": "closed",
+      "deadline": "2026-02-19",
+      "amount": "£56,000",
+      "summary": "Fellowship. deadline: 2026-02-19. Best suited for phd/academic; nationality rules appear flexible.",
+      "levels": [
+        "phd",
+        "academic"
+      ],
+      "disciplines": [
+        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "humanities"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "c3bf07082d91cf57c73c32fc91a75b557efc1b0d",
+      "title": "Funding competition Clean Maritime Demonstration Competition 7: Pre-deployment trials",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2415/overview/fa34afe8-b2e7-4cda-b77b-cf952d26a27a",
       "sourceName": "Innovate UK",
       "type": "call",
       "status": "closed",
-      "deadline": "2026-02-12",
-      "amount": "£3 m",
-      "summary": "Funding call. deadline: 2026-02-12. Best suited for no explicit level restriction; targeted at eu.",
+      "deadline": "2026-03-11",
+      "amount": "£121 m",
+      "summary": "Funding call. deadline: 2026-03-11. Best suited for no explicit level restriction; nationality rules appear flexible.",
       "levels": [],
       "disciplines": [
         "computer science and ai",
         "business"
       ],
       "nationalities": [
-        "eu"
+        "any"
       ]
     },
     {
-      "id": "5585faff0f9432f8f0ae844ca127bb51c2aa50cc",
-      "title": "Funding opportunity: Pre-announcement: NetworkPlus in property flood resilience",
-      "url": "https://www.ukri.org/opportunity/networkplus-in-property-flood-resilience",
-      "sourceName": "Engineering and Physical Sciences Research Council (EPSRC)",
+      "id": "c8db55f25a2ed2501166f6b58758dc4886a21be9",
+      "title": "Funding opportunity: Pre-announcement: MRC: new investigator research grant: applicant-led",
+      "url": "https://www.ukri.org/opportunity/mrc-new-investigator-research-grant-applicant-led",
+      "sourceName": "UK Research and Innovation (UKRI)",
       "type": "grant",
       "status": "closed",
-      "deadline": "2026-02-13",
-      "amount": "£2.5 m",
-      "summary": "Grant opportunity. deadline: 2026-02-13. Best suited for no explicit level restriction; targeted at international/eu.",
-      "levels": [],
+      "deadline": "2026-03-13",
+      "amount": "£1 m",
+      "summary": "Grant opportunity. deadline: 2026-03-13. Best suited for phd/postdoc/academic; targeted at international/eu.",
+      "levels": [
+        "phd",
+        "postdoc",
+        "academic"
+      ],
       "disciplines": [
-        "engineering",
+        "medicine and health",
         "computer science and ai",
-        "social sciences",
         "humanities",
         "business"
       ],
@@ -378,63 +598,86 @@
       ]
     },
     {
-      "id": "11c8e0fc72f142b18d0df64f68b362a89506b7ad",
-      "title": "Funding competition Advancing innovation in drug and alcohol addiction healthcare",
-      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2394/overview/33b56af8-353f-46ac-bb66-a0928731c0fc",
-      "sourceName": "Innovate UK",
-      "type": "call",
+      "id": "0e94b8580bf954802ab6575d06fd47775b597c47",
+      "title": "Funding opportunity: Pre-announcement: MRC: research grant: applicant-led",
+      "url": "https://www.ukri.org/opportunity/mrc-research-grant-applicant-led",
+      "sourceName": "UK Research and Innovation (UKRI)",
+      "type": "grant",
       "status": "closed",
-      "deadline": "2026-02-16",
-      "amount": "£20 m",
-      "summary": "Funding call. deadline: 2026-02-16. Best suited for no explicit level restriction; targeted at eu.",
-      "levels": [],
+      "deadline": "2026-03-13",
+      "amount": null,
+      "summary": "Grant opportunity. deadline: 2026-03-13. Best suited for academic; targeted at international/eu.",
+      "levels": [
+        "academic"
+      ],
       "disciplines": [
-        "life sciences",
         "medicine and health",
         "computer science and ai",
+        "humanities",
         "business"
       ],
       "nationalities": [
+        "international",
         "eu"
       ]
     },
     {
-      "id": "7bf0be5f57dff4d89effc6c1ae0d210199d17d17",
-      "title": "Funding competition Contracts for Innovation in drug and alcohol addiction healthcare",
-      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2395/overview/3d49fbc4-6e09-4dd8-9ac8-8e5f88facd8d",
+      "id": "bb39f5dd17a698a8c87fc4b519610416408bf6ce",
+      "title": "Funding competition Advanced Manufacturing Supply Chains: Potential High Growth SMEs",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2423/overview/6207ec15-42c0-424f-a3b7-6bd3bfa11ff1",
       "sourceName": "Innovate UK",
       "type": "call",
       "status": "closed",
-      "deadline": "2026-02-16",
-      "amount": "£20 m",
-      "summary": "Funding call. deadline: 2026-02-16. Best suited for no explicit level restriction; targeted at eu.",
+      "deadline": "2026-03-16",
+      "amount": "£2 m",
+      "summary": "Funding call. deadline: 2026-03-16. Best suited for no explicit level restriction; nationality rules appear flexible.",
       "levels": [],
       "disciplines": [
-        "life sciences",
-        "medicine and health",
+        "computer science and ai",
+        "social sciences",
+        "business"
+      ],
+      "nationalities": [
+        "any"
+      ]
+    },
+    {
+      "id": "88a7e13284af5765bf8024e1f5a24f9982ab56e6",
+      "title": "Funding competition Secure Software for Resilient Growth",
+      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2421/overview/3d6991fa-73b2-48c0-93eb-cc5393b5cf3d",
+      "sourceName": "Innovate UK",
+      "type": "call",
+      "status": "closed",
+      "deadline": "2026-03-16",
+      "amount": "£5 m",
+      "summary": "Funding call. deadline: 2026-03-16. Best suited for no explicit level restriction; nationality rules appear flexible.",
+      "levels": [],
+      "disciplines": [
         "computer science and ai",
         "business"
       ],
       "nationalities": [
-        "eu"
+        "any"
       ]
     },
     {
-      "id": "1a27476a882bbba0b3adebb84409ac507aac1fc1",
-      "title": "Funding competition Zero Emission Flight Demonstrator Round 1",
-      "url": "https://apply-for-innovation-funding.service.gov.uk/competition/2397/overview/752074ec-5f01-46d8-863f-596300a11651",
-      "sourceName": "Innovate UK",
-      "type": "call",
+      "id": "b8856146fbe62fab94b17220d77f0230bcddfb38",
+      "title": "Strategic Fund",
+      "url": "https://www.nuffieldfoundation.org/funding-for-research/strategic-fund",
+      "sourceName": "Nuffield Foundation",
+      "type": "grant",
       "status": "closed",
-      "deadline": "2026-02-16",
-      "amount": "£8 m",
-      "summary": "Funding call. deadline: 2026-02-16. Best suited for no explicit level restriction; nationality rules appear flexible.",
-      "levels": [],
+      "deadline": "2026-03-16",
+      "amount": "£15m",
+      "summary": "Grant opportunity. deadline: 2026-03-16. Best suited for academic; nationality rules appear flexible.",
+      "levels": [
+        "academic"
+      ],
       "disciplines": [
         "computer science and ai",
         "environment and earth",
         "social sciences",
-        "business"
+        "humanities"
       ],
       "nationalities": [
         "any"

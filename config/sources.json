@@ -36,8 +36,7 @@
     "category": "research_grants",
     "homepage": "https://www.ukri.org/councils/epsrc/",
     "seedUrls": [
-      "https://www.ukri.org/councils/epsrc/",
-      "https://www.ukri.org/councils/epsrc/guidance-for-applicants/funding-opportunities/"
+      "https://www.ukri.org/councils/epsrc/"
     ],
     "includeHosts": ["ukri.org"]
   },
@@ -108,8 +107,7 @@
     "category": "health_research",
     "homepage": "https://www.nihr.ac.uk/funding",
     "seedUrls": [
-      "https://www.nihr.ac.uk/funding",
-      "https://www.nihr.ac.uk/funding/our-funding-programmes"
+      "https://www.nihr.ac.uk/funding"
     ],
     "includeHosts": ["nihr.ac.uk"]
   },
@@ -138,9 +136,9 @@
     "id": "leverhulme",
     "name": "Leverhulme Trust",
     "category": "fellowships",
-    "homepage": "https://www.leverhulme.ac.uk/research-funding",
+    "homepage": "https://www.leverhulme.ac.uk/schemes-at-a-glance",
     "seedUrls": [
-      "https://www.leverhulme.ac.uk/research-funding"
+      "https://www.leverhulme.ac.uk/schemes-at-a-glance"
     ],
     "includeHosts": ["leverhulme.ac.uk"]
   },
@@ -188,9 +186,9 @@
     "id": "nuffield",
     "name": "Nuffield Foundation",
     "category": "social_research",
-    "homepage": "https://www.nuffieldfoundation.org/funding",
+    "homepage": "https://www.nuffieldfoundation.org/funding-for-research",
     "seedUrls": [
-      "https://www.nuffieldfoundation.org/funding"
+      "https://www.nuffieldfoundation.org/funding-for-research"
     ],
     "includeHosts": ["nuffieldfoundation.org"]
   },
